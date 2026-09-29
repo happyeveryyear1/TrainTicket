@@ -1,0 +1,41 @@
+[2026-06-30 12:00:02] [javac-extractor-46320] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-73.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 12:00:02] [javac-extractor-46320] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-73.trap.gz
+[2026-06-30 12:00:02] [javac-extractor-46320] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-delivery-service\src\main\java\delivery\entity\Delivery.java
+[2026-06-30 12:00:02] [javac-extractor-46320] [WARN] Appending source destination directory C:\train-ticket-master\ts-delivery-service\target\generated-sources\annotations to sourcepath
+[2026-06-30 12:00:10] [javac-extractor-46320] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 12:00:11] [javac-extractor-46320] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 12:00:11] [javac-extractor-46320] Processing file C:\train-ticket-master\ts-delivery-service\src\main\java\delivery\entity\Delivery.java
+[2026-06-30 12:00:42] [javac-extractor-46320] Processing JAR file: C:/Maven/LocalRepository/antlr/antlr/2.7.7/antlr-2.7.7.jar
+[2026-06-30 12:00:42] [javac-extractor-46320] Processing JAR file: C:/Maven/LocalRepository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar
+[2026-06-30 12:00:42] [javac-extractor-46320] Processing JAR file: C:/Maven/LocalRepository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar
+[2026-06-30 12:00:42] [javac-extractor-46320] Processing JAR file: C:/Maven/LocalRepository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar
+[2026-06-30 12:00:42] [javac-extractor-46320] Processing file C:\train-ticket-master\ts-delivery-service\src\main\java\delivery\DeliveryApplication.java
+[2026-06-30 12:00:43] [javac-extractor-46320] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\com\google\common\collect\Multimap.members\Multimap.members#52.0-1602837612000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\com\google\common\collect\Multimap.members\Multimap.members#52.0-1632472032000-java.trap.gz exists
+[2026-06-30 12:00:43] [javac-extractor-46320] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\com\google\common\annotations\GwtCompatible.members\GwtCompatible.members#52.0-1602837608000-java.trap.gz as the trap-old exists
+[2026-06-30 12:00:43] [javac-extractor-46320] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\com\google\errorprone\annotations\DoNotMock.members\DoNotMock.members#51.0-1575255712000-java.trap.gz as the trap-old exists
+[2026-06-30 12:00:45] [javac-extractor-46320] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\com\google\common\base\Function.members\Function.members#52.0-1602837608000-java.trap.gz as the trap-old exists
+[2026-06-30 12:00:45] [javac-extractor-46320] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\com\google\common\annotations\VisibleForTesting.members\VisibleForTesting.members#52.0-1602837614000-java.trap.gz as the trap-old exists
+[2026-06-30 12:00:46] [javac-extractor-46320] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\com\google\common\collect\ImmutableSet.members\ImmutableSet.members#52.0-1602837610000-java.trap.gz as the trap-old exists
+[2026-06-30 12:00:46] [javac-extractor-46320] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\com\google\common\collect\ImmutableCollection.members\ImmutableCollection.members#52.0-1602837608000-java.trap.gz as the trap-old exists
+[2026-06-30 12:00:46] [javac-extractor-46320] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\com\google\common\collect\ImmutableMap.members\ImmutableMap.members#52.0-1602837612000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\com\google\common\collect\ImmutableMap.members\ImmutableMap.members#52.0-1632472032000-java.trap.gz exists
+[2026-06-30 12:00:46] [javac-extractor-46320] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\com\google\common\base\Predicate.members\Predicate.members#52.0-1602837608000-java.trap.gz as the trap-old exists
+[2026-06-30 12:00:46] [javac-extractor-46320] Processing JAR file: C:/Maven/LocalRepository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar
+[2026-06-30 12:00:46] [javac-extractor-46320] Processing JAR file: C:/Maven/LocalRepository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar
+[2026-06-30 12:00:46] [javac-extractor-46320] Processing JAR file: C:/Maven/LocalRepository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar
+[2026-06-30 12:00:46] [javac-extractor-46320] Processing JAR file: C:/Maven/LocalRepository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar
+[2026-06-30 12:00:46] [javac-extractor-46320] Processing JAR file: C:/Maven/LocalRepository/io/springfox/springfox-spi/2.9.2/springfox-spi-2.9.2.jar
+[2026-06-30 12:00:46] [javac-extractor-46320] Processing JAR file: C:/Maven/LocalRepository/io/springfox/springfox-core/2.9.2/springfox-core-2.9.2.jar
+[2026-06-30 12:00:46] [javac-extractor-46320] Processing JAR file: C:/Maven/LocalRepository/org/mapstruct/mapstruct/1.2.0.Final/mapstruct-1.2.0.Final.jar
+[2026-06-30 12:00:46] [javac-extractor-46320] Processing JAR file: C:/Maven/LocalRepository/io/swagger/swagger-models/1.5.20/swagger-models-1.5.20.jar
+[2026-06-30 12:00:47] [javac-extractor-46320] Processing file C:\train-ticket-master\ts-delivery-service\src\main\java\delivery\config\Queues.java
+[2026-06-30 12:00:47] [javac-extractor-46320] Processing file C:\train-ticket-master\ts-delivery-service\src\main\java\delivery\repository\DeliveryRepository.java
+[2026-06-30 12:00:47] [javac-extractor-46320] Processing file C:\train-ticket-master\ts-delivery-service\src\main\java\delivery\mq\RabbitReceive.java
+[2026-06-30 12:00:47] [javac-extractor-46320] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\JsonUtils.members\JsonUtils.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\JsonUtils.members\JsonUtils.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 12:00:47] [javac-extractor-46320] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 12:00:47] [javac-extractor-46320] Javac init time: 8.5s
+[2026-06-30 12:00:47] [javac-extractor-46320] Javac attr time: 0.1s
+[2026-06-30 12:00:47] [javac-extractor-46320] Extractor time: 35.8s
+[2026-06-30 12:00:47] [javac-extractor-46320] Other time: 0.4s
+[2026-06-30 12:00:47] [javac-extractor-46320] Total time: 44.8s

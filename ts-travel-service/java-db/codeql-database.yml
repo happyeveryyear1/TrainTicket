@@ -1,0 +1,45 @@
+---
+sourceLocationPrefix: C:\train-ticket-master\ts-travel-service
+baselineLinesOfCode: 1303
+unicodeNewlines: false
+columnKind: utf16
+primaryLanguage: java
+inProgress:
+  primaryLanguage: java
+  installedExtractors:
+    actions:
+     - C:/Code Static Analysis/codeql/actions
+    cpp:
+     - C:/Code Static Analysis/codeql/cpp
+    csharp:
+     - C:/Code Static Analysis/codeql/csharp
+    csv:
+     - C:/Code Static Analysis/codeql/csv
+    go:
+     - C:/Code Static Analysis/codeql/go
+    html:
+     - C:/Code Static Analysis/codeql/html
+    java:
+     - C:/Code Static Analysis/codeql/java
+    javascript:
+     - C:/Code Static Analysis/codeql/javascript
+    properties:
+     - C:/Code Static Analysis/codeql/properties
+    python:
+     - C:/Code Static Analysis/codeql/python
+    ruby:
+     - C:/Code Static Analysis/codeql/ruby
+    rust:
+     - C:/Code Static Analysis/codeql/rust
+    swift:
+     - C:/Code Static Analysis/codeql/swift
+    xml:
+     - C:/Code Static Analysis/codeql/xml
+    yaml:
+     - C:/Code Static Analysis/codeql/yaml
+creationMetadata:
+  cliVersion: 2.22.1
+  creationTime: 2026-06-30T03:28:43.434187700Z
+overlayDatabase: false
+overlayBaseDatabase: false
+finalised: false

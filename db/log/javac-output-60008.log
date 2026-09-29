@@ -1,0 +1,9 @@
+[2026-06-30 11:58:38] [javac-output-60008] warning: [options] bootstrap class path is not set in conjunction with -source 8
+[2026-06-30 11:58:38] [javac-output-60008]   not setting the bootstrap class path may lead to class files that cannot run on JDK 8
+[2026-06-30 11:58:38] [javac-output-60008]     --release 8 is recommended instead of -source 8 -target 8 because it sets the bootstrap class path automatically
+[2026-06-30 11:58:38] [javac-output-60008] warning: [options] source value 8 is obsolete and will be removed in a future release
+[2026-06-30 11:58:38] [javac-output-60008] warning: [options] target value 8 is obsolete and will be removed in a future release
+[2026-06-30 11:58:38] [javac-output-60008] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[2026-06-30 11:58:46] [javac-output-60008] C:\train-ticket-master\ts-auth-service\src\main\java\auth\entity\User.java:39: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[2026-06-30 11:58:46] [javac-output-60008]     private Set<String> roles = new HashSet<>();
+[2026-06-30 11:58:46] [javac-output-60008]                         ^

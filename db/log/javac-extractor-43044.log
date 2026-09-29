@@ -1,0 +1,31 @@
+[2026-06-30 11:54:57] [javac-extractor-43044] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-57.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 11:54:57] [javac-extractor-43044] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-57.trap.gz
+[2026-06-30 11:54:57] [javac-extractor-43044] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-consign-service\src\main\java\consign\entity\GetPriceDomain.java
+[2026-06-30 11:54:57] [javac-extractor-43044] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-consign-service\src\main\java\consign\entity\InsertConsignRecordResult.java
+[2026-06-30 11:54:57] [javac-extractor-43044] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-consign-service\src\main\java\consign\entity\ConsignRecord.java
+[2026-06-30 11:54:57] [javac-extractor-43044] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-consign-service\src\main\java\consign\entity\Consign.java
+[2026-06-30 11:54:57] [javac-extractor-43044] [WARN] Appending source destination directory C:\train-ticket-master\ts-consign-service\target\generated-sources\annotations to sourcepath
+[2026-06-30 11:55:05] [javac-extractor-43044] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 11:55:06] [javac-extractor-43044] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 11:55:06] [javac-extractor-43044] Processing file C:\train-ticket-master\ts-consign-service\src\main\java\consign\entity\GetPriceDomain.java
+[2026-06-30 11:55:06] [javac-extractor-43044] Processing file C:\train-ticket-master\ts-consign-service\src\main\java\consign\entity\InsertConsignRecordResult.java
+[2026-06-30 11:55:06] [javac-extractor-43044] Processing file C:\train-ticket-master\ts-consign-service\src\main\java\consign\service\ConsignServiceImpl.java
+[2026-06-30 11:55:07] [javac-extractor-43044] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:55:07] [javac-extractor-43044] Processing file C:\train-ticket-master\ts-consign-service\src\main\java\consign\service\ConsignService.java
+[2026-06-30 11:55:07] [javac-extractor-43044] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:55:07] [javac-extractor-43044] Processing file C:\train-ticket-master\ts-consign-service\src\main\java\consign\repository\ConsignRepository.java
+[2026-06-30 11:55:07] [javac-extractor-43044] Processing file C:\train-ticket-master\ts-consign-service\src\main\java\consign\entity\ConsignRecord.java
+[2026-06-30 11:55:07] [javac-extractor-43044] Processing file C:\train-ticket-master\ts-consign-service\src\main\java\consign\entity\Consign.java
+[2026-06-30 11:55:07] [javac-extractor-43044] Processing file C:\train-ticket-master\ts-consign-service\src\main\java\consign\ConsignApplication.java
+[2026-06-30 11:55:08] [javac-extractor-43044] Processing file C:\train-ticket-master\ts-consign-service\src\main\java\consign\controller\ConsignController.java
+[2026-06-30 11:55:08] [javac-extractor-43044] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:55:08] [javac-extractor-43044] Processing file C:\train-ticket-master\ts-consign-service\src\main\java\consign\init\InitData.java
+[2026-06-30 11:55:08] [javac-extractor-43044] Processing file C:\train-ticket-master\ts-consign-service\src\main\java\consign\config\SecurityConfig.java
+[2026-06-30 11:55:08] [javac-extractor-43044] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:55:08] [javac-extractor-43044] Javac init time: 8.6s
+[2026-06-30 11:55:08] [javac-extractor-43044] Javac attr time: 0.3s
+[2026-06-30 11:55:08] [javac-extractor-43044] Extractor time: 2.2s
+[2026-06-30 11:55:08] [javac-extractor-43044] Other time: 0.5s
+[2026-06-30 11:55:08] [javac-extractor-43044] Total time: 11.6s

@@ -1,0 +1,41 @@
+[2026-06-30 11:36:54] [javac-extractor-73588] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-3.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 11:36:54] [javac-extractor-73588] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-3.trap.gz
+[2026-06-30 11:36:54] [javac-extractor-73588] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-contacts-service\src\main\java\contacts\entity\Contacts.java
+[2026-06-30 11:36:54] [javac-extractor-73588] [WARN] Appending source destination directory C:\train-ticket-master\ts-contacts-service\target\generated-sources\annotations to sourcepath
+[2026-06-30 11:37:03] [javac-extractor-73588] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 11:37:04] [javac-extractor-73588] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 11:37:04] [javac-extractor-73588] Processing file C:\train-ticket-master\ts-contacts-service\src\main\java\contacts\entity\DocumentType.java
+[2026-06-30 11:37:04] [javac-extractor-73588] Processing file C:\train-ticket-master\ts-contacts-service\src\main\java\contacts\controller\ContactsController.java
+[2026-06-30 11:37:04] [javac-extractor-73588] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:37:05] [javac-extractor-73588] Processing JAR file: C:/train-ticket-master/ts-common/target/ts-common-0.1.0.jar
+[2026-06-30 11:37:05] [javac-extractor-73588] Processing JAR file: C:/Maven/LocalRepository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar
+[2026-06-30 11:37:05] [javac-extractor-73588] Processing JAR file: C:/Maven/LocalRepository/org/hibernate/hibernate-core/5.4.32.Final/hibernate-core-5.4.32.Final.jar
+[2026-06-30 11:37:05] [javac-extractor-73588] Processing file C:\train-ticket-master\ts-contacts-service\src\main\java\contacts\service\ContactsService.java
+[2026-06-30 11:37:05] [javac-extractor-73588] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:37:05] [javac-extractor-73588] Processing file C:\train-ticket-master\ts-contacts-service\src\main\java\contacts\entity\Contacts.java
+[2026-06-30 11:37:05] [javac-extractor-73588] Processing file C:\train-ticket-master\ts-contacts-service\src\main\java\contacts\config\SecurityConfig.java
+[2026-06-30 11:37:06] [javac-extractor-73588] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:37:06] [javac-extractor-73588] Processing file C:\train-ticket-master\ts-contacts-service\src\main\java\contacts\repository\ContactsRepository.java
+[2026-06-30 11:37:06] [javac-extractor-73588] Processing JAR file: C:/Maven/LocalRepository/org/springframework/data/spring-data-commons/2.3.9.RELEASE/spring-data-commons-2.3.9.RELEASE.jar
+[2026-06-30 11:37:06] [javac-extractor-73588] Processing JAR file: C:/Maven/LocalRepository/org/springframework/data/spring-data-jpa/2.3.9.RELEASE/spring-data-jpa-2.3.9.RELEASE.jar
+[2026-06-30 11:37:06] [javac-extractor-73588] Processing file C:\train-ticket-master\ts-contacts-service\src\main\java\contacts\service\ContactsServiceImpl.java
+[2026-06-30 11:37:06] [javac-extractor-73588] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:37:07] [javac-extractor-73588] Processing file C:\train-ticket-master\ts-contacts-service\src\main\java\contacts\ContactsApplication.java
+[2026-06-30 11:37:08] [javac-extractor-73588] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\com\google\common\base\Function.members\Function.members#52.0-1602837608000-java.trap.gz as the trap-old exists
+[2026-06-30 11:37:08] [javac-extractor-73588] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\com\google\common\annotations\GwtCompatible.members\GwtCompatible.members#52.0-1602837608000-java.trap.gz as the trap-old exists
+[2026-06-30 11:37:08] [javac-extractor-73588] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\com\google\errorprone\annotations\DoNotMock.members\DoNotMock.members#51.0-1575255712000-java.trap.gz as the trap-old exists
+[2026-06-30 11:37:08] [javac-extractor-73588] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\com\google\common\collect\ImmutableMap.members\ImmutableMap.members#52.0-1602837612000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\com\google\common\collect\ImmutableMap.members\ImmutableMap.members#52.0-1632472032000-java.trap.gz exists
+[2026-06-30 11:37:08] [javac-extractor-73588] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\com\google\common\collect\Multimap.members\Multimap.members#52.0-1602837612000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\com\google\common\collect\Multimap.members\Multimap.members#52.0-1632472032000-java.trap.gz exists
+[2026-06-30 11:37:08] [javac-extractor-73588] Processing JAR file: C:/Maven/LocalRepository/org/springframework/integration/spring-integration-core/5.3.8.RELEASE/spring-integration-core-5.3.8.RELEASE.jar
+[2026-06-30 11:37:08] [javac-extractor-73588] Processing JAR file: C:/Maven/LocalRepository/io/springfox/springfox-swagger2/2.4.0/springfox-swagger2-2.4.0.jar
+[2026-06-30 11:37:08] [javac-extractor-73588] Processing JAR file: C:/Maven/LocalRepository/io/springfox/springfox-swagger-common/2.4.0/springfox-swagger-common-2.4.0.jar
+[2026-06-30 11:37:08] [javac-extractor-73588] Processing JAR file: C:/Maven/LocalRepository/io/springfox/springfox-schema/2.4.0/springfox-schema-2.4.0.jar
+[2026-06-30 11:37:08] [javac-extractor-73588] Processing file C:\train-ticket-master\ts-contacts-service\src\main\java\contacts\init\InitData.java
+[2026-06-30 11:37:09] [javac-extractor-73588] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:37:09] [javac-extractor-73588] Javac init time: 9.3s
+[2026-06-30 11:37:09] [javac-extractor-73588] Javac attr time: 0.2s
+[2026-06-30 11:37:09] [javac-extractor-73588] Extractor time: 4.4s
+[2026-06-30 11:37:09] [javac-extractor-73588] Other time: 0.4s
+[2026-06-30 11:37:09] [javac-extractor-73588] Total time: 14.4s

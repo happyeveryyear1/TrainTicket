@@ -1,0 +1,1586 @@
+{
+  "root": "C:/train-ticket-master",
+  "serviceCount": 46,
+  "calls": {
+    "ts-admin-basic-info-service": {
+      "ts-contacts-service": 4,
+      "ts-station-service": 4,
+      "ts-train-service": 4,
+      "ts-config-service": 4,
+      "ts-price-service": 4
+    },
+    "ts-admin-order-service": {
+      "ts-order-service": 4,
+      "ts-order-other-service": 4
+    },
+    "ts-admin-route-service": {
+      "ts-route-service": 3,
+      "ts-station-service": 1
+    },
+    "ts-admin-travel-service": {
+      "ts-travel-service": 4,
+      "ts-travel2-service": 4,
+      "ts-station-service": 1,
+      "ts-train-service": 1,
+      "ts-route-service": 1
+    },
+    "ts-admin-user-service": {
+      "ts-user-service": 4
+    },
+    "ts-assurance-service": {},
+    "ts-auth-service": {
+      "ts-verification-code-service": 1
+    },
+    "ts-avatar-service": {},
+    "ts-basic-service": {
+      "ts-station-service": 3,
+      "ts-train-service": 2,
+      "ts-route-service": 2,
+      "ts-price-service": 2
+    },
+    "ts-cancel-service": {
+      "ts-order-service": 2,
+      "ts-order-other-service": 2,
+      "ts-notification-service": 1,
+      "ts-inside-payment-service": 1,
+      "ts-user-service": 1
+    },
+    "ts-config-service": {},
+    "ts-consign-price-service": {},
+    "ts-consign-service": {
+      "ts-consign-price-service": 2
+    },
+    "ts-contacts-service": {},
+    "ts-delivery-service": {},
+    "ts-execute-service": {
+      "ts-order-service": 2,
+      "ts-order-other-service": 2
+    },
+    "ts-food-delivery-service": {
+      "ts-station-food-service": 1
+    },
+    "ts-food-service": {
+      "ts-train-food-service": 1,
+      "ts-travel-service": 1,
+      "ts-station-food-service": 1
+    },
+    "ts-gateway-service": {},
+    "ts-inside-payment-service": {
+      "ts-order-service": 2,
+      "ts-order-other-service": 2,
+      "ts-payment-service": 2
+    },
+    "ts-news-service": {},
+    "ts-notification-service": {},
+    "ts-order-other-service": {
+      "ts-station-service": 1
+    },
+    "ts-order-service": {
+      "ts-station-service": 1
+    },
+    "ts-payment-service": {},
+    "ts-preserve-other-service": {
+      "ts-basic-service": 1,
+      "ts-seat-service": 1,
+      "ts-user-service": 1,
+      "ts-assurance-service": 1,
+      "ts-station-service": 1,
+      "ts-security-service": 1,
+      "ts-travel2-service": 1,
+      "ts-contacts-service": 1,
+      "ts-order-other-service": 1,
+      "ts-food-service": 1,
+      "ts-consign-service": 1
+    },
+    "ts-preserve-service": {
+      "ts-basic-service": 1,
+      "ts-seat-service": 1,
+      "ts-user-service": 1,
+      "ts-assurance-service": 1,
+      "ts-station-service": 1,
+      "ts-security-service": 1,
+      "ts-travel-service": 1,
+      "ts-contacts-service": 1,
+      "ts-order-service": 1,
+      "ts-food-service": 1,
+      "ts-consign-service": 1
+    },
+    "ts-price-service": {},
+    "ts-rebook-service": {
+      "ts-order-service": 4,
+      "ts-order-other-service": 4,
+      "ts-inside-payment-service": 2,
+      "ts-seat-service": 1,
+      "ts-travel-service": 1,
+      "ts-travel2-service": 1,
+      "ts-train-service": 1,
+      "ts-route-service": 1
+    },
+    "ts-route-plan-service": {
+      "ts-travel-service": 3,
+      "ts-travel2-service": 3,
+      "ts-route-service": 2
+    },
+    "ts-route-service": {},
+    "ts-seat-service": {
+      "ts-order-service": 2,
+      "ts-order-other-service": 2,
+      "ts-config-service": 1
+    },
+    "ts-security-service": {
+      "ts-order-service": 1,
+      "ts-order-other-service": 1
+    },
+    "ts-station-food-service": {},
+    "ts-station-service": {},
+    "ts-ticket-office-service": {},
+    "ts-train-food-service": {},
+    "ts-train-service": {},
+    "ts-travel-plan-service": {
+      "ts-route-plan-service": 3,
+      "ts-seat-service": 1,
+      "ts-travel-service": 1,
+      "ts-travel2-service": 1,
+      "ts-train-service": 1
+    },
+    "ts-travel-service": {
+      "ts-basic-service": 2,
+      "ts-train-service": 1,
+      "ts-route-service": 1,
+      "ts-seat-service": 1
+    },
+    "ts-travel2-service": {
+      "ts-basic-service": 2,
+      "ts-train-service": 1,
+      "ts-route-service": 1,
+      "ts-seat-service": 1
+    },
+    "ts-ui-dashboard": {},
+    "ts-user-service": {
+      "ts-auth-service": 2
+    },
+    "ts-verification-code-service": {},
+    "ts-voucher-service": {},
+    "ts-wait-order-service": {
+      "ts-preserve-service": 1
+    }
+  },
+  "mentions": {
+    "ts-admin-basic-info-service": {
+      "ts-contacts-service": 8,
+      "ts-station-service": 8,
+      "ts-train-service": 8,
+      "ts-config-service": 8,
+      "ts-price-service": 8
+    },
+    "ts-admin-order-service": {
+      "ts-order-service": 12,
+      "ts-order-other-service": 12
+    },
+    "ts-admin-route-service": {
+      "ts-route-service": 6,
+      "ts-station-service": 1
+    },
+    "ts-admin-travel-service": {
+      "ts-travel-service": 12,
+      "ts-travel2-service": 12,
+      "ts-station-service": 1,
+      "ts-train-service": 1,
+      "ts-route-service": 1
+    },
+    "ts-admin-user-service": {
+      "ts-user-service": 8
+    },
+    "ts-assurance-service": {},
+    "ts-auth-service": {
+      "ts-verification-code-service": 2,
+      "ts-user-service": 1
+    },
+    "ts-avatar-service": {},
+    "ts-basic-service": {
+      "ts-station-service": 7,
+      "ts-train-service": 4,
+      "ts-route-service": 3,
+      "ts-price-service": 3
+    },
+    "ts-cancel-service": {
+      "ts-order-service": 6,
+      "ts-order-other-service": 4,
+      "ts-notification-service": 2,
+      "ts-inside-payment-service": 2,
+      "ts-user-service": 2
+    },
+    "ts-config-service": {},
+    "ts-consign-price-service": {},
+    "ts-consign-service": {
+      "ts-consign-price-service": 4
+    },
+    "ts-contacts-service": {},
+    "ts-delivery-service": {},
+    "ts-execute-service": {
+      "ts-order-service": 8,
+      "ts-order-other-service": 6
+    },
+    "ts-food-delivery-service": {
+      "ts-station-food-service": 2
+    },
+    "ts-food-service": {
+      "ts-train-food-service": 1,
+      "ts-travel-service": 1,
+      "ts-station-food-service": 1
+    },
+    "ts-gateway-service": {},
+    "ts-inside-payment-service": {
+      "ts-order-service": 4,
+      "ts-order-other-service": 2,
+      "ts-payment-service": 2
+    },
+    "ts-news-service": {},
+    "ts-notification-service": {},
+    "ts-order-other-service": {
+      "ts-station-service": 2
+    },
+    "ts-order-service": {
+      "ts-station-service": 2
+    },
+    "ts-payment-service": {},
+    "ts-preserve-other-service": {
+      "ts-seat-service": 2,
+      "ts-user-service": 2,
+      "ts-basic-service": 1,
+      "ts-assurance-service": 1,
+      "ts-station-service": 1,
+      "ts-security-service": 1,
+      "ts-travel2-service": 1,
+      "ts-contacts-service": 1,
+      "ts-order-other-service": 1,
+      "ts-food-service": 1,
+      "ts-consign-service": 1,
+      "ts-notification-service": 1
+    },
+    "ts-preserve-service": {
+      "ts-seat-service": 2,
+      "ts-user-service": 2,
+      "ts-basic-service": 1,
+      "ts-assurance-service": 1,
+      "ts-station-service": 1,
+      "ts-security-service": 1,
+      "ts-travel-service": 1,
+      "ts-contacts-service": 1,
+      "ts-order-service": 1,
+      "ts-food-service": 1,
+      "ts-consign-service": 1,
+      "ts-notification-service": 1
+    },
+    "ts-price-service": {},
+    "ts-rebook-service": {
+      "ts-order-service": 5,
+      "ts-order-other-service": 5,
+      "ts-seat-service": 2,
+      "ts-travel-service": 2,
+      "ts-travel2-service": 2,
+      "ts-inside-payment-service": 2,
+      "ts-train-service": 1,
+      "ts-route-service": 1
+    },
+    "ts-route-plan-service": {
+      "ts-travel-service": 3,
+      "ts-travel2-service": 3,
+      "ts-route-service": 2
+    },
+    "ts-route-service": {},
+    "ts-seat-service": {
+      "ts-order-service": 2,
+      "ts-order-other-service": 2,
+      "ts-config-service": 1
+    },
+    "ts-security-service": {
+      "ts-order-service": 1,
+      "ts-order-other-service": 1
+    },
+    "ts-station-food-service": {},
+    "ts-station-service": {},
+    "ts-ticket-office-service": {},
+    "ts-train-food-service": {},
+    "ts-train-service": {},
+    "ts-travel-plan-service": {
+      "ts-route-plan-service": 3,
+      "ts-seat-service": 1,
+      "ts-travel-service": 1,
+      "ts-travel2-service": 1,
+      "ts-train-service": 1
+    },
+    "ts-travel-service": {
+      "ts-basic-service": 2,
+      "ts-train-service": 1,
+      "ts-route-service": 1,
+      "ts-seat-service": 1
+    },
+    "ts-travel2-service": {
+      "ts-basic-service": 2,
+      "ts-train-service": 1,
+      "ts-route-service": 1,
+      "ts-seat-service": 1
+    },
+    "ts-ui-dashboard": {},
+    "ts-user-service": {
+      "ts-auth-service": 6
+    },
+    "ts-verification-code-service": {},
+    "ts-voucher-service": {
+      "ts-order-service": 1,
+      "ts-order-other-service": 1
+    },
+    "ts-wait-order-service": {
+      "ts-preserve-service": 1
+    }
+  },
+  "endpoints": {
+    "ts-admin-basic-info-service": [
+      "@ /api/v1/adminbasicservice",
+      "DELETE /adminbasic/configs/{name}",
+      "DELETE /adminbasic/contacts/{contactsId}",
+      "DELETE /adminbasic/prices/{pricesId}",
+      "DELETE /adminbasic/stations/{id}",
+      "DELETE /adminbasic/trains/{id}",
+      "GET /adminbasic/configs",
+      "GET /adminbasic/contacts",
+      "GET /adminbasic/prices",
+      "GET /adminbasic/stations",
+      "GET /adminbasic/trains",
+      "GET /welcome",
+      "POST /adminbasic/configs",
+      "POST /adminbasic/contacts",
+      "POST /adminbasic/prices",
+      "POST /adminbasic/stations",
+      "POST /adminbasic/trains",
+      "PUT /adminbasic/configs",
+      "PUT /adminbasic/contacts",
+      "PUT /adminbasic/prices",
+      "PUT /adminbasic/stations",
+      "PUT /adminbasic/trains"
+    ],
+    "ts-admin-order-service": [
+      "@ /api/v1/adminorderservice",
+      "DELETE /adminorder/{orderId}/{trainNumber}",
+      "GET /adminorder",
+      "GET /welcome",
+      "POST /adminorder",
+      "PUT /adminorder"
+    ],
+    "ts-admin-route-service": [
+      "@ /api/v1/adminrouteservice",
+      "DELETE /adminroute/{routeId}",
+      "GET /adminroute",
+      "GET /welcome",
+      "POST /adminroute"
+    ],
+    "ts-admin-travel-service": [
+      "@ /api/v1/admintravelservice",
+      "DELETE /admintravel/{tripId}",
+      "GET /admintravel",
+      "GET /welcome",
+      "POST /admintravel",
+      "PUT /admintravel"
+    ],
+    "ts-admin-user-service": [
+      "@ /api/v1/adminuserservice/users",
+      "DELETE /{userId}",
+      "GET /welcome"
+    ],
+    "ts-assurance-service": [
+      "@ /api/v1/assuranceservice",
+      "DELETE /assurances/assuranceid/{assuranceId}",
+      "DELETE /assurances/orderid/{orderId}",
+      "GET /assurance/orderid/{orderId}",
+      "GET /assurances",
+      "GET /assurances/assuranceid/{assuranceId}",
+      "GET /assurances/types",
+      "GET /assurances/{typeIndex}/{orderId}",
+      "GET /welcome",
+      "PATCH /assurances/{assuranceId}/{orderId}/{typeIndex}"
+    ],
+    "ts-auth-service": [
+      "@ /api/v1/auth",
+      "@ /api/v1/users",
+      "DELETE /{userId}",
+      "GET /hello",
+      "POST /login"
+    ],
+    "ts-avatar-service": [],
+    "ts-basic-service": [
+      "@ /api/v1/basicservice",
+      "GET /basic/{stationName}",
+      "GET /welcome",
+      "POST /basic/travel",
+      "POST /basic/travels"
+    ],
+    "ts-cancel-service": [
+      "@ /api/v1/cancelservice",
+      "GET /cancel/refound/{orderId}",
+      "GET /cancel/{orderId}/{loginId}",
+      "GET /welcome"
+    ],
+    "ts-config-service": [
+      "@ api/v1/configservice",
+      "DELETE /configs/{configName}",
+      "GET /configs",
+      "GET /configs/{configName}",
+      "GET /welcome",
+      "POST /configs",
+      "PUT /configs"
+    ],
+    "ts-consign-price-service": [
+      "@ /api/v1/consignpriceservice",
+      "GET /consignprice/config",
+      "GET /consignprice/price",
+      "GET /consignprice/{weight}/{isWithinRegion}",
+      "GET /welcome",
+      "POST /consignprice"
+    ],
+    "ts-consign-service": [
+      "@ /api/v1/consignservice",
+      "GET /consigns/account/{id}",
+      "GET /consigns/order/{id}",
+      "GET /consigns/{consignee}",
+      "GET /welcome",
+      "POST /consigns",
+      "PUT /consigns"
+    ],
+    "ts-contacts-service": [
+      "@ api/v1/contactservice",
+      "DELETE /contacts/{contactsId}",
+      "GET /contacts",
+      "GET /contacts/account/{accountId}",
+      "GET /contacts/welcome",
+      "GET /contacts/{id}",
+      "POST /contacts",
+      "POST /contacts/admin",
+      "PUT /contacts"
+    ],
+    "ts-delivery-service": [],
+    "ts-execute-service": [
+      "@ /api/v1/executeservice",
+      "GET /execute/collected/{orderId}",
+      "GET /execute/execute/{orderId}",
+      "GET /welcome"
+    ],
+    "ts-food-delivery-service": [
+      "@ /api/v1/fooddeliveryservice",
+      "DELETE /orders/d/{orderId}",
+      "GET /orders/all",
+      "GET /orders/store/{storeId}",
+      "GET /orders/{orderId}",
+      "GET /welcome",
+      "POST /orders",
+      "PUT /orders/dtime",
+      "PUT /orders/seatno",
+      "PUT /orders/tripid"
+    ],
+    "ts-food-service": [
+      "@ /api/v1/foodservice",
+      "DELETE /orders/{orderId}",
+      "GET /foods/{date}/{startStation}/{endStation}/{tripId}",
+      "GET /orders",
+      "GET /orders/{orderId}",
+      "GET /test_send_delivery",
+      "GET /welcome",
+      "POST /createOrderBatch",
+      "POST /orders",
+      "PUT /orders"
+    ],
+    "ts-gateway-service": [],
+    "ts-inside-payment-service": [
+      "@ /api/v1/inside_pay_service",
+      "GET /inside_payment/account",
+      "GET /inside_payment/drawback/{userId}/{money}",
+      "GET /inside_payment/money",
+      "GET /inside_payment/payment",
+      "GET /inside_payment/{userId}/{money}",
+      "GET /welcome",
+      "POST /inside_payment",
+      "POST /inside_payment/account",
+      "POST /inside_payment/difference"
+    ],
+    "ts-news-service": [],
+    "ts-notification-service": [
+      "@ /api/v1/notifyservice",
+      "GET /test_send_mail",
+      "GET /test_send_mq",
+      "GET /welcome",
+      "POST /notification/order_cancel_success",
+      "POST /notification/order_changed_success",
+      "POST /notification/order_create_success",
+      "POST /notification/preserve_success"
+    ],
+    "ts-order-other-service": [
+      "@ /api/v1/orderOtherService",
+      "DELETE /orderOther/{orderId}",
+      "GET /orderOther",
+      "GET /orderOther/orderPay/{orderId}",
+      "GET /orderOther/price/{orderId}",
+      "GET /orderOther/security/{checkDate}/{accountId}",
+      "GET /orderOther/status/{orderId}/{status}",
+      "GET /orderOther/{orderId}",
+      "GET /orderOther/{travelDate}/{trainNumber}",
+      "GET /welcome",
+      "POST /orderOther",
+      "POST /orderOther/admin",
+      "POST /orderOther/query",
+      "POST /orderOther/refresh",
+      "POST /orderOther/tickets",
+      "PUT /orderOther",
+      "PUT /orderOther/admin"
+    ],
+    "ts-order-service": [
+      "@ /api/v1/orderservice",
+      "DELETE /order/{orderId}",
+      "GET /order",
+      "GET /order/orderPay/{orderId}",
+      "GET /order/price/{orderId}",
+      "GET /order/security/{checkDate}/{accountId}",
+      "GET /order/status/{orderId}/{status}",
+      "GET /order/{orderId}",
+      "GET /order/{travelDate}/{trainNumber}",
+      "GET /welcome",
+      "POST /order",
+      "POST /order/admin",
+      "POST /order/query",
+      "POST /order/refresh",
+      "POST /order/tickets",
+      "PUT /order",
+      "PUT /order/admin"
+    ],
+    "ts-payment-service": [
+      "@ /api/v1/paymentservice",
+      "GET /payment",
+      "GET /welcome",
+      "POST /payment",
+      "POST /payment/money"
+    ],
+    "ts-preserve-other-service": [
+      "@ /api/v1/preserveotherservice",
+      "GET /welcome",
+      "POST /preserveOther"
+    ],
+    "ts-preserve-service": [
+      "@ /api/v1/preserveservice",
+      "GET /welcome",
+      "POST /preserve"
+    ],
+    "ts-price-service": [
+      "@ /api/v1/priceservice",
+      "DELETE /prices/{pricesId}",
+      "GET /prices",
+      "GET /prices/welcome",
+      "GET /prices/{routeId}/{trainType}",
+      "POST /prices",
+      "POST /prices/byRouteIdsAndTrainTypes",
+      "PUT /prices"
+    ],
+    "ts-rebook-service": [
+      "@ /api/v1/rebookservice",
+      "GET /welcome",
+      "POST /rebook",
+      "POST /rebook/difference"
+    ],
+    "ts-route-plan-service": [
+      "@ /api/v1/routeplanservice",
+      "GET /welcome",
+      "POST /routePlan/cheapestRoute",
+      "POST /routePlan/minStopStations",
+      "POST /routePlan/quickestRoute"
+    ],
+    "ts-route-service": [
+      "@ /api/v1/routeservice",
+      "DELETE /routes/{routeId}",
+      "GET /routes",
+      "GET /routes/{routeId}",
+      "GET /routes/{start}/{end}",
+      "GET /welcome",
+      "POST /routes",
+      "POST /routes/byIds"
+    ],
+    "ts-seat-service": [
+      "@ /api/v1/seatservice",
+      "GET /welcome",
+      "POST /seats",
+      "POST /seats/left_tickets"
+    ],
+    "ts-security-service": [
+      "@ /api/v1/securityservice",
+      "DELETE /securityConfigs/{id}",
+      "GET /securityConfigs",
+      "GET /securityConfigs/{accountId}",
+      "GET /welcome",
+      "POST /securityConfigs",
+      "PUT /securityConfigs"
+    ],
+    "ts-station-food-service": [
+      "@ /api/v1/stationfoodservice",
+      "GET /stationfoodstores",
+      "GET /stationfoodstores/bystoreid/{stationFoodStoreId}",
+      "GET /stationfoodstores/welcome",
+      "GET /stationfoodstores/{stationId}",
+      "POST /stationfoodstores"
+    ],
+    "ts-station-service": [
+      "@ /api/v1/stationservice",
+      "DELETE /stations/{stationsId}",
+      "GET /stations",
+      "GET /stations/id/{stationNameForId}",
+      "GET /stations/name/{stationIdForName}",
+      "GET /welcome",
+      "POST /stations",
+      "POST /stations/idlist",
+      "POST /stations/namelist",
+      "PUT /stations"
+    ],
+    "ts-ticket-office-service": [],
+    "ts-train-food-service": [
+      "@ /api/v1/trainfoodservice",
+      "GET /trainfoods",
+      "GET /trainfoods/welcome",
+      "GET /trainfoods/{tripId}"
+    ],
+    "ts-train-service": [
+      "@ /api/v1/trainservice",
+      "DELETE /trains/{id}",
+      "GET /trains",
+      "GET /trains/byName/{name}",
+      "GET /trains/welcome",
+      "GET /trains/{id}",
+      "POST /trains",
+      "POST /trains/byNames",
+      "PUT /trains"
+    ],
+    "ts-travel-plan-service": [
+      "@ api/v1/travelplanservice",
+      "GET /welcome",
+      "POST /travelPlan/cheapest",
+      "POST /travelPlan/minStation",
+      "POST /travelPlan/quickest",
+      "POST /travelPlan/transferResult"
+    ],
+    "ts-travel-service": [
+      "@ /api/v1/travelservice",
+      "DELETE /trips/{tripId}",
+      "GET /admin_trip",
+      "GET /analytics",
+      "GET /analytics/price/{tripId}",
+      "GET /price/factory/{tripId}",
+      "GET /price/{tripId}",
+      "GET /routes/{tripId}",
+      "GET /train_types/{tripId}",
+      "GET /trips",
+      "GET /trips/available",
+      "GET /trips/by_route/{routeName}",
+      "GET /trips/generic/{tripId}",
+      "GET /trips/handle/{tripId}",
+      "GET /trips/{tripId}",
+      "GET /welcome",
+      "POST /trip_detail",
+      "POST /trips",
+      "POST /trips/left",
+      "POST /trips/left_parallel",
+      "POST /trips/routes",
+      "PUT /trips"
+    ],
+    "ts-travel2-service": [
+      "@ /api/v1/travel2service",
+      "DELETE /trips/{tripId}",
+      "GET /admin_trip",
+      "GET /routes/{tripId}",
+      "GET /train_types/{tripId}",
+      "GET /trips",
+      "GET /trips/{tripId}",
+      "GET /welcome",
+      "POST /trip_detail",
+      "POST /trips",
+      "POST /trips/left",
+      "POST /trips/routes",
+      "PUT /trips"
+    ],
+    "ts-ui-dashboard": [],
+    "ts-user-service": [
+      "@ /api/v1/userservice/users",
+      "DELETE /{userId}",
+      "GET /hello",
+      "GET /id/{userId}",
+      "GET /{userName}",
+      "POST /register"
+    ],
+    "ts-verification-code-service": [
+      "@ /api/v1/verifycode",
+      "GET /generate",
+      "GET /verify/{verifyCode}"
+    ],
+    "ts-voucher-service": [],
+    "ts-wait-order-service": [
+      "@ /api/v1/waitorderservice",
+      "GET /orders",
+      "GET /waitlistorders",
+      "GET /welcome",
+      "POST /order"
+    ]
+  },
+  "urlPaths": {
+    "ts-admin-basic-info-service": [
+      "/api/v1/adminbasicservice",
+      "/api/v1/adminbasicservice/**",
+      "/api/v1/adminbasicservice/adminbasic/configs",
+      "/api/v1/adminbasicservice/adminbasic/configs/name",
+      "/api/v1/adminbasicservice/adminbasic/contacts",
+      "/api/v1/adminbasicservice/adminbasic/contacts/contactsId",
+      "/api/v1/adminbasicservice/adminbasic/prices",
+      "/api/v1/adminbasicservice/adminbasic/stations",
+      "/api/v1/adminbasicservice/adminbasic/trains",
+      "/api/v1/adminbasicservice/adminbasic/trains/id",
+      "/api/v1/adminbasicservice/welcome",
+      "/api/v1/configservice/configs",
+      "/api/v1/configservice/configs/",
+      "/api/v1/contactservice/contacts",
+      "/api/v1/contactservice/contacts/",
+      "/api/v1/contactservice/contacts/admin",
+      "/api/v1/priceservice/prices",
+      "/api/v1/priceservice/prices/",
+      "/api/v1/stationservice/stations",
+      "/api/v1/stationservice/stations/",
+      "/api/v1/trainservice/trains",
+      "/api/v1/trainservice/trains/"
+    ],
+    "ts-admin-order-service": [
+      "/api/v1/adminorderservice",
+      "/api/v1/adminorderservice/**",
+      "/api/v1/adminorderservice/adminorder",
+      "/api/v1/adminorderservice/adminorder/orderId/trainNumber",
+      "/api/v1/adminorderservice/welcome",
+      "/api/v1/orderOtherService/orderOther",
+      "/api/v1/orderOtherService/orderOther/",
+      "/api/v1/orderOtherService/orderOther/admin",
+      "/api/v1/orderservice/order",
+      "/api/v1/orderservice/order/",
+      "/api/v1/orderservice/order/admin"
+    ],
+    "ts-admin-route-service": [
+      "/api/v1/adminrouteservice",
+      "/api/v1/adminrouteservice/**",
+      "/api/v1/adminrouteservice/adminroute",
+      "/api/v1/adminrouteservice/adminroute/routeId",
+      "/api/v1/adminrouteservice/welcome",
+      "/api/v1/routeservice/routes",
+      "/api/v1/routeservice/routes/",
+      "/api/v1/stationservice/stations/idlist"
+    ],
+    "ts-admin-travel-service": [
+      "/api/v1/admintravelservice",
+      "/api/v1/admintravelservice/**",
+      "/api/v1/admintravelservice/admintravel",
+      "/api/v1/admintravelservice/admintravel/trip_id",
+      "/api/v1/admintravelservice/welcome",
+      "/api/v1/routeservice/routes/",
+      "/api/v1/stationservice/stations/idlist",
+      "/api/v1/trainservice/trains/byName/",
+      "/api/v1/travel2service/admin_trip",
+      "/api/v1/travel2service/trips",
+      "/api/v1/travel2service/trips/",
+      "/api/v1/travelservice/admin_trip",
+      "/api/v1/travelservice/trips",
+      "/api/v1/travelservice/trips/"
+    ],
+    "ts-admin-user-service": [
+      "/api/v1/adminuserservice/users",
+      "/api/v1/adminuserservice/users/**",
+      "/api/v1/adminuserservice/users/user_id",
+      "/api/v1/adminuserservice/users/welcome",
+      "/api/v1/userservice/users"
+    ],
+    "ts-assurance-service": [
+      "/api/v1/assuranceservice",
+      "/api/v1/assuranceservice/**",
+      "/api/v1/assuranceservice/assurance/orderid/",
+      "/api/v1/assuranceservice/assurances",
+      "/api/v1/assuranceservice/assurances/1/order_id",
+      "/api/v1/assuranceservice/assurances/assurance_id/order_id/1",
+      "/api/v1/assuranceservice/assurances/assuranceid/",
+      "/api/v1/assuranceservice/assurances/orderid/",
+      "/api/v1/assuranceservice/assurances/types",
+      "/api/v1/assuranceservice/welcome"
+    ],
+    "ts-auth-service": [
+      "/api/v1/auth",
+      "/api/v1/auth/hello",
+      "/api/v1/user/hello",
+      "/api/v1/users",
+      "/api/v1/users/",
+      "/api/v1/users/*",
+      "/api/v1/users/hello",
+      "/api/v1/users/login",
+      "/api/v1/verifycode/verify/"
+    ],
+    "ts-avatar-service": [
+      "/api/v1/avatar"
+    ],
+    "ts-basic-service": [
+      "/api/v1/basicservice",
+      "/api/v1/basicservice/**",
+      "/api/v1/basicservice/basic/stationName",
+      "/api/v1/basicservice/basic/travel",
+      "/api/v1/basicservice/welcome",
+      "/api/v1/priceservice/prices/",
+      "/api/v1/priceservice/prices/byRouteIdsAndTrainTypes",
+      "/api/v1/routeservice/routes/",
+      "/api/v1/routeservice/routes/byIds/",
+      "/api/v1/stationservice/stations/id/",
+      "/api/v1/stationservice/stations/idlist",
+      "/api/v1/trainservice/trains/byName/",
+      "/api/v1/trainservice/trains/byNames"
+    ],
+    "ts-cancel-service": [
+      "/api/v1/cancelservice",
+      "/api/v1/cancelservice/**",
+      "/api/v1/cancelservice/cancel/order_id/login_id",
+      "/api/v1/cancelservice/cancel/refound/order_id",
+      "/api/v1/cancelservice/welcome",
+      "/api/v1/inside_pay_service/inside_payment/drawback/",
+      "/api/v1/notifyservice/notification/order_cancel_success",
+      "/api/v1/orderOtherService/orderOther",
+      "/api/v1/orderOtherService/orderOther/",
+      "/api/v1/orderservice/order",
+      "/api/v1/orderservice/order/",
+      "/api/v1/userservice/users/id/"
+    ],
+    "ts-config-service": [
+      "/api/v1/configservice/**",
+      "/api/v1/configservice/configs",
+      "/api/v1/configservice/configs/*",
+      "/api/v1/configservice/configs/config_name",
+      "/api/v1/configservice/welcome"
+    ],
+    "ts-consign-price-service": [
+      "/api/v1/consignpriceservice",
+      "/api/v1/consignpriceservice/**",
+      "/api/v1/consignpriceservice/consignprice",
+      "/api/v1/consignpriceservice/consignprice/1.0/true",
+      "/api/v1/consignpriceservice/consignprice/config",
+      "/api/v1/consignpriceservice/consignprice/price",
+      "/api/v1/consignpriceservice/welcome"
+    ],
+    "ts-consign-service": [
+      "/api/v1/consignpriceservice/consignprice/",
+      "/api/v1/consignservice",
+      "/api/v1/consignservice/**",
+      "/api/v1/consignservice/consigns",
+      "/api/v1/consignservice/consigns/account/",
+      "/api/v1/consignservice/consigns/consignee",
+      "/api/v1/consignservice/consigns/order/",
+      "/api/v1/consignservice/welcome"
+    ],
+    "ts-contacts-service": [
+      "/api/v1/contactservice/**",
+      "/api/v1/contactservice/contacts",
+      "/api/v1/contactservice/contacts/",
+      "/api/v1/contactservice/contacts/account/",
+      "/api/v1/contactservice/contacts/admin",
+      "/api/v1/contactservice/contacts/welcome"
+    ],
+    "ts-delivery-service": [],
+    "ts-execute-service": [
+      "/api/v1/executeservice",
+      "/api/v1/executeservice/**",
+      "/api/v1/executeservice/execute/collected/order_id",
+      "/api/v1/executeservice/execute/execute/order_id",
+      "/api/v1/executeservice/welcome",
+      "/api/v1/orderOtherService/orderOther/",
+      "/api/v1/orderOtherService/orderOther/status/",
+      "/api/v1/orderservice/order/",
+      "/api/v1/orderservice/order/status/"
+    ],
+    "ts-food-delivery-service": [
+      "/api/v1/fooddeliveryservice",
+      "/api/v1/fooddeliveryservice/**",
+      "/api/v1/fooddeliveryservice/orders",
+      "/api/v1/fooddeliveryservice/orders/123",
+      "/api/v1/fooddeliveryservice/orders/all",
+      "/api/v1/fooddeliveryservice/orders/d/123",
+      "/api/v1/fooddeliveryservice/orders/dtime",
+      "/api/v1/fooddeliveryservice/orders/seatno",
+      "/api/v1/fooddeliveryservice/orders/store/1234",
+      "/api/v1/fooddeliveryservice/orders/tripid",
+      "/api/v1/fooddeliveryservice/welcome",
+      "/api/v1/stationfoodservice/stationfoodstores/bystoreid/"
+    ],
+    "ts-food-service": [
+      "/api/v1/foodservice",
+      "/api/v1/foodservice/**",
+      "/api/v1/foodservice/foods/date/start_station/end_station/trip_id",
+      "/api/v1/foodservice/orders",
+      "/api/v1/foodservice/orders/*",
+      "/api/v1/foodservice/orders/order_id",
+      "/api/v1/foodservice/welcome",
+      "/api/v1/stationfoodservice/stationfoodstores",
+      "/api/v1/trainfoodservice/trainfoods/",
+      "/api/v1/travelservice/routes/"
+    ],
+    "ts-gateway-service": [],
+    "ts-inside-payment-service": [
+      "/api/v1/inside_pay_service",
+      "/api/v1/inside_pay_service/**",
+      "/api/v1/inside_pay_service/inside_payment",
+      "/api/v1/inside_pay_service/inside_payment/account",
+      "/api/v1/inside_pay_service/inside_payment/difference",
+      "/api/v1/inside_pay_service/inside_payment/drawback/user_id/money",
+      "/api/v1/inside_pay_service/inside_payment/money",
+      "/api/v1/inside_pay_service/inside_payment/payment",
+      "/api/v1/inside_pay_service/inside_payment/user_id/money",
+      "/api/v1/inside_pay_service/welcome",
+      "/api/v1/orderOtherService/orderOther/",
+      "/api/v1/orderOtherService/orderOther/status/",
+      "/api/v1/orderservice/order/",
+      "/api/v1/orderservice/order/status/",
+      "/api/v1/paymentservice/payment"
+    ],
+    "ts-news-service": [],
+    "ts-notification-service": [
+      "/api/v1/notifyservice",
+      "/api/v1/notifyservice/**",
+      "/api/v1/notifyservice/notification/order_cancel_success",
+      "/api/v1/notifyservice/notification/order_changed_success",
+      "/api/v1/notifyservice/notification/order_create_success",
+      "/api/v1/notifyservice/notification/preserve_success",
+      "/api/v1/notifyservice/welcome"
+    ],
+    "ts-order-other-service": [
+      "/api/v1/orderOtherService",
+      "/api/v1/orderOtherService/orderOther",
+      "/api/v1/orderOtherService/orderOther/",
+      "/api/v1/orderOtherService/orderOther/**",
+      "/api/v1/orderOtherService/orderOther/admin",
+      "/api/v1/orderOtherService/orderOther/orderPay/order_id",
+      "/api/v1/orderOtherService/orderOther/order_id",
+      "/api/v1/orderOtherService/orderOther/price/order_id",
+      "/api/v1/orderOtherService/orderOther/query",
+      "/api/v1/orderOtherService/orderOther/refresh",
+      "/api/v1/orderOtherService/orderOther/security/",
+      "/api/v1/orderOtherService/orderOther/status/order_id/1",
+      "/api/v1/orderOtherService/orderOther/tickets",
+      "/api/v1/orderOtherService/welcome",
+      "/api/v1/stationservice/stations/namelist"
+    ],
+    "ts-order-service": [
+      "/api/v1/orderservice",
+      "/api/v1/orderservice/order",
+      "/api/v1/orderservice/order/",
+      "/api/v1/orderservice/order/**",
+      "/api/v1/orderservice/order/admin",
+      "/api/v1/orderservice/order/orderPay/order_id",
+      "/api/v1/orderservice/order/order_id",
+      "/api/v1/orderservice/order/price/order_id",
+      "/api/v1/orderservice/order/query",
+      "/api/v1/orderservice/order/refresh",
+      "/api/v1/orderservice/order/security/",
+      "/api/v1/orderservice/order/status/order_id/1",
+      "/api/v1/orderservice/order/tickets",
+      "/api/v1/orderservice/welcome",
+      "/api/v1/stationservice/stations/namelist"
+    ],
+    "ts-payment-service": [
+      "/api/v1/paymentservice",
+      "/api/v1/paymentservice/**",
+      "/api/v1/paymentservice/payment",
+      "/api/v1/paymentservice/payment/money",
+      "/api/v1/paymentservice/welcome"
+    ],
+    "ts-preserve-other-service": [
+      "/api/v1/assuranceservice/assurances/",
+      "/api/v1/basicservice/basic/travel",
+      "/api/v1/consignservice/consigns",
+      "/api/v1/contactservice/contacts/",
+      "/api/v1/foodservice/orders",
+      "/api/v1/orderOtherService/orderOther",
+      "/api/v1/preserveotherservice",
+      "/api/v1/preserveotherservice/**",
+      "/api/v1/preserveotherservice/preserveOther",
+      "/api/v1/preserveotherservice/welcome",
+      "/api/v1/seatservice/seats",
+      "/api/v1/securityservice/securityConfigs/",
+      "/api/v1/stationservice/stations/id/",
+      "/api/v1/travel2service/trip_detail",
+      "/api/v1/userservice/users/id/"
+    ],
+    "ts-preserve-service": [
+      "/api/v1/assuranceservice/assurances/",
+      "/api/v1/basicservice/basic/travel",
+      "/api/v1/consignservice/consigns",
+      "/api/v1/contactservice/contacts/",
+      "/api/v1/foodservice/orders",
+      "/api/v1/orderservice/order",
+      "/api/v1/preserveservice",
+      "/api/v1/preserveservice/**",
+      "/api/v1/preserveservice/preserve",
+      "/api/v1/preserveservice/welcome",
+      "/api/v1/seatservice/seats",
+      "/api/v1/securityservice/securityConfigs/",
+      "/api/v1/stationservice/stations/id/",
+      "/api/v1/travelservice/trip_detail",
+      "/api/v1/userservice/users/id/"
+    ],
+    "ts-price-service": [
+      "/api/v1/priceservice",
+      "/api/v1/priceservice/**",
+      "/api/v1/priceservice/prices",
+      "/api/v1/priceservice/prices/route_id/train_type",
+      "/api/v1/priceservice/prices/welcome"
+    ],
+    "ts-rebook-service": [
+      "/api/v1/inside_pay_service/inside_payment/difference",
+      "/api/v1/inside_pay_service/inside_payment/drawback/",
+      "/api/v1/orderOtherService/orderOther",
+      "/api/v1/orderOtherService/orderOther/",
+      "/api/v1/orderservice/order",
+      "/api/v1/orderservice/order/",
+      "/api/v1/rebookservice",
+      "/api/v1/rebookservice/**",
+      "/api/v1/rebookservice/rebook",
+      "/api/v1/rebookservice/rebook/difference",
+      "/api/v1/rebookservice/welcome",
+      "/api/v1/routeservice/routes/",
+      "/api/v1/seatservice/seats",
+      "/api/v1/trainservice/trains/byName/",
+      "/api/v1/travel2service/trip_detail",
+      "/api/v1/travelservice/trip_detail"
+    ],
+    "ts-route-plan-service": [
+      "/api/v1/routeplanservice",
+      "/api/v1/routeplanservice/**",
+      "/api/v1/routeplanservice/routePlan/cheapestRoute",
+      "/api/v1/routeplanservice/routePlan/minStopStations",
+      "/api/v1/routeplanservice/routePlan/quickestRoute",
+      "/api/v1/routeplanservice/welcome",
+      "/api/v1/routeservice/routes/",
+      "/api/v1/travel2service/routes/",
+      "/api/v1/travel2service/trip_detail",
+      "/api/v1/travel2service/trips/left",
+      "/api/v1/travel2service/trips/routes",
+      "/api/v1/travelservice/routes/",
+      "/api/v1/travelservice/trip_detail",
+      "/api/v1/travelservice/trips/left",
+      "/api/v1/travelservice/trips/routes"
+    ],
+    "ts-route-service": [
+      "/api/v1/routeservice",
+      "/api/v1/routeservice/**",
+      "/api/v1/routeservice/routes",
+      "/api/v1/routeservice/routes/*",
+      "/api/v1/routeservice/routes/route_id",
+      "/api/v1/routeservice/routes/start_id/terminal_id",
+      "/api/v1/routeservice/welcome"
+    ],
+    "ts-seat-service": [
+      "/api/v1/configservice/configs/",
+      "/api/v1/orderOtherService/orderOther/tickets",
+      "/api/v1/orderservice/order/tickets",
+      "/api/v1/seatservice",
+      "/api/v1/seatservice/**",
+      "/api/v1/seatservice/seats",
+      "/api/v1/seatservice/seats/left_tickets",
+      "/api/v1/seatservice/welcome"
+    ],
+    "ts-security-service": [
+      "/api/v1/orderOtherService/orderOther/security/",
+      "/api/v1/orderservice/order/security/",
+      "/api/v1/securityservice",
+      "/api/v1/securityservice/**",
+      "/api/v1/securityservice/securityConfigs",
+      "/api/v1/securityservice/securityConfigs/account_id",
+      "/api/v1/securityservice/securityConfigs/id",
+      "/api/v1/securityservice/welcome"
+    ],
+    "ts-station-food-service": [
+      "/api/v1/foodmapservice/stationfoodstores",
+      "/api/v1/foodmapservice/stationfoodstores/station_id",
+      "/api/v1/foodmapservice/stationfoodstores/welcome",
+      "/api/v1/stationfoodservice",
+      "/api/v1/stationfoodservice/**"
+    ],
+    "ts-station-service": [
+      "/api/v1/stationservice",
+      "/api/v1/stationservice/**",
+      "/api/v1/stationservice/stations",
+      "/api/v1/stationservice/stations/id/station_name",
+      "/api/v1/stationservice/stations/idlist",
+      "/api/v1/stationservice/stations/name/station_id",
+      "/api/v1/stationservice/stations/namelist",
+      "/api/v1/stationservice/welcome"
+    ],
+    "ts-ticket-office-service": [],
+    "ts-train-food-service": [
+      "/api/v1/trainfoodservice",
+      "/api/v1/trainfoodservice/**"
+    ],
+    "ts-train-service": [
+      "/api/v1/trainservice",
+      "/api/v1/trainservice/**",
+      "/api/v1/trainservice/trains",
+      "/api/v1/trainservice/trains/*",
+      "/api/v1/trainservice/trains/id",
+      "/api/v1/trainservice/trains/welcome",
+      "/api/v1/trainservice/trains/wrong_id"
+    ],
+    "ts-travel-plan-service": [
+      "/api/v1/routeplanservice/routePlan/cheapestRoute",
+      "/api/v1/routeplanservice/routePlan/minStopStations",
+      "/api/v1/routeplanservice/routePlan/quickestRoute",
+      "/api/v1/seatservice/seats/left_tickets",
+      "/api/v1/trainservice/trains/byName/",
+      "/api/v1/travel2service/trips/left",
+      "/api/v1/travelplanservice/**",
+      "/api/v1/travelplanservice/travelPlan/cheapest",
+      "/api/v1/travelplanservice/travelPlan/minStation",
+      "/api/v1/travelplanservice/travelPlan/quickest",
+      "/api/v1/travelplanservice/travelPlan/transferResult",
+      "/api/v1/travelplanservice/welcome",
+      "/api/v1/travelservice/trips/left"
+    ],
+    "ts-travel-service": [
+      "/api/v1/basicservice/basic/travel",
+      "/api/v1/basicservice/basic/travels",
+      "/api/v1/routeservice/routes/",
+      "/api/v1/seatservice/seats/left_tickets",
+      "/api/v1/trainservice/trains/byName/",
+      "/api/v1/travelservice",
+      "/api/v1/travelservice/**",
+      "/api/v1/travelservice/admin_trip",
+      "/api/v1/travelservice/routes/trip_id",
+      "/api/v1/travelservice/train_types/trip_id",
+      "/api/v1/travelservice/trip_detail",
+      "/api/v1/travelservice/trips",
+      "/api/v1/travelservice/trips/*",
+      "/api/v1/travelservice/trips/left",
+      "/api/v1/travelservice/trips/routes",
+      "/api/v1/travelservice/trips/trip_id",
+      "/api/v1/travelservice/welcome"
+    ],
+    "ts-travel2-service": [
+      "/api/v1/basicservice/basic/travel",
+      "/api/v1/basicservice/basic/travels",
+      "/api/v1/routeservice/routes/",
+      "/api/v1/seatservice/seats/left_tickets",
+      "/api/v1/trainservice/trains/byName/",
+      "/api/v1/travel2service",
+      "/api/v1/travel2service/**",
+      "/api/v1/travel2service/admin_trip",
+      "/api/v1/travel2service/routes/trip_id",
+      "/api/v1/travel2service/train_types/trip_id",
+      "/api/v1/travel2service/trip_detail",
+      "/api/v1/travel2service/trips",
+      "/api/v1/travel2service/trips/left",
+      "/api/v1/travel2service/trips/routes",
+      "/api/v1/travel2service/trips/trip_id",
+      "/api/v1/travel2service/welcome"
+    ],
+    "ts-ui-dashboard": [
+      "/api/v1/adminbasicservice/adminbasic/configs",
+      "/api/v1/adminbasicservice/adminbasic/configs/",
+      "/api/v1/adminbasicservice/adminbasic/contacts",
+      "/api/v1/adminbasicservice/adminbasic/contacts/",
+      "/api/v1/adminbasicservice/adminbasic/prices",
+      "/api/v1/adminbasicservice/adminbasic/prices/",
+      "/api/v1/adminbasicservice/adminbasic/stations",
+      "/api/v1/adminbasicservice/adminbasic/stations/",
+      "/api/v1/adminbasicservice/adminbasic/trains",
+      "/api/v1/adminbasicservice/adminbasic/trains/",
+      "/api/v1/adminorderservice/adminorder",
+      "/api/v1/adminorderservice/adminorder/",
+      "/api/v1/adminrouteservice/adminroute",
+      "/api/v1/adminrouteservice/adminroute/",
+      "/api/v1/admintravelservice/admintravel",
+      "/api/v1/admintravelservice/admintravel/",
+      "/api/v1/adminuserservice/users",
+      "/api/v1/adminuserservice/users/",
+      "/api/v1/assuranceservice/assurances/types",
+      "/api/v1/avatar",
+      "/api/v1/cancelservice/cancel/",
+      "/api/v1/cancelservice/cancel/refound/",
+      "/api/v1/consignservice/consigns",
+      "/api/v1/consignservice/consigns/account/",
+      "/api/v1/consignservice/consigns/order/",
+      "/api/v1/contactservice/contacts",
+      "/api/v1/contactservice/contacts/account/",
+      "/api/v1/executeservice/execute/collected/",
+      "/api/v1/executeservice/execute/execute/",
+      "/api/v1/foodservice/foods/",
+      "/api/v1/inside_pay_service/inside_payment",
+      "/api/v1/orderOtherService/orderOther/refresh",
+      "/api/v1/orderservice/order/refresh",
+      "/api/v1/preserveotherservice/preserveOther",
+      "/api/v1/preserveservice/preserve",
+      "/api/v1/rebookservice/rebook ",
+      "/api/v1/rebookservice/rebook/difference",
+      "/api/v1/routeservice/routes",
+      "/api/v1/stationservice/stations",
+      "/api/v1/stationservice/stations/name/",
+      "/api/v1/trainservice/trains",
+      "/api/v1/travel2service/trips/left",
+      "/api/v1/travelplanservice/travelPlan/cheapest",
+      "/api/v1/travelplanservice/travelPlan/minStation",
+      "/api/v1/travelplanservice/travelPlan/quickest",
+      "/api/v1/travelservice/trips/left",
+      "/api/v1/users/login",
+      "/api/v1/userservice/users",
+      "/api/v1/verifycode/generate?"
+    ],
+    "ts-user-service": [
+      "/api/v1/auth",
+      "/api/v1/userservice/users",
+      "/api/v1/userservice/users/",
+      "/api/v1/userservice/users/*",
+      "/api/v1/userservice/users/**",
+      "/api/v1/userservice/users/hello",
+      "/api/v1/userservice/users/id/user_id",
+      "/api/v1/userservice/users/register",
+      "/api/v1/userservice/users/user_name"
+    ],
+    "ts-verification-code-service": [
+      "/api/v1/verifycode",
+      "/api/v1/verifycode/**",
+      "/api/v1/verifycode/generate",
+      "/api/v1/verifycode/verify/verifyCode"
+    ],
+    "ts-voucher-service": [
+      "/api/v1/orderOtherService/orderOther/",
+      "/api/v1/orderservice/order/"
+    ],
+    "ts-wait-order-service": [
+      "/api/v1/contactservice/preserve",
+      "/api/v1/orderservice/order",
+      "/api/v1/orderservice/order/**",
+      "/api/v1/orderservice/order/admin",
+      "/api/v1/waitorderservice"
+    ]
+  },
+  "evidence": {
+    "ts-admin-basic-info-service->ts-contacts-service": [
+      "C:\\train-ticket-master\\ts-admin-basic-info-service\\src\\main\\java\\adminbasic\\service\\AdminBasicInfoServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-basic-info-service\\src\\main\\java\\adminbasic\\service\\AdminBasicInfoServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-basic-info-service\\src\\main\\java\\adminbasic\\service\\AdminBasicInfoServiceImpl.java"
+    ],
+    "ts-admin-basic-info-service->ts-station-service": [
+      "C:\\train-ticket-master\\ts-admin-basic-info-service\\src\\main\\java\\adminbasic\\service\\AdminBasicInfoServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-basic-info-service\\src\\main\\java\\adminbasic\\service\\AdminBasicInfoServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-basic-info-service\\src\\main\\java\\adminbasic\\service\\AdminBasicInfoServiceImpl.java"
+    ],
+    "ts-admin-basic-info-service->ts-train-service": [
+      "C:\\train-ticket-master\\ts-admin-basic-info-service\\src\\main\\java\\adminbasic\\service\\AdminBasicInfoServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-basic-info-service\\src\\main\\java\\adminbasic\\service\\AdminBasicInfoServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-basic-info-service\\src\\main\\java\\adminbasic\\service\\AdminBasicInfoServiceImpl.java"
+    ],
+    "ts-admin-basic-info-service->ts-config-service": [
+      "C:\\train-ticket-master\\ts-admin-basic-info-service\\src\\main\\java\\adminbasic\\service\\AdminBasicInfoServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-basic-info-service\\src\\main\\java\\adminbasic\\service\\AdminBasicInfoServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-basic-info-service\\src\\main\\java\\adminbasic\\service\\AdminBasicInfoServiceImpl.java"
+    ],
+    "ts-admin-basic-info-service->ts-price-service": [
+      "C:\\train-ticket-master\\ts-admin-basic-info-service\\src\\main\\java\\adminbasic\\service\\AdminBasicInfoServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-basic-info-service\\src\\main\\java\\adminbasic\\service\\AdminBasicInfoServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-basic-info-service\\src\\main\\java\\adminbasic\\service\\AdminBasicInfoServiceImpl.java"
+    ],
+    "ts-admin-order-service->ts-order-service": [
+      "C:\\train-ticket-master\\ts-admin-order-service\\src\\main\\java\\adminorder\\service\\AdminOrderServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-order-service\\src\\main\\java\\adminorder\\service\\AdminOrderServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-order-service\\src\\main\\java\\adminorder\\service\\AdminOrderServiceImpl.java"
+    ],
+    "ts-admin-order-service->ts-order-other-service": [
+      "C:\\train-ticket-master\\ts-admin-order-service\\src\\main\\java\\adminorder\\service\\AdminOrderServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-order-service\\src\\main\\java\\adminorder\\service\\AdminOrderServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-order-service\\src\\main\\java\\adminorder\\service\\AdminOrderServiceImpl.java"
+    ],
+    "ts-admin-route-service->ts-route-service": [
+      "C:\\train-ticket-master\\ts-admin-route-service\\src\\main\\java\\adminroute\\service\\AdminRouteServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-route-service\\src\\main\\java\\adminroute\\service\\AdminRouteServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-route-service\\src\\main\\java\\adminroute\\service\\AdminRouteServiceImpl.java"
+    ],
+    "ts-admin-route-service->ts-station-service": [
+      "C:\\train-ticket-master\\ts-admin-route-service\\src\\main\\java\\adminroute\\service\\AdminRouteServiceImpl.java"
+    ],
+    "ts-admin-travel-service->ts-travel-service": [
+      "C:\\train-ticket-master\\ts-admin-travel-service\\src\\main\\java\\admintravel\\service\\AdminTravelServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-travel-service\\src\\main\\java\\admintravel\\service\\AdminTravelServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-travel-service\\src\\main\\java\\admintravel\\service\\AdminTravelServiceImpl.java"
+    ],
+    "ts-admin-travel-service->ts-travel2-service": [
+      "C:\\train-ticket-master\\ts-admin-travel-service\\src\\main\\java\\admintravel\\service\\AdminTravelServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-travel-service\\src\\main\\java\\admintravel\\service\\AdminTravelServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-travel-service\\src\\main\\java\\admintravel\\service\\AdminTravelServiceImpl.java"
+    ],
+    "ts-admin-travel-service->ts-station-service": [
+      "C:\\train-ticket-master\\ts-admin-travel-service\\src\\main\\java\\admintravel\\service\\AdminTravelServiceImpl.java"
+    ],
+    "ts-admin-travel-service->ts-train-service": [
+      "C:\\train-ticket-master\\ts-admin-travel-service\\src\\main\\java\\admintravel\\service\\AdminTravelServiceImpl.java"
+    ],
+    "ts-admin-travel-service->ts-route-service": [
+      "C:\\train-ticket-master\\ts-admin-travel-service\\src\\main\\java\\admintravel\\service\\AdminTravelServiceImpl.java"
+    ],
+    "ts-admin-user-service->ts-user-service": [
+      "C:\\train-ticket-master\\ts-admin-user-service\\src\\main\\java\\adminuser\\service\\AdminUserServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-user-service\\src\\main\\java\\adminuser\\service\\AdminUserServiceImpl.java",
+      "C:\\train-ticket-master\\ts-admin-user-service\\src\\main\\java\\adminuser\\service\\AdminUserServiceImpl.java"
+    ],
+    "ts-auth-service->ts-verification-code-service": [
+      "C:\\train-ticket-master\\ts-auth-service\\src\\main\\java\\auth\\service\\impl\\TokenServiceImpl.java"
+    ],
+    "ts-basic-service->ts-station-service": [
+      "C:\\train-ticket-master\\ts-basic-service\\src\\main\\java\\fdse\\microservice\\service\\BasicServiceImpl.java",
+      "C:\\train-ticket-master\\ts-basic-service\\src\\main\\java\\fdse\\microservice\\service\\BasicServiceImpl.java",
+      "C:\\train-ticket-master\\ts-basic-service\\src\\main\\java\\fdse\\microservice\\service\\BasicServiceImpl.java"
+    ],
+    "ts-basic-service->ts-train-service": [
+      "C:\\train-ticket-master\\ts-basic-service\\src\\main\\java\\fdse\\microservice\\service\\BasicServiceImpl.java",
+      "C:\\train-ticket-master\\ts-basic-service\\src\\main\\java\\fdse\\microservice\\service\\BasicServiceImpl.java"
+    ],
+    "ts-basic-service->ts-route-service": [
+      "C:\\train-ticket-master\\ts-basic-service\\src\\main\\java\\fdse\\microservice\\service\\BasicServiceImpl.java",
+      "C:\\train-ticket-master\\ts-basic-service\\src\\main\\java\\fdse\\microservice\\service\\BasicServiceImpl.java"
+    ],
+    "ts-basic-service->ts-price-service": [
+      "C:\\train-ticket-master\\ts-basic-service\\src\\main\\java\\fdse\\microservice\\service\\BasicServiceImpl.java",
+      "C:\\train-ticket-master\\ts-basic-service\\src\\main\\java\\fdse\\microservice\\service\\BasicServiceImpl.java"
+    ],
+    "ts-cancel-service->ts-notification-service": [
+      "C:\\train-ticket-master\\ts-cancel-service\\src\\main\\java\\cancel\\service\\CancelServiceImpl.java"
+    ],
+    "ts-cancel-service->ts-order-service": [
+      "C:\\train-ticket-master\\ts-cancel-service\\src\\main\\java\\cancel\\service\\CancelServiceImpl.java",
+      "C:\\train-ticket-master\\ts-cancel-service\\src\\main\\java\\cancel\\service\\CancelServiceImpl.java"
+    ],
+    "ts-cancel-service->ts-order-other-service": [
+      "C:\\train-ticket-master\\ts-cancel-service\\src\\main\\java\\cancel\\service\\CancelServiceImpl.java",
+      "C:\\train-ticket-master\\ts-cancel-service\\src\\main\\java\\cancel\\service\\CancelServiceImpl.java"
+    ],
+    "ts-cancel-service->ts-inside-payment-service": [
+      "C:\\train-ticket-master\\ts-cancel-service\\src\\main\\java\\cancel\\service\\CancelServiceImpl.java"
+    ],
+    "ts-cancel-service->ts-user-service": [
+      "C:\\train-ticket-master\\ts-cancel-service\\src\\main\\java\\cancel\\service\\CancelServiceImpl.java"
+    ],
+    "ts-consign-service->ts-consign-price-service": [
+      "C:\\train-ticket-master\\ts-consign-service\\src\\main\\java\\consign\\service\\ConsignServiceImpl.java",
+      "C:\\train-ticket-master\\ts-consign-service\\src\\main\\java\\consign\\service\\ConsignServiceImpl.java"
+    ],
+    "ts-execute-service->ts-order-service": [
+      "C:\\train-ticket-master\\ts-execute-service\\src\\main\\java\\execute\\serivce\\ExecuteServiceImpl.java",
+      "C:\\train-ticket-master\\ts-execute-service\\src\\main\\java\\execute\\serivce\\ExecuteServiceImpl.java"
+    ],
+    "ts-execute-service->ts-order-other-service": [
+      "C:\\train-ticket-master\\ts-execute-service\\src\\main\\java\\execute\\serivce\\ExecuteServiceImpl.java",
+      "C:\\train-ticket-master\\ts-execute-service\\src\\main\\java\\execute\\serivce\\ExecuteServiceImpl.java"
+    ],
+    "ts-food-delivery-service->ts-station-food-service": [
+      "C:\\train-ticket-master\\ts-food-delivery-service\\src\\main\\java\\food_delivery\\service\\FoodDeliveryServiceImpl.java"
+    ],
+    "ts-food-service->ts-train-food-service": [
+      "C:\\train-ticket-master\\ts-food-service\\src\\main\\java\\foodsearch\\service\\FoodServiceImpl.java"
+    ],
+    "ts-food-service->ts-travel-service": [
+      "C:\\train-ticket-master\\ts-food-service\\src\\main\\java\\foodsearch\\service\\FoodServiceImpl.java"
+    ],
+    "ts-food-service->ts-station-food-service": [
+      "C:\\train-ticket-master\\ts-food-service\\src\\main\\java\\foodsearch\\service\\FoodServiceImpl.java"
+    ],
+    "ts-inside-payment-service->ts-order-service": [
+      "C:\\train-ticket-master\\ts-inside-payment-service\\src\\main\\java\\inside_payment\\service\\InsidePaymentServiceImpl.java",
+      "C:\\train-ticket-master\\ts-inside-payment-service\\src\\main\\java\\inside_payment\\service\\InsidePaymentServiceImpl.java"
+    ],
+    "ts-inside-payment-service->ts-order-other-service": [
+      "C:\\train-ticket-master\\ts-inside-payment-service\\src\\main\\java\\inside_payment\\service\\InsidePaymentServiceImpl.java",
+      "C:\\train-ticket-master\\ts-inside-payment-service\\src\\main\\java\\inside_payment\\service\\InsidePaymentServiceImpl.java"
+    ],
+    "ts-inside-payment-service->ts-payment-service": [
+      "C:\\train-ticket-master\\ts-inside-payment-service\\src\\main\\java\\inside_payment\\service\\InsidePaymentServiceImpl.java",
+      "C:\\train-ticket-master\\ts-inside-payment-service\\src\\main\\java\\inside_payment\\service\\InsidePaymentServiceImpl.java"
+    ],
+    "ts-order-other-service->ts-station-service": [
+      "C:\\train-ticket-master\\ts-order-other-service\\src\\main\\java\\other\\service\\OrderOtherServiceImpl.java"
+    ],
+    "ts-order-service->ts-station-service": [
+      "C:\\train-ticket-master\\ts-order-service\\src\\main\\java\\order\\service\\OrderServiceImpl.java"
+    ],
+    "ts-preserve-other-service->ts-basic-service": [
+      "C:\\train-ticket-master\\ts-preserve-other-service\\src\\main\\java\\preserveOther\\service\\PreserveOtherServiceImpl.java"
+    ],
+    "ts-preserve-other-service->ts-seat-service": [
+      "C:\\train-ticket-master\\ts-preserve-other-service\\src\\main\\java\\preserveOther\\service\\PreserveOtherServiceImpl.java"
+    ],
+    "ts-preserve-other-service->ts-user-service": [
+      "C:\\train-ticket-master\\ts-preserve-other-service\\src\\main\\java\\preserveOther\\service\\PreserveOtherServiceImpl.java"
+    ],
+    "ts-preserve-other-service->ts-assurance-service": [
+      "C:\\train-ticket-master\\ts-preserve-other-service\\src\\main\\java\\preserveOther\\service\\PreserveOtherServiceImpl.java"
+    ],
+    "ts-preserve-other-service->ts-station-service": [
+      "C:\\train-ticket-master\\ts-preserve-other-service\\src\\main\\java\\preserveOther\\service\\PreserveOtherServiceImpl.java"
+    ],
+    "ts-preserve-other-service->ts-security-service": [
+      "C:\\train-ticket-master\\ts-preserve-other-service\\src\\main\\java\\preserveOther\\service\\PreserveOtherServiceImpl.java"
+    ],
+    "ts-preserve-other-service->ts-travel2-service": [
+      "C:\\train-ticket-master\\ts-preserve-other-service\\src\\main\\java\\preserveOther\\service\\PreserveOtherServiceImpl.java"
+    ],
+    "ts-preserve-other-service->ts-contacts-service": [
+      "C:\\train-ticket-master\\ts-preserve-other-service\\src\\main\\java\\preserveOther\\service\\PreserveOtherServiceImpl.java"
+    ],
+    "ts-preserve-other-service->ts-order-other-service": [
+      "C:\\train-ticket-master\\ts-preserve-other-service\\src\\main\\java\\preserveOther\\service\\PreserveOtherServiceImpl.java"
+    ],
+    "ts-preserve-other-service->ts-food-service": [
+      "C:\\train-ticket-master\\ts-preserve-other-service\\src\\main\\java\\preserveOther\\service\\PreserveOtherServiceImpl.java"
+    ],
+    "ts-preserve-other-service->ts-consign-service": [
+      "C:\\train-ticket-master\\ts-preserve-other-service\\src\\main\\java\\preserveOther\\service\\PreserveOtherServiceImpl.java"
+    ],
+    "ts-preserve-service->ts-basic-service": [
+      "C:\\train-ticket-master\\ts-preserve-service\\src\\main\\java\\preserve\\service\\PreserveServiceImpl.java"
+    ],
+    "ts-preserve-service->ts-seat-service": [
+      "C:\\train-ticket-master\\ts-preserve-service\\src\\main\\java\\preserve\\service\\PreserveServiceImpl.java"
+    ],
+    "ts-preserve-service->ts-user-service": [
+      "C:\\train-ticket-master\\ts-preserve-service\\src\\main\\java\\preserve\\service\\PreserveServiceImpl.java"
+    ],
+    "ts-preserve-service->ts-assurance-service": [
+      "C:\\train-ticket-master\\ts-preserve-service\\src\\main\\java\\preserve\\service\\PreserveServiceImpl.java"
+    ],
+    "ts-preserve-service->ts-station-service": [
+      "C:\\train-ticket-master\\ts-preserve-service\\src\\main\\java\\preserve\\service\\PreserveServiceImpl.java"
+    ],
+    "ts-preserve-service->ts-security-service": [
+      "C:\\train-ticket-master\\ts-preserve-service\\src\\main\\java\\preserve\\service\\PreserveServiceImpl.java"
+    ],
+    "ts-preserve-service->ts-travel-service": [
+      "C:\\train-ticket-master\\ts-preserve-service\\src\\main\\java\\preserve\\service\\PreserveServiceImpl.java"
+    ],
+    "ts-preserve-service->ts-contacts-service": [
+      "C:\\train-ticket-master\\ts-preserve-service\\src\\main\\java\\preserve\\service\\PreserveServiceImpl.java"
+    ],
+    "ts-preserve-service->ts-order-service": [
+      "C:\\train-ticket-master\\ts-preserve-service\\src\\main\\java\\preserve\\service\\PreserveServiceImpl.java"
+    ],
+    "ts-preserve-service->ts-food-service": [
+      "C:\\train-ticket-master\\ts-preserve-service\\src\\main\\java\\preserve\\service\\PreserveServiceImpl.java"
+    ],
+    "ts-preserve-service->ts-consign-service": [
+      "C:\\train-ticket-master\\ts-preserve-service\\src\\main\\java\\preserve\\service\\PreserveServiceImpl.java"
+    ],
+    "ts-rebook-service->ts-seat-service": [
+      "C:\\train-ticket-master\\ts-rebook-service\\src\\main\\java\\rebook\\service\\RebookServiceImpl.java"
+    ],
+    "ts-rebook-service->ts-travel-service": [
+      "C:\\train-ticket-master\\ts-rebook-service\\src\\main\\java\\rebook\\service\\RebookServiceImpl.java"
+    ],
+    "ts-rebook-service->ts-travel2-service": [
+      "C:\\train-ticket-master\\ts-rebook-service\\src\\main\\java\\rebook\\service\\RebookServiceImpl.java"
+    ],
+    "ts-rebook-service->ts-order-service": [
+      "C:\\train-ticket-master\\ts-rebook-service\\src\\main\\java\\rebook\\service\\RebookServiceImpl.java",
+      "C:\\train-ticket-master\\ts-rebook-service\\src\\main\\java\\rebook\\service\\RebookServiceImpl.java",
+      "C:\\train-ticket-master\\ts-rebook-service\\src\\main\\java\\rebook\\service\\RebookServiceImpl.java"
+    ],
+    "ts-rebook-service->ts-order-other-service": [
+      "C:\\train-ticket-master\\ts-rebook-service\\src\\main\\java\\rebook\\service\\RebookServiceImpl.java",
+      "C:\\train-ticket-master\\ts-rebook-service\\src\\main\\java\\rebook\\service\\RebookServiceImpl.java",
+      "C:\\train-ticket-master\\ts-rebook-service\\src\\main\\java\\rebook\\service\\RebookServiceImpl.java"
+    ],
+    "ts-rebook-service->ts-train-service": [
+      "C:\\train-ticket-master\\ts-rebook-service\\src\\main\\java\\rebook\\service\\RebookServiceImpl.java"
+    ],
+    "ts-rebook-service->ts-route-service": [
+      "C:\\train-ticket-master\\ts-rebook-service\\src\\main\\java\\rebook\\service\\RebookServiceImpl.java"
+    ],
+    "ts-rebook-service->ts-inside-payment-service": [
+      "C:\\train-ticket-master\\ts-rebook-service\\src\\main\\java\\rebook\\service\\RebookServiceImpl.java",
+      "C:\\train-ticket-master\\ts-rebook-service\\src\\main\\java\\rebook\\service\\RebookServiceImpl.java"
+    ],
+    "ts-route-plan-service->ts-route-service": [
+      "C:\\train-ticket-master\\ts-route-plan-service\\src\\main\\java\\plan\\service\\RoutePlanServiceImpl.java",
+      "C:\\train-ticket-master\\ts-route-plan-service\\src\\main\\java\\plan\\service\\RoutePlanServiceImpl.java"
+    ],
+    "ts-route-plan-service->ts-travel-service": [
+      "C:\\train-ticket-master\\ts-route-plan-service\\src\\main\\java\\plan\\service\\RoutePlanServiceImpl.java",
+      "C:\\train-ticket-master\\ts-route-plan-service\\src\\main\\java\\plan\\service\\RoutePlanServiceImpl.java",
+      "C:\\train-ticket-master\\ts-route-plan-service\\src\\main\\java\\plan\\service\\RoutePlanServiceImpl.java"
+    ],
+    "ts-route-plan-service->ts-travel2-service": [
+      "C:\\train-ticket-master\\ts-route-plan-service\\src\\main\\java\\plan\\service\\RoutePlanServiceImpl.java",
+      "C:\\train-ticket-master\\ts-route-plan-service\\src\\main\\java\\plan\\service\\RoutePlanServiceImpl.java",
+      "C:\\train-ticket-master\\ts-route-plan-service\\src\\main\\java\\plan\\service\\RoutePlanServiceImpl.java"
+    ],
+    "ts-seat-service->ts-order-service": [
+      "C:\\train-ticket-master\\ts-seat-service\\src\\main\\java\\seat\\service\\SeatServiceImpl.java",
+      "C:\\train-ticket-master\\ts-seat-service\\src\\main\\java\\seat\\service\\SeatServiceImpl.java"
+    ],
+    "ts-seat-service->ts-order-other-service": [
+      "C:\\train-ticket-master\\ts-seat-service\\src\\main\\java\\seat\\service\\SeatServiceImpl.java",
+      "C:\\train-ticket-master\\ts-seat-service\\src\\main\\java\\seat\\service\\SeatServiceImpl.java"
+    ],
+    "ts-seat-service->ts-config-service": [
+      "C:\\train-ticket-master\\ts-seat-service\\src\\main\\java\\seat\\service\\SeatServiceImpl.java"
+    ],
+    "ts-security-service->ts-order-service": [
+      "C:\\train-ticket-master\\ts-security-service\\src\\main\\java\\security\\service\\SecurityServiceImpl.java"
+    ],
+    "ts-security-service->ts-order-other-service": [
+      "C:\\train-ticket-master\\ts-security-service\\src\\main\\java\\security\\service\\SecurityServiceImpl.java"
+    ],
+    "ts-travel-plan-service->ts-seat-service": [
+      "C:\\train-ticket-master\\ts-travel-plan-service\\src\\main\\java\\travelplan\\service\\TravelPlanServiceImpl.java"
+    ],
+    "ts-travel-plan-service->ts-route-plan-service": [
+      "C:\\train-ticket-master\\ts-travel-plan-service\\src\\main\\java\\travelplan\\service\\TravelPlanServiceImpl.java",
+      "C:\\train-ticket-master\\ts-travel-plan-service\\src\\main\\java\\travelplan\\service\\TravelPlanServiceImpl.java",
+      "C:\\train-ticket-master\\ts-travel-plan-service\\src\\main\\java\\travelplan\\service\\TravelPlanServiceImpl.java"
+    ],
+    "ts-travel-plan-service->ts-travel-service": [
+      "C:\\train-ticket-master\\ts-travel-plan-service\\src\\main\\java\\travelplan\\service\\TravelPlanServiceImpl.java"
+    ],
+    "ts-travel-plan-service->ts-travel2-service": [
+      "C:\\train-ticket-master\\ts-travel-plan-service\\src\\main\\java\\travelplan\\service\\TravelPlanServiceImpl.java"
+    ],
+    "ts-travel-plan-service->ts-train-service": [
+      "C:\\train-ticket-master\\ts-travel-plan-service\\src\\main\\java\\travelplan\\service\\TravelPlanServiceImpl.java"
+    ],
+    "ts-travel-service->ts-basic-service": [
+      "C:\\train-ticket-master\\ts-travel-service\\src\\main\\java\\travel\\service\\TravelServiceImpl.java",
+      "C:\\train-ticket-master\\ts-travel-service\\src\\main\\java\\travel\\service\\TravelServiceImpl.java"
+    ],
+    "ts-travel-service->ts-train-service": [
+      "C:\\train-ticket-master\\ts-travel-service\\src\\main\\java\\travel\\service\\TravelServiceImpl.java"
+    ],
+    "ts-travel-service->ts-route-service": [
+      "C:\\train-ticket-master\\ts-travel-service\\src\\main\\java\\travel\\service\\TravelServiceImpl.java"
+    ],
+    "ts-travel-service->ts-seat-service": [
+      "C:\\train-ticket-master\\ts-travel-service\\src\\main\\java\\travel\\service\\TravelServiceImpl.java"
+    ],
+    "ts-travel2-service->ts-basic-service": [
+      "C:\\train-ticket-master\\ts-travel2-service\\src\\main\\java\\travel2\\service\\TravelServiceImpl.java",
+      "C:\\train-ticket-master\\ts-travel2-service\\src\\main\\java\\travel2\\service\\TravelServiceImpl.java"
+    ],
+    "ts-travel2-service->ts-train-service": [
+      "C:\\train-ticket-master\\ts-travel2-service\\src\\main\\java\\travel2\\service\\TravelServiceImpl.java"
+    ],
+    "ts-travel2-service->ts-route-service": [
+      "C:\\train-ticket-master\\ts-travel2-service\\src\\main\\java\\travel2\\service\\TravelServiceImpl.java"
+    ],
+    "ts-travel2-service->ts-seat-service": [
+      "C:\\train-ticket-master\\ts-travel2-service\\src\\main\\java\\travel2\\service\\TravelServiceImpl.java"
+    ],
+    "ts-user-service->ts-auth-service": [
+      "C:\\train-ticket-master\\ts-user-service\\src\\main\\java\\user\\service\\impl\\UserServiceImpl.java",
+      "C:\\train-ticket-master\\ts-user-service\\src\\main\\java\\user\\service\\impl\\UserServiceImpl.java"
+    ],
+    "ts-wait-order-service->ts-preserve-service": [
+      "C:\\train-ticket-master\\ts-wait-order-service\\src\\main\\java\\waitorder\\utils\\PollThread.java"
+    ]
+  }
+}

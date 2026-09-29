@@ -1,0 +1,23 @@
+[2026-06-30 11:36:25] [javac-extractor-6500] Starting extraction for:
+                                             sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-2.args
+                                             user.dir=C:\train-ticket-master
+[2026-06-30 11:36:25] [javac-extractor-6500] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-2.trap.gz
+[2026-06-30 11:36:25] [javac-extractor-6500] [WARN] Appending source destination directory C:\train-ticket-master\ts-verification-code-service\target\generated-test-sources\test-annotations to sourcepath
+[2026-06-30 11:36:33] [javac-extractor-6500] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 11:36:33] [javac-extractor-6500] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 11:36:33] [javac-extractor-6500] Processing file C:\train-ticket-master\ts-verification-code-service\src\test\java\verifycode\service\VerifyCodeServiceImplTest.java
+[2026-06-30 11:36:34] [javac-extractor-6500] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\verifycode\service\impl\VerifyCodeServiceImpl.members\VerifyCodeServiceImpl.members#52.0-1782790542559-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\verifycode\service\impl\VerifyCodeServiceImpl.members\VerifyCodeServiceImpl.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:36:34] [javac-extractor-6500] Processing JAR file: C:/Maven/LocalRepository/junit/junit/4.12/junit-4.12.jar
+[2026-06-30 11:36:35] [javac-extractor-6500] Processing JAR file: C:/Maven/LocalRepository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar
+[2026-06-30 11:36:35] [javac-extractor-6500] Processing file C:\train-ticket-master\ts-verification-code-service\src\test\java\verifycode\controller\VerifyCodeControllerTest.java
+[2026-06-30 11:36:35] [javac-extractor-6500] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:36:35] [javac-extractor-6500] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\verifycode\service\VerifyCodeService.members\VerifyCodeService.members#52.0-1782790542564-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\verifycode\service\VerifyCodeService.members\VerifyCodeService.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:36:35] [javac-extractor-6500] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\verifycode\controller\VerifyCodeController.members\VerifyCodeController.members#52.0-1782790542617-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\verifycode\controller\VerifyCodeController.members\VerifyCodeController.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:36:40] [javac-extractor-6500] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-test/5.2.15.RELEASE/spring-test-5.2.15.RELEASE.jar
+[2026-06-30 11:36:40] [javac-extractor-6500] Processing JAR file: C:/Maven/LocalRepository/org/mockito/mockito-core/3.3.3/mockito-core-3.3.3.jar
+[2026-06-30 11:36:40] [javac-extractor-6500] Processing JAR file: C:/Maven/LocalRepository/com/alibaba/fastjson/1.2.31/fastjson-1.2.31.jar
+[2026-06-30 11:36:40] [javac-extractor-6500] Javac init time: 8.0s
+[2026-06-30 11:36:40] [javac-extractor-6500] Javac attr time: 0.2s
+[2026-06-30 11:36:40] [javac-extractor-6500] Extractor time: 6.9s
+[2026-06-30 11:36:40] [javac-extractor-6500] Other time: 0.3s
+[2026-06-30 11:36:40] [javac-extractor-6500] Total time: 15.4s

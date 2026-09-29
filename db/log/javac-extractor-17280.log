@@ -1,0 +1,27 @@
+[2026-06-30 11:39:03] [javac-extractor-17280] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-9.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 11:39:03] [javac-extractor-17280] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-9.trap.gz
+[2026-06-30 11:39:03] [javac-extractor-17280] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-config-service\src\main\java\config\entity\Config.java
+[2026-06-30 11:39:03] [javac-extractor-17280] [WARN] Appending source destination directory C:\train-ticket-master\ts-config-service\target\generated-sources\annotations to sourcepath
+[2026-06-30 11:39:11] [javac-extractor-17280] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 11:39:12] [javac-extractor-17280] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 11:39:12] [javac-extractor-17280] Processing file C:\train-ticket-master\ts-config-service\src\main\java\config\entity\Config.java
+[2026-06-30 11:39:12] [javac-extractor-17280] Processing file C:\train-ticket-master\ts-config-service\src\main\java\config\repository\ConfigRepository.java
+[2026-06-30 11:39:13] [javac-extractor-17280] Processing file C:\train-ticket-master\ts-config-service\src\main\java\config\controller\ConfigController.java
+[2026-06-30 11:39:13] [javac-extractor-17280] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:39:13] [javac-extractor-17280] Processing file C:\train-ticket-master\ts-config-service\src\main\java\config\service\ConfigService.java
+[2026-06-30 11:39:13] [javac-extractor-17280] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:39:13] [javac-extractor-17280] Processing file C:\train-ticket-master\ts-config-service\src\main\java\config\SecurityConfig.java
+[2026-06-30 11:39:13] [javac-extractor-17280] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:39:14] [javac-extractor-17280] Processing file C:\train-ticket-master\ts-config-service\src\main\java\config\service\ConfigServiceImpl.java
+[2026-06-30 11:39:14] [javac-extractor-17280] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:39:14] [javac-extractor-17280] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-tx/5.2.15.RELEASE/spring-tx-5.2.15.RELEASE.jar
+[2026-06-30 11:39:14] [javac-extractor-17280] Processing file C:\train-ticket-master\ts-config-service\src\main\java\config\init\InitData.java
+[2026-06-30 11:39:14] [javac-extractor-17280] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:39:14] [javac-extractor-17280] Processing file C:\train-ticket-master\ts-config-service\src\main\java\config\ConfigApplication.java
+[2026-06-30 11:39:14] [javac-extractor-17280] Javac init time: 8.4s
+[2026-06-30 11:39:14] [javac-extractor-17280] Javac attr time: 0.2s
+[2026-06-30 11:39:14] [javac-extractor-17280] Extractor time: 1.9s
+[2026-06-30 11:39:14] [javac-extractor-17280] Other time: 0.4s
+[2026-06-30 11:39:14] [javac-extractor-17280] Total time: 10.9s

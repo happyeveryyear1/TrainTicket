@@ -1,0 +1,23 @@
+[2026-06-30 12:02:48] [javac-extractor-9968] Starting extraction for:
+                                             sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-79.args
+                                             user.dir=C:\train-ticket-master
+[2026-06-30 12:02:48] [javac-extractor-9968] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-79.trap.gz
+[2026-06-30 12:02:48] [javac-extractor-9968] [WARN] Appending source destination directory C:\train-ticket-master\ts-wait-order-service\target\generated-test-sources\test-annotations to sourcepath
+[2026-06-30 12:02:58] [javac-extractor-9968] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 12:02:58] [javac-extractor-9968] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 12:02:58] [javac-extractor-9968] Processing file C:\train-ticket-master\ts-wait-order-service\src\test\java\waitorder\WaitOrderApplicationTests.java
+[2026-06-30 12:03:00] [javac-extractor-9968] Processing JAR file: C:/Maven/LocalRepository/org/junit/jupiter/junit-jupiter-api/5.6.3/junit-jupiter-api-5.6.3.jar
+[2026-06-30 12:03:00] [javac-extractor-9968] Processing JAR file: C:/Maven/LocalRepository/org/springframework/boot/spring-boot-test/2.3.12.RELEASE/spring-boot-test-2.3.12.RELEASE.jar
+[2026-06-30 12:03:00] [javac-extractor-9968] Processing JAR file: C:/Maven/LocalRepository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar
+[2026-06-30 12:03:00] [javac-extractor-9968] Processing JAR file: C:/Maven/LocalRepository/org/junit/platform/junit-platform-commons/1.6.3/junit-platform-commons-1.6.3.jar
+[2026-06-30 12:03:00] [javac-extractor-9968] Processing file C:\train-ticket-master\ts-wait-order-service\src\test\java\waitorder\service\Impl\WaitListOrderServiceImplTest.java
+[2026-06-30 12:03:00] [javac-extractor-9968] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 12:03:00] [javac-extractor-9968] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\waitorder\entity\WaitListOrder.members\WaitListOrder.members#52.0-1782792145982-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\waitorder\entity\WaitListOrder.members\WaitListOrder.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 12:03:00] [javac-extractor-9968] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\waitorder\repository\WaitListOrderRepository.members\WaitListOrderRepository.members#52.0-1782792146010-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\waitorder\repository\WaitListOrderRepository.members\WaitListOrderRepository.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 12:03:00] [javac-extractor-9968] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\waitorder\service\Impl\WaitListOrderServiceImpl.members\WaitListOrderServiceImpl.members#52.0-1782792146107-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\waitorder\service\Impl\WaitListOrderServiceImpl.members\WaitListOrderServiceImpl.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 12:03:00] [javac-extractor-9968] Processing JAR file: C:/Maven/LocalRepository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar
+[2026-06-30 12:03:00] [javac-extractor-9968] Javac init time: 9.4s
+[2026-06-30 12:03:00] [javac-extractor-9968] Javac attr time: 0.1s
+[2026-06-30 12:03:00] [javac-extractor-9968] Extractor time: 2.5s
+[2026-06-30 12:03:00] [javac-extractor-9968] Other time: 0.7s
+[2026-06-30 12:03:00] [javac-extractor-9968] Total time: 12.6s

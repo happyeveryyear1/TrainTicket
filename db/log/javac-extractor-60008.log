@@ -1,0 +1,44 @@
+[2026-06-30 11:58:37] [javac-extractor-60008] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-69.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 11:58:37] [javac-extractor-60008] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-69.trap.gz
+[2026-06-30 11:58:37] [javac-extractor-60008] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-auth-service\src\main\java\auth\dto\BasicAuthDto.java
+[2026-06-30 11:58:37] [javac-extractor-60008] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-auth-service\src\main\java\auth\entity\User.java
+[2026-06-30 11:58:37] [javac-extractor-60008] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-auth-service\src\main\java\auth\dto\AuthDto.java
+[2026-06-30 11:58:37] [javac-extractor-60008] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-auth-service\src\main\java\auth\dto\TokenDto.java
+[2026-06-30 11:58:37] [javac-extractor-60008] [WARN] Appending source destination directory C:\train-ticket-master\ts-auth-service\target\generated-sources\annotations to sourcepath
+[2026-06-30 11:58:45] [javac-extractor-60008] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 11:58:46] [javac-extractor-60008] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 11:58:46] [javac-extractor-60008] Processing file C:\train-ticket-master\ts-auth-service\src\main\java\auth\config\WebSecurityConfig.java
+[2026-06-30 11:58:46] [javac-extractor-60008] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:58:47] [javac-extractor-60008] Processing file C:\train-ticket-master\ts-auth-service\src\main\java\auth\constant\AuthConstant.java
+[2026-06-30 11:58:47] [javac-extractor-60008] Processing file C:\train-ticket-master\ts-auth-service\src\main\java\auth\dto\BasicAuthDto.java
+[2026-06-30 11:58:47] [javac-extractor-60008] Processing file C:\train-ticket-master\ts-auth-service\src\main\java\auth\exception\UserOperationException.java
+[2026-06-30 11:58:47] [javac-extractor-60008] Processing file C:\train-ticket-master\ts-auth-service\src\main\java\auth\entity\User.java
+[2026-06-30 11:58:47] [javac-extractor-60008] Processing file C:\train-ticket-master\ts-auth-service\src\main\java\auth\AuthApplication.java
+[2026-06-30 11:58:47] [javac-extractor-60008] Processing file C:\train-ticket-master\ts-auth-service\src\main\java\auth\repository\UserRepository.java
+[2026-06-30 11:58:48] [javac-extractor-60008] Processing file C:\train-ticket-master\ts-auth-service\src\main\java\auth\dto\AuthDto.java
+[2026-06-30 11:58:48] [javac-extractor-60008] Processing file C:\train-ticket-master\ts-auth-service\src\main\java\auth\service\impl\TokenServiceImpl.java
+[2026-06-30 11:58:48] [javac-extractor-60008] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:58:48] [javac-extractor-60008] Processing JAR file: C:/Maven/LocalRepository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar
+[2026-06-30 11:58:48] [javac-extractor-60008] Processing file C:\train-ticket-master\ts-auth-service\src\main\java\auth\service\TokenService.java
+[2026-06-30 11:58:48] [javac-extractor-60008] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:58:48] [javac-extractor-60008] Processing file C:\train-ticket-master\ts-auth-service\src\main\java\auth\security\jwt\JWTProvider.java
+[2026-06-30 11:58:48] [javac-extractor-60008] Processing file C:\train-ticket-master\ts-auth-service\src\main\java\auth\service\UserService.java
+[2026-06-30 11:58:48] [javac-extractor-60008] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:58:49] [javac-extractor-60008] Processing file C:\train-ticket-master\ts-auth-service\src\main\java\auth\exception\handler\GlobalExceptionHandler.java
+[2026-06-30 11:58:49] [javac-extractor-60008] Processing file C:\train-ticket-master\ts-auth-service\src\main\java\auth\init\InitUser.java
+[2026-06-30 11:58:49] [javac-extractor-60008] Processing file C:\train-ticket-master\ts-auth-service\src\main\java\auth\controller\AuthController.java
+[2026-06-30 11:58:49] [javac-extractor-60008] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:58:49] [javac-extractor-60008] Processing file C:\train-ticket-master\ts-auth-service\src\main\java\auth\service\impl\UserServiceImpl.java
+[2026-06-30 11:58:49] [javac-extractor-60008] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:58:49] [javac-extractor-60008] Processing file C:\train-ticket-master\ts-auth-service\src\main\java\auth\security\UserDetailsServiceImpl.java
+[2026-06-30 11:58:49] [javac-extractor-60008] Processing file C:\train-ticket-master\ts-auth-service\src\main\java\auth\controller\UserController.java
+[2026-06-30 11:58:49] [javac-extractor-60008] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:58:50] [javac-extractor-60008] Processing file C:\train-ticket-master\ts-auth-service\src\main\java\auth\dto\TokenDto.java
+[2026-06-30 11:58:50] [javac-extractor-60008] Processing file C:\train-ticket-master\ts-auth-service\src\main\java\auth\constant\InfoConstant.java
+[2026-06-30 11:58:50] [javac-extractor-60008] Javac init time: 8.9s
+[2026-06-30 11:58:50] [javac-extractor-60008] Javac attr time: 0.3s
+[2026-06-30 11:58:50] [javac-extractor-60008] Extractor time: 3.5s
+[2026-06-30 11:58:50] [javac-extractor-60008] Other time: 0.5s
+[2026-06-30 11:58:50] [javac-extractor-60008] Total time: 13.2s

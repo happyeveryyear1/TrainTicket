@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Train Ticket · 服务调用总图（章节导航）</title>
+<style>
+:root{--bg:#0b1220;--panel:#101a2f;--line:#22304d;--txt:#dbe6f6;--muted:#8fa3c2;--accent:#22d3ee;--active:#1d4ed8}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.5 "Segoe UI",system-ui,"Microsoft YaHei",sans-serif;display:flex;flex-direction:column}
+header{padding:14px 20px 10px;border-bottom:1px solid var(--line);background:var(--panel)}
+h1{margin:0 0 4px;font-size:18px}
+.meta{color:var(--muted);font-size:12px}
+.main{flex:1;display:flex;min-height:0}
+nav{width:250px;flex:none;overflow:auto;border-right:1px solid var(--line);background:#0d1526;padding:10px}
+nav button{display:block;width:100%;text-align:left;background:transparent;color:var(--txt);border:1px solid transparent;border-radius:8px;padding:8px 10px;margin:2px 0;cursor:pointer;font:inherit}
+nav button:hover{background:#16233d}
+nav button.on{background:var(--active);border-color:#3b82f6;font-weight:600}
+nav .grp{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin:12px 6px 4px}
+nav a{display:block;color:#7dd3fc;text-decoration:none;padding:6px 10px;font-size:12.5px}
+nav a:hover{text-decoration:underline}
+iframe{flex:1;border:0;background:#0b1220;width:100%;height:100%}
+</style></head><body>
+<header>
+<h1>Train Ticket · 服务调用总图 <small style="color:var(--muted);font-weight:400">章节导航</small></h1>
+<div class="meta">46 个可运行服务 · 92 条同步调用 + 5 条 RabbitMQ 异步边 · 证据：<code>getServiceUrl("ts-…")</code> + 队列名</div>
+</header>
+<div class="main">
+<nav id="nav">
+<div class="grp">总览</div>
+<button data-src="train-ticket-call-matrix.html" class="on">调用矩阵（完整 97 条边）</button>
+<button data-src="train-ticket-call-graph-master.html">服务调用总览图（章节导航 · 25 条可渲染）</button>
+<div class="grp">分组调用图</div>
+<button data-src="train-ticket-calls-booking-preserve.html">订票编排</button>
+<button data-src="train-ticket-calls-after-sales.html">改签 / 取消 / 代金券</button>
+<button data-src="train-ticket-calls-admin.html">管理后台</button>
+<button data-src="train-ticket-calls-domain-core.html">出行域核心</button>
+<button data-src="train-ticket-calls-seat-basic.html">座位与基础信息</button>
+<button data-src="train-ticket-calls-payment-security.html">支付 / 安全 / 执行</button>
+<button data-src="train-ticket-calls-dining.html">餐饮与托运</button>
+<button data-src="train-ticket-calls-planning.html">行程规划</button>
+<button data-src="train-ticket-calls-route-planning.html">路线规划</button>
+<button data-src="train-ticket-calls-order-store.html">订单落库</button>
+<button data-src="train-ticket-calls-identity-user.html">账户 → 认证</button>
+<button data-src="train-ticket-calls-identity-auth.html">认证 → 验证码</button>
+<div class="grp">相关视图</div>
+<a href="train-ticket-runtime.html" target="_blank">高层运行时架构 ↗</a>
+<a href="train-ticket-service-map.html" target="_blank">全网服务地图 ↗</a>
+</nav>
+<iframe id="frame" src="train-ticket-call-matrix.html" title="服务调用视图"></iframe>
+</div>
+<script>
+const nav = document.getElementById('nav');
+const frame = document.getElementById('frame');
+nav.addEventListener('click', (e) => {
+  const b = e.target.closest('button[data-src]');
+  if (!b) return;
+  [...nav.querySelectorAll('button[data-src]')].forEach((x) => x.classList.toggle('on', x === b));
+  frame.src = b.dataset.src;
+});
+</script>
+</body></html>

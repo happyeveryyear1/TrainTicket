@@ -1,0 +1,12 @@
+---
+sourceLocationPrefix: C:\train-ticket-master\ts-user-service
+baselineLinesOfCode: 737
+unicodeNewlines: false
+columnKind: utf16
+primaryLanguage: java
+creationMetadata:
+  cliVersion: 2.22.1
+  creationTime: 2025-11-25T14:02:41.495096600Z
+overlayBaseDatabase: false
+overlayDatabase: false
+finalised: true

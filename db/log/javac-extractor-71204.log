@@ -1,0 +1,25 @@
+[2026-06-30 11:56:49] [javac-extractor-71204] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-63.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 11:56:49] [javac-extractor-71204] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-63.trap.gz
+[2026-06-30 11:56:49] [javac-extractor-71204] [WARN] Appending source destination directory C:\train-ticket-master\ts-admin-route-service\target\generated-sources\annotations to sourcepath
+[2026-06-30 11:56:56] [javac-extractor-71204] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 11:56:56] [javac-extractor-71204] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 11:56:56] [javac-extractor-71204] Processing file C:\train-ticket-master\ts-admin-route-service\src\main\java\adminroute\service\AdminRouteService.java
+[2026-06-30 11:56:56] [javac-extractor-71204] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\RouteInfo.members\RouteInfo.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\RouteInfo.members\RouteInfo.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:56:56] [javac-extractor-71204] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:56:57] [javac-extractor-71204] Processing file C:\train-ticket-master\ts-admin-route-service\src\main\java\adminroute\service\AdminRouteServiceImpl.java
+[2026-06-30 11:56:57] [javac-extractor-71204] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Route.members\Route.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Route.members\Route.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:56:57] [javac-extractor-71204] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\RouteInfo.members\RouteInfo.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\RouteInfo.members\RouteInfo.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:56:57] [javac-extractor-71204] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:56:57] [javac-extractor-71204] Processing file C:\train-ticket-master\ts-admin-route-service\src\main\java\adminroute\config\SecurityConfig.java
+[2026-06-30 11:56:57] [javac-extractor-71204] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:56:58] [javac-extractor-71204] Processing file C:\train-ticket-master\ts-admin-route-service\src\main\java\adminroute\AdminRouteApplication.java
+[2026-06-30 11:56:58] [javac-extractor-71204] Processing file C:\train-ticket-master\ts-admin-route-service\src\main\java\adminroute\controller\AdminRouteController.java
+[2026-06-30 11:56:58] [javac-extractor-71204] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\RouteInfo.members\RouteInfo.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\RouteInfo.members\RouteInfo.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:56:58] [javac-extractor-71204] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:56:58] [javac-extractor-71204] Javac init time: 7.2s
+[2026-06-30 11:56:58] [javac-extractor-71204] Javac attr time: 0.2s
+[2026-06-30 11:56:58] [javac-extractor-71204] Extractor time: 1.5s
+[2026-06-30 11:56:58] [javac-extractor-71204] Other time: 0.4s
+[2026-06-30 11:56:58] [javac-extractor-71204] Total time: 9.4s

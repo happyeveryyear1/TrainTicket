@@ -1,0 +1,41 @@
+[2026-06-30 11:44:45] [javac-extractor-56892] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-27.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 11:44:45] [javac-extractor-56892] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-27.trap.gz
+[2026-06-30 11:44:45] [javac-extractor-56892] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-notification-service\src\main\java\notification\entity\Mail.java
+[2026-06-30 11:44:45] [javac-extractor-56892] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-notification-service\src\main\java\notification\entity\NotifyInfo.java
+[2026-06-30 11:44:45] [javac-extractor-56892] [WARN] Appending source destination directory C:\train-ticket-master\ts-notification-service\target\generated-sources\annotations to sourcepath
+[2026-06-30 11:44:53] [javac-extractor-56892] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 11:44:54] [javac-extractor-56892] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 11:44:54] [javac-extractor-56892] Processing file C:\train-ticket-master\ts-notification-service\src\main\java\notification\config\Queues.java
+[2026-06-30 11:44:54] [javac-extractor-56892] Processing file C:\train-ticket-master\ts-notification-service\src\main\java\notification\config\SecurityConfig.java
+[2026-06-30 11:44:54] [javac-extractor-56892] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:44:55] [javac-extractor-56892] Processing file C:\train-ticket-master\ts-notification-service\src\main\java\notification\mq\RabbitReceive.java
+[2026-06-30 11:44:55] [javac-extractor-56892] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\JsonUtils.members\JsonUtils.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\JsonUtils.members\JsonUtils.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:44:55] [javac-extractor-56892] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:44:55] [javac-extractor-56892] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\javax\persistence\Entity.members\Entity.members#52.0-1503305948000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\javax\persistence\Entity.members\Entity.members#52.0-1564736392000-java.trap.gz exists
+[2026-06-30 11:44:56] [javac-extractor-56892] Processing JAR file: C:/Maven/LocalRepository/org/springframework/amqp/spring-rabbit/2.2.18.RELEASE/spring-rabbit-2.2.18.RELEASE.jar
+[2026-06-30 11:44:56] [javac-extractor-56892] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-messaging/5.2.15.RELEASE/spring-messaging-5.2.15.RELEASE.jar
+[2026-06-30 11:44:56] [javac-extractor-56892] Processing file C:\train-ticket-master\ts-notification-service\src\main\java\notification\service\MailService.java
+[2026-06-30 11:44:59] [javac-extractor-56892] Processing JAR file: C:/Maven/LocalRepository/com/sun/mail/jakarta.mail/1.6.7/jakarta.mail-1.6.7.jar
+[2026-06-30 11:45:00] [javac-extractor-56892] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-context-support/5.2.15.RELEASE/spring-context-support-5.2.15.RELEASE.jar
+[2026-06-30 11:45:00] [javac-extractor-56892] Processing JAR file: C:/Maven/LocalRepository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar
+[2026-06-30 11:45:00] [javac-extractor-56892] Processing JAR file: C:/Maven/LocalRepository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar
+[2026-06-30 11:45:00] [javac-extractor-56892] Processing file C:\train-ticket-master\ts-notification-service\src\main\java\notification\repository\NotifyRepository.java
+[2026-06-30 11:45:00] [javac-extractor-56892] Processing file C:\train-ticket-master\ts-notification-service\src\main\java\notification\entity\NotifyInfo.java
+[2026-06-30 11:45:00] [javac-extractor-56892] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\javax\persistence\Column.members\Column.members#52.0-1503305948000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\javax\persistence\Column.members\Column.members#52.0-1564736392000-java.trap.gz exists
+[2026-06-30 11:45:00] [javac-extractor-56892] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\javax\persistence\Id.members\Id.members#52.0-1503305948000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\javax\persistence\Id.members\Id.members#52.0-1564736392000-java.trap.gz exists
+[2026-06-30 11:45:00] [javac-extractor-56892] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\javax\persistence\Entity.members\Entity.members#52.0-1503305948000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\javax\persistence\Entity.members\Entity.members#52.0-1564736392000-java.trap.gz exists
+[2026-06-30 11:45:00] [javac-extractor-56892] Processing file C:\train-ticket-master\ts-notification-service\src\main\java\notification\entity\Mail.java
+[2026-06-30 11:45:00] [javac-extractor-56892] Processing file C:\train-ticket-master\ts-notification-service\src\main\java\notification\config\EmailConfig.java
+[2026-06-30 11:45:00] [javac-extractor-56892] Processing file C:\train-ticket-master\ts-notification-service\src\main\java\notification\config\EmailProperties.java
+[2026-06-30 11:45:00] [javac-extractor-56892] Processing file C:\train-ticket-master\ts-notification-service\src\main\java\notification\mq\RabbitSend.java
+[2026-06-30 11:45:00] [javac-extractor-56892] Processing file C:\train-ticket-master\ts-notification-service\src\main\java\notification\service\NotificationService.java
+[2026-06-30 11:45:00] [javac-extractor-56892] Processing file C:\train-ticket-master\ts-notification-service\src\main\java\notification\service\NotificationServiceImpl.java
+[2026-06-30 11:45:01] [javac-extractor-56892] Processing file C:\train-ticket-master\ts-notification-service\src\main\java\notification\NotificationApplication.java
+[2026-06-30 11:45:01] [javac-extractor-56892] Processing file C:\train-ticket-master\ts-notification-service\src\main\java\notification\controller\NotificationController.java
+[2026-06-30 11:45:01] [javac-extractor-56892] Javac init time: 8.4s
+[2026-06-30 11:45:01] [javac-extractor-56892] Javac attr time: 0.3s
+[2026-06-30 11:45:01] [javac-extractor-56892] Extractor time: 6.5s
+[2026-06-30 11:45:01] [javac-extractor-56892] Other time: 0.5s
+[2026-06-30 11:45:01] [javac-extractor-56892] Total time: 15.7s

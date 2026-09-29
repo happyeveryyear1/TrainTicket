@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Train Ticket · 代码级服务调用分析</title>
+<style>
+:root{--bg:#0b1220;--panel:#111c33;--line:#22304d;--txt:#dbe6f6;--muted:#8fa3c2;--accent:#22d3ee;--link:#7dd3fc}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#0b1220,#0f172a);color:var(--txt);font:15px/1.6 "Segoe UI",system-ui,"Microsoft YaHei",sans-serif}
+header{padding:26px 30px 8px}
+h1{margin:0 0 6px;font-size:22px}
+.meta{color:var(--muted);font-size:13px}
+.wrap{padding:8px 30px 50px;max-width:1100px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin:16px 0}
+.panel h2{margin:0 0 12px;font-size:16px;color:var(--accent)}
+ul{margin:0;padding-left:20px}
+li{margin:6px 0}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+.tag{display:inline-block;font-size:11px;color:#0b1220;background:var(--accent);border-radius:4px;padding:0 6px;margin-left:8px;vertical-align:middle}
+small{color:var(--muted)}
+code{background:#0b1220;border:1px solid var(--line);border-radius:5px;padding:1px 5px;font-size:13px}
+</style></head><body>
+<header>
+<h1>Train Ticket · 代码级服务调用分析</h1>
+<div class="meta">46 个可运行服务 · 27 个调用方 · 92 条同步调用 · 5 条 RabbitMQ 异步边 · 证据：<code>getServiceUrl("ts-…")</code> + 队列名匹配</div>
+</header>
+<div class="wrap">
+
+<div class="panel">
+<h2>总览</h2>
+<ul>
+<li><a href="train-ticket-runtime-v2.html">运行时架构（50 组件 · 多主路径 · 信任边界）</a><span class="tag">本次</span></li>
+<li><a href="train-ticket-call-atlas.html">服务调用总图（章节导航）</a> — 一个页面内切换：矩阵 + 12 张分组调用图 + 总览图</li>
+<li><a href="train-ticket-call-matrix.html">服务调用矩阵（完整）</a> — 调用方 × 被调方，含每条边的调用点数量；覆盖全部 92+5 条边</li>
+<li><a href="train-ticket-call-graph-master.html">服务调用总览图</a> — 单张 archify 图 + 5 个章节（渲染子集 25/97 条）</li>
+<li><a href="train-ticket-runtime.html">高层运行时架构</a> — 订票主链路 + 信任边界（12 节点）</li>
+<li><a href="train-ticket-service-map.html">全网服务地图</a> — 46 个服务按域分组</li>
+</ul>
+</div>
+
+<div class="panel">
+<h2>分组调用关系图（左=调用方 · 右=被调方 · 实线=同步 · 虚线=异步）</h2>
+<ul>
+<li><a href="train-ticket-calls-booking-preserve.html">订票编排</a> — ts-preserve / ts-preserve-other → 14 个下游</li>
+<li><a href="train-ticket-calls-after-sales.html">改签 / 取消 / 代金券</a> — ts-rebook / ts-cancel / ts-voucher</li>
+<li><a href="train-ticket-calls-admin.html">管理后台</a> — 5 个 ts-admin-* → 票务核心</li>
+<li><a href="train-ticket-calls-domain-core.html">出行域核心</a> — ts-travel / ts-travel2 / ts-wait-order</li>
+<li><a href="train-ticket-calls-seat-basic.html">座位与基础信息</a> — ts-seat / ts-basic</li>
+<li><a href="train-ticket-calls-payment-security.html">支付、安全、执行</a> — inside-payment / security / execute</li>
+<li><a href="train-ticket-calls-dining.html">餐饮与托运</a> — food / food-delivery / consign</li>
+<li><a href="train-ticket-calls-planning.html">行程规划</a> — ts-travel-plan</li>
+<li><a href="train-ticket-calls-route-planning.html">路线规划</a> — ts-route-plan</li>
+<li><a href="train-ticket-calls-order-store.html">订单落库</a> — order / order-other → station</li>
+<li><a href="train-ticket-calls-identity-user.html">账户 → 认证</a> — ts-user → ts-auth</li>
+<li><a href="train-ticket-calls-identity-auth.html">认证 → 验证码</a> — ts-auth → ts-verification-code</li>
+</ul>
+</div>
+
+<div class="panel">
+<h2>方法与限制</h2>
+<ul>
+<li>提取规则：<code>getServiceUrl("ts-…")</code> 调用点；Python 服务直连 URL；RabbitMQ 队列 <code>email</code>/<code>food_delivery</code>。</li>
+<li>网关的 38 条 Path 路由写在 YAML 而非代码，未计入调用边（见服务地图）。</li>
+<li><code>ts-avatar</code> / <code>ts-news</code> / <code>ts-ticket-office</code> 未发现跨服务调用。</li>
+<li>archify 的架构渲染器不接受重复节点 ID，且会拒绝穿越节点的正交连线，因此 92 条边无法忠实渲染为单张图；完整关系以矩阵呈现，分组图给出可视化。</li>
+</ul>
+</div>
+
+</div></body></html>

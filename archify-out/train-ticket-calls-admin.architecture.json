@@ -1,0 +1,330 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Train Ticket 服务调用关系 · admin（左=调用方 · 右=被调方 · 实线=同步 · 虚线=异步）",
+    "locale": "zh-CN",
+    "quality_profile": "standard",
+    "viewBox": [
+      1565,
+      626
+    ]
+  },
+  "components": [
+    {
+      "id": "ts-admin-basic-info-service",
+      "type": "backend",
+      "label": "ts-admin-basic-info-service",
+      "pos": [
+        48,
+        230
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-admin-order-service",
+      "type": "backend",
+      "label": "ts-admin-order-service",
+      "pos": [
+        48,
+        276
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-admin-route-service",
+      "type": "backend",
+      "label": "ts-admin-route-service",
+      "pos": [
+        48,
+        322
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-admin-travel-service",
+      "type": "backend",
+      "label": "ts-admin-travel-service",
+      "pos": [
+        48,
+        368
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-admin-user-service",
+      "type": "backend",
+      "label": "ts-admin-user-service",
+      "pos": [
+        48,
+        414
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-config-service",
+      "type": "backend",
+      "label": "ts-config-service",
+      "pos": [
+        1327,
+        92
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-contacts-service",
+      "type": "backend",
+      "label": "ts-contacts-service",
+      "pos": [
+        1327,
+        138
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-order-other-service",
+      "type": "backend",
+      "label": "ts-order-other-service",
+      "pos": [
+        1327,
+        184
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-order-service",
+      "type": "backend",
+      "label": "ts-order-service",
+      "pos": [
+        1327,
+        230
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-price-service",
+      "type": "backend",
+      "label": "ts-price-service",
+      "pos": [
+        1327,
+        276
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-route-service",
+      "type": "backend",
+      "label": "ts-route-service",
+      "pos": [
+        1327,
+        322
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-station-service",
+      "type": "backend",
+      "label": "ts-station-service",
+      "pos": [
+        1327,
+        368
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-train-service",
+      "type": "backend",
+      "label": "ts-train-service",
+      "pos": [
+        1327,
+        414
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-travel-service",
+      "type": "backend",
+      "label": "ts-travel-service",
+      "pos": [
+        1327,
+        460
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-travel2-service",
+      "type": "backend",
+      "label": "ts-travel2-service",
+      "pos": [
+        1327,
+        506
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-user-service",
+      "type": "backend",
+      "label": "ts-user-service",
+      "pos": [
+        1327,
+        552
+      ],
+      "size": [
+        190,
+        34
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "e0",
+      "from": "ts-admin-basic-info-service",
+      "to": "ts-contacts-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e1",
+      "from": "ts-admin-basic-info-service",
+      "to": "ts-station-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "from": "ts-admin-basic-info-service",
+      "to": "ts-train-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e3",
+      "from": "ts-admin-basic-info-service",
+      "to": "ts-config-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e4",
+      "from": "ts-admin-basic-info-service",
+      "to": "ts-price-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e5",
+      "from": "ts-admin-order-service",
+      "to": "ts-order-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e6",
+      "from": "ts-admin-order-service",
+      "to": "ts-order-other-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e7",
+      "from": "ts-admin-route-service",
+      "to": "ts-route-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e8",
+      "from": "ts-admin-route-service",
+      "to": "ts-station-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e9",
+      "from": "ts-admin-travel-service",
+      "to": "ts-travel-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e10",
+      "from": "ts-admin-travel-service",
+      "to": "ts-travel2-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e11",
+      "from": "ts-admin-travel-service",
+      "to": "ts-station-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e12",
+      "from": "ts-admin-travel-service",
+      "to": "ts-train-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e13",
+      "from": "ts-admin-travel-service",
+      "to": "ts-route-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e14",
+      "from": "ts-admin-user-service",
+      "to": "ts-user-service",
+      "fromSide": "right",
+      "toSide": "left"
+    }
+  ]
+}

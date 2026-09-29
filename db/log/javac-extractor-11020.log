@@ -1,0 +1,22 @@
+[2026-06-30 11:58:17] [javac-extractor-11020] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-68.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 11:58:17] [javac-extractor-11020] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-68.trap.gz
+[2026-06-30 11:58:17] [javac-extractor-11020] [WARN] Appending source destination directory C:\train-ticket-master\ts-admin-user-service\target\generated-test-sources\test-annotations to sourcepath
+[2026-06-30 11:58:25] [javac-extractor-11020] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 11:58:26] [javac-extractor-11020] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 11:58:26] [javac-extractor-11020] Processing file C:\train-ticket-master\ts-admin-user-service\src\test\java\adminuser\service\AdminUserServiceImplTest.java
+[2026-06-30 11:58:26] [javac-extractor-11020] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\adminuser\dto\UserDto.members\UserDto.members#52.0-1782791879084-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\adminuser\dto\UserDto.members\UserDto.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:58:26] [javac-extractor-11020] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\User.members\User.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\User.members\User.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:58:26] [javac-extractor-11020] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:58:26] [javac-extractor-11020] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\adminuser\service\AdminUserServiceImpl.members\AdminUserServiceImpl.members#52.0-1782791879120-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\adminuser\service\AdminUserServiceImpl.members\AdminUserServiceImpl.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:58:27] [javac-extractor-11020] Processing file C:\train-ticket-master\ts-admin-user-service\src\test\java\adminuser\controller\AdminUserControllerTest.java
+[2026-06-30 11:58:27] [javac-extractor-11020] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\adminuser\dto\UserDto.members\UserDto.members#52.0-1782791879084-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\adminuser\dto\UserDto.members\UserDto.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:58:27] [javac-extractor-11020] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\adminuser\service\AdminUserService.members\AdminUserService.members#52.0-1782791879094-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\adminuser\service\AdminUserService.members\AdminUserService.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:58:27] [javac-extractor-11020] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:58:27] [javac-extractor-11020] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\adminuser\controller\AdminUserController.members\AdminUserController.members#52.0-1782791879090-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\adminuser\controller\AdminUserController.members\AdminUserController.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:58:27] [javac-extractor-11020] Javac init time: 7.9s
+[2026-06-30 11:58:27] [javac-extractor-11020] Javac attr time: 0.3s
+[2026-06-30 11:58:27] [javac-extractor-11020] Extractor time: 0.7s
+[2026-06-30 11:58:27] [javac-extractor-11020] Other time: 0.4s
+[2026-06-30 11:58:27] [javac-extractor-11020] Total time: 9.4s

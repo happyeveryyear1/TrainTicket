@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Train Ticket 服务调用关系 · domain-core（左=调用方 · 右=被调方 · 实线=同步 · 虚线=异步）",
+    "locale": "zh-CN",
+    "quality_profile": "standard",
+    "viewBox": [
+      940,
+      350
+    ]
+  },
+  "components": [
+    {
+      "id": "ts-travel-service",
+      "type": "backend",
+      "label": "ts-travel-service",
+      "pos": [
+        48,
+        138
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-travel2-service",
+      "type": "backend",
+      "label": "ts-travel2-service",
+      "pos": [
+        48,
+        184
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-wait-order-service",
+      "type": "backend",
+      "label": "ts-wait-order-service",
+      "pos": [
+        48,
+        230
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-basic-service",
+      "type": "backend",
+      "label": "ts-basic-service",
+      "pos": [
+        702,
+        92
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-preserve-service",
+      "type": "backend",
+      "label": "ts-preserve-service",
+      "pos": [
+        702,
+        138
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-route-service",
+      "type": "backend",
+      "label": "ts-route-service",
+      "pos": [
+        702,
+        184
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-seat-service",
+      "type": "backend",
+      "label": "ts-seat-service",
+      "pos": [
+        702,
+        230
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-train-service",
+      "type": "backend",
+      "label": "ts-train-service",
+      "pos": [
+        702,
+        276
+      ],
+      "size": [
+        190,
+        34
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "e0",
+      "from": "ts-travel-service",
+      "to": "ts-basic-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e1",
+      "from": "ts-travel-service",
+      "to": "ts-train-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "from": "ts-travel-service",
+      "to": "ts-route-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e3",
+      "from": "ts-travel-service",
+      "to": "ts-seat-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e4",
+      "from": "ts-travel2-service",
+      "to": "ts-basic-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e5",
+      "from": "ts-travel2-service",
+      "to": "ts-train-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e6",
+      "from": "ts-travel2-service",
+      "to": "ts-route-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e7",
+      "from": "ts-travel2-service",
+      "to": "ts-seat-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e8",
+      "from": "ts-wait-order-service",
+      "to": "ts-preserve-service",
+      "fromSide": "right",
+      "toSide": "left"
+    }
+  ]
+}

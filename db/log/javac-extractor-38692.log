@@ -1,0 +1,24 @@
+[2026-06-30 11:55:36] [javac-extractor-38692] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-59.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 11:55:36] [javac-extractor-38692] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-59.trap.gz
+[2026-06-30 11:55:36] [javac-extractor-38692] [WARN] Appending source destination directory C:\train-ticket-master\ts-admin-order-service\target\generated-sources\annotations to sourcepath
+[2026-06-30 11:55:43] [javac-extractor-38692] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 11:55:43] [javac-extractor-38692] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 11:55:44] [javac-extractor-38692] Processing file C:\train-ticket-master\ts-admin-order-service\src\main\java\adminorder\service\AdminOrderServiceImpl.java
+[2026-06-30 11:55:44] [javac-extractor-38692] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:55:44] [javac-extractor-38692] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Order.members\Order.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Order.members\Order.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:55:44] [javac-extractor-38692] Processing file C:\train-ticket-master\ts-admin-order-service\src\main\java\adminorder\service\AdminOrderService.java
+[2026-06-30 11:55:44] [javac-extractor-38692] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:55:44] [javac-extractor-38692] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Order.members\Order.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Order.members\Order.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:55:44] [javac-extractor-38692] Processing file C:\train-ticket-master\ts-admin-order-service\src\main\java\adminorder\controller\AdminOrderController.java
+[2026-06-30 11:55:44] [javac-extractor-38692] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:55:44] [javac-extractor-38692] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Order.members\Order.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Order.members\Order.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:55:44] [javac-extractor-38692] Processing file C:\train-ticket-master\ts-admin-order-service\src\main\java\adminorder\AdminOrderApplication.java
+[2026-06-30 11:55:45] [javac-extractor-38692] Processing file C:\train-ticket-master\ts-admin-order-service\src\main\java\adminorder\config\SecurityConfig.java
+[2026-06-30 11:55:45] [javac-extractor-38692] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:55:45] [javac-extractor-38692] Javac init time: 6.8s
+[2026-06-30 11:55:45] [javac-extractor-38692] Javac attr time: 0.3s
+[2026-06-30 11:55:45] [javac-extractor-38692] Extractor time: 1.4s
+[2026-06-30 11:55:45] [javac-extractor-38692] Other time: 0.4s
+[2026-06-30 11:55:45] [javac-extractor-38692] Total time: 8.9s

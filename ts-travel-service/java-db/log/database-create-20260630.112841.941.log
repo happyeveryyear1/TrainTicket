@@ -1,0 +1,443 @@
+[2026-06-30 11:28:41] This is codeql database create java-db --language=java
+[2026-06-30 11:28:41] Log file was started late.
+[2026-06-30 11:28:41] [PROGRESS] database create> Initializing database at C:\train-ticket-master\ts-travel-service\java-db.
+[2026-06-30 11:28:42] Running plumbing command: codeql database init --language=java --extractor-options-verbosity=1 --qlconfig-file=C:\train-ticket-master\ts-travel-service\qlconfig.yml --source-root=C:\train-ticket-master\ts-travel-service --allow-missing-source-root=false --allow-already-existing -- C:\train-ticket-master\ts-travel-service\java-db
+[2026-06-30 11:28:42] Calling plumbing command: codeql resolve languages --extractor-options-verbosity=1 --format=betterjson
+[2026-06-30 11:28:42] [DETAILS] resolve languages> Scanning for [codeql-extractor.yml] from C:\Code Static Analysis\codeql\.codeqlmanifest.json
+[2026-06-30 11:28:42] [DETAILS] resolve languages> Parsing C:\Code Static Analysis\codeql\actions\codeql-extractor.yml.
+[2026-06-30 11:28:42] [DETAILS] resolve languages> Parsing C:\Code Static Analysis\codeql\cpp\codeql-extractor.yml.
+[2026-06-30 11:28:42] [DETAILS] resolve languages> Parsing C:\Code Static Analysis\codeql\csharp\codeql-extractor.yml.
+[2026-06-30 11:28:42] [DETAILS] resolve languages> Parsing C:\Code Static Analysis\codeql\csv\codeql-extractor.yml.
+[2026-06-30 11:28:42] [DETAILS] resolve languages> Parsing C:\Code Static Analysis\codeql\go\codeql-extractor.yml.
+[2026-06-30 11:28:42] [DETAILS] resolve languages> Parsing C:\Code Static Analysis\codeql\html\codeql-extractor.yml.
+[2026-06-30 11:28:42] [DETAILS] resolve languages> Parsing C:\Code Static Analysis\codeql\java\codeql-extractor.yml.
+[2026-06-30 11:28:42] [DETAILS] resolve languages> Parsing C:\Code Static Analysis\codeql\javascript\codeql-extractor.yml.
+[2026-06-30 11:28:42] [DETAILS] resolve languages> Parsing C:\Code Static Analysis\codeql\properties\codeql-extractor.yml.
+[2026-06-30 11:28:42] [DETAILS] resolve languages> Parsing C:\Code Static Analysis\codeql\python\codeql-extractor.yml.
+[2026-06-30 11:28:42] [DETAILS] resolve languages> Parsing C:\Code Static Analysis\codeql\ruby\codeql-extractor.yml.
+[2026-06-30 11:28:42] [DETAILS] resolve languages> Parsing C:\Code Static Analysis\codeql\rust\codeql-extractor.yml.
+[2026-06-30 11:28:42] [DETAILS] resolve languages> Parsing C:\Code Static Analysis\codeql\swift\codeql-extractor.yml.
+[2026-06-30 11:28:42] [DETAILS] resolve languages> Parsing C:\Code Static Analysis\codeql\xml\codeql-extractor.yml.
+[2026-06-30 11:28:42] [DETAILS] resolve languages> Parsing C:\Code Static Analysis\codeql\yaml\codeql-extractor.yml.
+[2026-06-30 11:28:43] Plumbing command codeql resolve languages completed:
+                      {
+                        "aliases" : {
+                          "c" : "cpp",
+                          "c++" : "cpp",
+                          "c-c++" : "cpp",
+                          "c-cpp" : "cpp",
+                          "c#" : "csharp",
+                          "java-kotlin" : "java",
+                          "kotlin" : "java",
+                          "javascript-typescript" : "javascript",
+                          "typescript" : "javascript"
+                        },
+                        "extractors" : {
+                          "actions" : [
+                            {
+                              "extractor_root" : "C:\\Code Static Analysis\\codeql\\actions",
+                              "extractor_options" : { }
+                            }
+                          ],
+                          "cpp" : [
+                            {
+                              "extractor_root" : "C:\\Code Static Analysis\\codeql\\cpp",
+                              "extractor_options" : {
+                                "scale_timeouts" : {
+                                  "title" : "Value to scale compiler introspection timeouts with",
+                                  "description" : "The extractor attempts to determine what compiler the source code being extracted is compiled with. To this end the extractor makes additional calls to the compiler, some of which are expected to return within a certain fixed time (either 10s or 15s). On some systems that are under high load this time might be too short, and can be scaled up using this option.\n",
+                                  "type" : "string",
+                                  "pattern" : "[0-9]+"
+                                },
+                                "log_verbosity" : {
+                                  "title" : "Verbosity of the extractor logging",
+                                  "description" : "Set the verbosity of the extractor logging to 'quiet' (0), 'normal' (1), 'chatty' (2), or 'noisy' (3). The default is 'normal'.\n",
+                                  "type" : "string",
+                                  "pattern" : "[0-3]"
+                                }
+                              }
+                            }
+                          ],
+                          "csharp" : [
+                            {
+                              "extractor_root" : "C:\\Code Static Analysis\\codeql\\csharp",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'brotli' (the default, to write brotli-compressed TRAP), 'gzip', and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip|brotli)$"
+                                    }
+                                  }
+                                },
+                                "buildless" : {
+                                  "title" : "DEPRECATED - Whether to use buildless (standalone) extraction.",
+                                  "description" : "DEPRECATED: Use `--build-mode none` instead.\nA value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "logging" : {
+                                  "title" : "Options pertaining to logging.",
+                                  "description" : "Options pertaining to logging.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "verbosity" : {
+                                      "title" : "Extractor logging verbosity level.",
+                                      "description" : "Controls the level of verbosity of the extractor. The supported levels are (in order of increasing verbosity):\n  - off\n  - errors\n  - warnings\n  - info or progress\n  - debug or progress+\n  - trace or progress++\n  - progress+++\n",
+                                      "type" : "string",
+                                      "pattern" : "^(off|errors|warnings|(info|progress)|(debug|progress\\+)|(trace|progress\\+\\+)|progress\\+\\+\\+)$"
+                                    }
+                                  }
+                                },
+                                "binlog" : {
+                                  "title" : "Binlog",
+                                  "description" : "[EXPERIMENTAL] The value is a path to the MsBuild binary log file that should be extracted. This option only works when `--build-mode none` is also specified.\n",
+                                  "type" : "array"
+                                }
+                              }
+                            }
+                          ],
+                          "csv" : [
+                            {
+                              "extractor_root" : "C:\\Code Static Analysis\\codeql\\csv"
+                            }
+                          ],
+                          "go" : [
+                            {
+                              "extractor_root" : "C:\\Code Static Analysis\\codeql\\go",
+                              "extractor_options" : {
+                                "extract_tests" : {
+                                  "title" : "Whether to include Go test files in the CodeQL database.",
+                                  "description" : "A value indicating whether Go test files should be included in the CodeQL database. The default is 'false'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "extract_vendor_dirs" : {
+                                  "title" : "Whether to include Go vendor directories in the CodeQL database.",
+                                  "description" : "A value indicating whether Go vendor directories should be included in the CodeQL database. The default is 'false'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "html" : [
+                            {
+                              "extractor_root" : "C:\\Code Static Analysis\\codeql\\html"
+                            }
+                          ],
+                          "java" : [
+                            {
+                              "extractor_root" : "C:\\Code Static Analysis\\codeql\\java",
+                              "extractor_options" : {
+                                "exclude" : {
+                                  "title" : "A glob excluding files from analysis.",
+                                  "description" : "A glob indicating what files to exclude from the analysis. This accepts glob patterns that are supported by Java's 'getPathMatcher' implementation.\n",
+                                  "type" : "string"
+                                },
+                                "add_prefer_source" : {
+                                  "title" : "Whether to always prefer source files over class files.",
+                                  "description" : "A value indicating whether source files should be preferred over class files. If set to 'true', the extraction adds '-Xprefer:source' to the javac command line. If set to 'false', the extraction uses the default javac behavior ('-Xprefer:newer'). The default is 'true'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "buildless" : {
+                                  "title" : "Whether to use buildless (standalone) extraction (experimental).",
+                                  "description" : "A value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "buildless_dependency_dir" : {
+                                  "title" : "The path where buildless (standalone) extraction should keep dependencies.",
+                                  "description" : "If set, the buildless (standalone) extractor will store dependencies in this directory.\n",
+                                  "type" : "string"
+                                },
+                                "minimize_dependency_jars" : {
+                                  "title" : "Whether to rewrite and minimize downloaded JAR dependencies (experimental).",
+                                  "description" : "If 'true', JAR dependencies downloaded during extraction will be rewritten to remove unneeded data, such as method bodies. The default is 'false'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "javascript" : [
+                            {
+                              "extractor_root" : "C:\\Code Static Analysis\\codeql\\javascript",
+                              "extractor_options" : {
+                                "skip_types" : {
+                                  "title" : "Skip type extraction for TypeScript",
+                                  "description" : "Whether to skip the extraction of types in a TypeScript application",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "properties" : [
+                            {
+                              "extractor_root" : "C:\\Code Static Analysis\\codeql\\properties"
+                            }
+                          ],
+                          "python" : [
+                            {
+                              "extractor_root" : "C:\\Code Static Analysis\\codeql\\python",
+                              "extractor_options" : {
+                                "logging" : {
+                                  "title" : "Options pertaining to logging.",
+                                  "description" : "Options pertaining to logging.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "verbosity" : {
+                                      "title" : "Python extractor logging verbosity level.",
+                                      "description" : "Controls the level of verbosity of the CodeQL Python extractor.\nThe supported levels are (in order of increasing verbosity):\n\n  - off\n  - errors\n  - warnings\n  - info or progress\n  - debug or progress+\n  - trace or progress++\n  - progress+++\n",
+                                      "type" : "string",
+                                      "pattern" : "^(off|errors|warnings|(info|progress)|(debug|progress\\+)|(trace|progress\\+\\+)|progress\\+\\+\\+)$"
+                                    }
+                                  }
+                                },
+                                "python_executable_name" : {
+                                  "title" : "Controls the name of the Python executable used by the Python extractor.",
+                                  "description" : "The Python extractor uses platform-dependent heuristics to determine the name of the Python executable to use. Specifying a value for this option overrides the name of the Python executable used by the extractor. Accepted values are py, python and python3. Use this setting with caution, the Python extractor requires Python 3 to run.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(py|python|python3)$"
+                                }
+                              }
+                            }
+                          ],
+                          "ruby" : [
+                            {
+                              "extractor_root" : "C:\\Code Static Analysis\\codeql\\ruby",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'gzip' (the default, to write gzip-compressed TRAP) 'zstd' (to write Zstandard-compressed TRAP) and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip|zstd)$"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ],
+                          "rust" : [
+                            {
+                              "extractor_root" : "C:\\Code Static Analysis\\codeql\\rust",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'gzip' (to write gzip-compressed TRAP) 'zstd' (to write Zstandard-compressed TRAP) and 'none' (the default, to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip|zstd)$"
+                                    }
+                                  }
+                                },
+                                "cargo_target_dir" : {
+                                  "title" : "Directory to use for cargo output files.",
+                                  "description" : "This value is an optional path to use as `CARGO_TARGET_DIR` for the internal cargo commands the extractor uses. Pointing it to a persistent directory may reduce execution time of consecutive extractor runs. By default, a new scratch directory is used for each run.\n",
+                                  "type" : "string"
+                                },
+                                "cargo_target" : {
+                                  "title" : "Target architecture",
+                                  "description" : "Target architecture to use for analysis, analogous to `cargo --target`. By default the host architecture is used.\n",
+                                  "type" : "string"
+                                },
+                                "cargo_features" : {
+                                  "title" : "Cargo features to turn on",
+                                  "description" : "Comma-separated list of features to turn on. By default all features are enabled. If any features are specified, then only those features are enabled. The `default` feature must be explicitly specified if only default features are desired. Can be repeated.\n",
+                                  "type" : "array"
+                                },
+                                "cargo_cfg_overrides" : {
+                                  "title" : "Cargo cfg overrides",
+                                  "description" : "Comma-separated list of cfg settings to enable, or disable if prefixed with `-`. Can be repeated.\n",
+                                  "type" : "array"
+                                },
+                                "logging" : {
+                                  "title" : "Options pertaining to logging.",
+                                  "description" : "Options pertaining to logging.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "verbosity" : {
+                                      "title" : "Extractor logging verbosity level.",
+                                      "description" : "Controls the level of verbosity of the extractor. The supported levels are (in order of increasing verbosity):\n  - off\n  - errors\n  - warnings\n  - info or progress\n  - debug or progress+\n  - trace or progress++\n  - progress+++\n",
+                                      "type" : "string",
+                                      "pattern" : "^(off|errors|warnings|(info|progress)|(debug|progress\\+)|(trace|progress\\+\\+)|progress\\+\\+\\+)$"
+                                    },
+                                    "flamegraph" : {
+                                      "title" : "[Experimental] File path for write flame graph log",
+                                      "description" : "Collect flame graph data using the `tracing-flame` crate. To render a flame graph or chart, run the `inferno-flamegraph` command. See also: https://crates.io/crates/tracing-flame\n",
+                                      "type" : "string"
+                                    }
+                                  }
+                                },
+                                "skip_path_resolution" : {
+                                  "title" : "Skip path resolution",
+                                  "description" : "Skip path resolution. This is experimental, while we move path resolution from the extractor to the QL library.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "extract_dependencies_as_source" : {
+                                  "title" : "Extract dependencies as source code",
+                                  "description" : "Extract the full source code of dependencies instead of only extracting signatures.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "swift" : [
+                            {
+                              "extractor_root" : "C:\\Code Static Analysis\\codeql\\swift"
+                            }
+                          ],
+                          "xml" : [
+                            {
+                              "extractor_root" : "C:\\Code Static Analysis\\codeql\\xml"
+                            }
+                          ],
+                          "yaml" : [
+                            {
+                              "extractor_root" : "C:\\Code Static Analysis\\codeql\\yaml"
+                            }
+                          ]
+                        }
+                      }
+[2026-06-30 11:28:43] [PROGRESS] database init> Calculating baseline information in C:\train-ticket-master\ts-travel-service
+[2026-06-30 11:28:43] [SPAMMY] database init> Ignoring the following directories when processing baseline information: .git, .hg, .svn.
+[2026-06-30 11:28:43] [DETAILS] database init> Running command in C:\train-ticket-master\ts-travel-service: C:\Code Static Analysis\codeql\tools\win64\scc.exe --by-file --exclude-dir .git,.hg,.svn --format json --no-large --no-min .
+[2026-06-30 11:28:43] [SPAMMY] database init> Found 13 baseline files for java.
+[2026-06-30 11:28:43] [PROGRESS] database init> Calculated baseline information for languages: java (268ms).
+[2026-06-30 11:28:43] [PROGRESS] database init> Resolving extractor java.
+[2026-06-30 11:28:43] [DETAILS] database init> Found candidate extractor root for java: C:\Code Static Analysis\codeql\java.
+[2026-06-30 11:28:43] [PROGRESS] database init> Successfully loaded extractor Java/Kotlin (java) from C:\Code Static Analysis\codeql\java.
+[2026-06-30 11:28:43] [PROGRESS] database init> Created skeleton CodeQL database at C:\train-ticket-master\ts-travel-service\java-db. This in-progress database is ready to be populated by an extractor.
+[2026-06-30 11:28:43] Plumbing command codeql database init completed.
+[2026-06-30 11:28:43] Using autobuild script C:\Code Static Analysis\codeql\java\tools\autobuild.cmd.
+[2026-06-30 11:28:43] [DETAILS] database create> Detected autobuild command for Java/Kotlin: C:\Code Static Analysis\codeql\java\tools\autobuild.cmd.
+[2026-06-30 11:28:43] [PROGRESS] database create> Running build command: [C:\Code Static Analysis\codeql\java\tools\autobuild.cmd]
+[2026-06-30 11:28:43] Running plumbing command: codeql database trace-command --working-dir=C:\train-ticket-master\ts-travel-service --index-traceless-dbs --no-db-cluster -- C:\train-ticket-master\ts-travel-service\java-db C:\Code Static Analysis\codeql\java\tools\autobuild.cmd
+[2026-06-30 11:28:43] [PROGRESS] database trace-command> Running command in C:\train-ticket-master\ts-travel-service: [C:\Code Static Analysis\codeql\java\tools\autobuild.cmd]
+[2026-06-30 11:28:46] [build-stdout] [2026-06-30 11:28:46] Build directory is .
+[2026-06-30 11:28:46] [build-stdout] [2026-06-30 11:28:46] [autobuild] > C:\train-ticket-master\ts-travel-service\.\mvnw.cmd clean package -f pom.xml -B -V -e -Dfindbugs.skip -Dcheckstyle.skip -Dpmd.skip=true -Dspotbugs.skip -Denforcer.skip -Dmaven.javadoc.skip -DskipTests -Dmaven.test.skip.exec -Dlicense.skip=true -Drat.skip=true -Dspotless.check.skip=true -s C:\Users\侯钰坤\.m2\settings.xml
+[2026-06-30 11:28:48] [build-stdout] [2026-06-30 11:28:48] [autobuild] Apache Maven 3.5.0 (ff8f5e7444045639af65f6095c62210b5713f426; 2017-04-04T03:39:06+08:00)
+[2026-06-30 11:28:48] [build-stdout] [2026-06-30 11:28:48] [autobuild] Maven home: C:\Users\������\.m2\wrapper\dists\apache-maven-3.5.0-bin\6ps54u5pnnbbpr6ds9rppcc7iv\apache-maven-3.5.0
+[2026-06-30 11:28:48] [build-stdout] [2026-06-30 11:28:48] [autobuild] Java version: 17.0.12, vendor: Oracle Corporation
+[2026-06-30 11:28:48] [build-stdout] [2026-06-30 11:28:48] [autobuild] Java home: C:\Program Files\Java\jdk-17
+[2026-06-30 11:28:48] [build-stdout] [2026-06-30 11:28:48] [autobuild] Default locale: zh_CN, platform encoding: GBK
+[2026-06-30 11:28:48] [build-stdout] [2026-06-30 11:28:48] [autobuild] OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
+[2026-06-30 11:28:49] [build-stdout] [2026-06-30 11:28:49] [autobuild] [INFO] Error stacktraces are turned on.
+[2026-06-30 11:28:49] [build-stdout] [2026-06-30 11:28:49] [autobuild] [WARNING] 
+[2026-06-30 11:28:49] [build-stdout] [2026-06-30 11:28:49] [autobuild] [WARNING] Some problems were encountered while building the effective settings
+[2026-06-30 11:28:49] [build-stdout] [2026-06-30 11:28:49] [autobuild] [WARNING] expected START_TAG or END_TAG not TEXT (position: TEXT seen ...</mirrorOf>?\r\n    </... @26:7)  @ C:\Users\������\.m2\settings.xml, line 26, column 7
+[2026-06-30 11:28:49] [build-stdout] [2026-06-30 11:28:49] [autobuild] [WARNING] 
+[2026-06-30 11:28:50] [build-stdout] [2026-06-30 11:28:50] [autobuild] [INFO] Scanning for projects...
+[2026-06-30 11:28:53] [build-stdout] [2026-06-30 11:28:53] [autobuild] [INFO] 
+[2026-06-30 11:28:53] [build-stdout] [2026-06-30 11:28:53] [autobuild] [INFO] ------------------------------------------------------------------------
+[2026-06-30 11:28:53] [build-stdout] [2026-06-30 11:28:53] [autobuild] [INFO] Building ts-travel-service 1.0
+[2026-06-30 11:28:53] [build-stdout] [2026-06-30 11:28:53] [autobuild] [INFO] ------------------------------------------------------------------------
+[2026-06-30 11:28:54] [build-stdout] [2026-06-30 11:28:54] [autobuild] [INFO] Downloading: http://maven.aliyun.com/nexus/content/groups/public/org/services/ts-common/0.1.0/ts-common-0.1.0.pom
+[2026-06-30 11:28:56] [build-stdout] [2026-06-30 11:28:56] [autobuild] [WARNING] The POM for org.services:ts-common:jar:0.1.0 is missing, no dependency information available
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] [INFO] Downloading: http://maven.aliyun.com/nexus/content/groups/public/org/services/ts-common/0.1.0/ts-common-0.1.0.jar
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] [INFO] ------------------------------------------------------------------------
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] [INFO] BUILD FAILURE
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] [INFO] ------------------------------------------------------------------------
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] [INFO] Total time: 9.825 s
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] [INFO] Finished at: 2026-06-30T11:28:59+08:00
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] [INFO] Final Memory: 29M/94M
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] [INFO] ------------------------------------------------------------------------
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] [ERROR] Failed to execute goal on project ts-travel-service: Could not resolve dependencies for project fdse.microservice:ts-travel-service:jar:1.0: Could not find artifact org.services:ts-common:jar:0.1.0 in alimaven (http://maven.aliyun.com/nexus/content/groups/public/) -> [Help 1]
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal on project ts-travel-service: Could not resolve dependencies for project fdse.microservice:ts-travel-service:jar:1.0: Could not find artifact org.services:ts-common:jar:0.1.0 in alimaven (http://maven.aliyun.com/nexus/content/groups/public/)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.lifecycle.internal.LifecycleDependencyResolver.getDependencies(LifecycleDependencyResolver.java:221)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.lifecycle.internal.LifecycleDependencyResolver.resolveProjectDependencies(LifecycleDependencyResolver.java:127)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.lifecycle.internal.MojoExecutor.ensureDependenciesAreResolved(MojoExecutor.java:246)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:200)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:154)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:146)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:309)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:194)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:107)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:993)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:345)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.cli.MavenCli.main(MavenCli.java:191)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:39)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.wrapper.WrapperExecutor.execute(WrapperExecutor.java:122)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.wrapper.MavenWrapperMain.main(MavenWrapperMain.java:50)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] Caused by: org.apache.maven.project.DependencyResolutionException: Could not resolve dependencies for project fdse.microservice:ts-travel-service:jar:1.0: Could not find artifact org.services:ts-common:jar:0.1.0 in alimaven (http://maven.aliyun.com/nexus/content/groups/public/)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.project.DefaultProjectDependenciesResolver.resolve(DefaultProjectDependenciesResolver.java:208)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.lifecycle.internal.LifecycleDependencyResolver.getDependencies(LifecycleDependencyResolver.java:195)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	... 30 more
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] Caused by: org.eclipse.aether.resolution.DependencyResolutionException: Could not find artifact org.services:ts-common:jar:0.1.0 in alimaven (http://maven.aliyun.com/nexus/content/groups/public/)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveDependencies(DefaultRepositorySystem.java:393)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.apache.maven.project.DefaultProjectDependenciesResolver.resolve(DefaultProjectDependenciesResolver.java:202)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	... 31 more
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] Caused by: org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact org.services:ts-common:jar:0.1.0 in alimaven (http://maven.aliyun.com/nexus/content/groups/public/)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:453)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:255)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveDependencies(DefaultRepositorySystem.java:376)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	... 32 more
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find artifact org.services:ts-common:jar:0.1.0 in alimaven (http://maven.aliyun.com/nexus/content/groups/public/)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:48)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:364)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:76)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:590)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:258)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:529)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:430)
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] 	... 34 more
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] [ERROR] 
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] [ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] [ERROR] 
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] [ERROR] For more information about the errors and possible solutions, please read the following articles:
+[2026-06-30 11:28:59] [build-stdout] [2026-06-30 11:28:59] [autobuild] [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+[2026-06-30 11:29:00] [build-stdout] [2026-06-30 11:29:00] [ERROR] Spawned process exited abnormally (code 1; tried to run: [C:\Code Static Analysis\codeql\tools\win64\runner.exe, cmd.exe, /C, type, NUL, &&, C:\train-ticket-master\ts-travel-service\.\mvnw.cmd, clean, package, -f, pom.xml, -B, -V, -e, -Dfindbugs.skip, -Dcheckstyle.skip, -Dpmd.skip=true, -Dspotbugs.skip, -Denforcer.skip, -Dmaven.javadoc.skip, -DskipTests, -Dmaven.test.skip.exec, -Dlicense.skip=true, -Drat.skip=true, -Dspotless.check.skip=true, -s, C:\Users\侯钰坤\.m2\settings.xml])
+[2026-06-30 11:29:00] [ERROR] Spawned process exited abnormally (code 1; tried to run: [C:\Code Static Analysis\codeql\tools\win64\tracer.exe, C:\Code Static Analysis\codeql\tools\win64\runner.exe, cmd.exe, /C, type, NUL, &&, C:\Code Static Analysis\codeql\java\tools\autobuild.cmd])
+[2026-06-30 11:29:00] Exception caught at top level: Exit status 1 from command: [C:\Code Static Analysis\codeql\tools\win64\runner.exe, cmd.exe, /C, type, NUL, &&, C:\Code Static Analysis\codeql\java\tools\autobuild.cmd]
+                      com.semmle.cli2.Commandline.executeAndCheckResult(Commandline.java:170)
+                      com.semmle.cli2.Commandline.runWithoutReturn(Commandline.java:123)
+                      com.semmle.cli2.database.DatabaseProcessCommandCommon.executeSubcommand(DatabaseProcessCommandCommon.java:227)
+                      com.semmle.cli2.database.TraceCommandCommand.executeSubcommand(TraceCommandCommand.java:126)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$5(SubcommandCommon.java:892)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:890)
+                      com.semmle.cli2.picocli.PlumbingRunner.run(PlumbingRunner.java:119)
+                      com.semmle.cli2.picocli.SubcommandCommon.runPlumbingInProcess(SubcommandCommon.java:201)
+                      com.semmle.cli2.database.CreateCommand.executeSubcommand(CreateCommand.java:185)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$5(SubcommandCommon.java:892)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:890)
+                      com.semmle.cli2.picocli.SubcommandCommon.toplevelMain(SubcommandCommon.java:777)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:757)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:238)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:259)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:115)

@@ -1,0 +1,30 @@
+[2026-06-30 11:35:43] [javac-extractor-39060] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-1.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 11:35:43] [javac-extractor-39060] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-1.trap.gz
+[2026-06-30 11:35:43] [javac-extractor-39060] [WARN] Appending source destination directory C:\train-ticket-master\ts-verification-code-service\target\generated-sources\annotations to sourcepath
+[2026-06-30 11:35:51] [javac-extractor-39060] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 11:35:51] [javac-extractor-39060] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 11:35:51] [javac-extractor-39060] Processing file C:\train-ticket-master\ts-verification-code-service\src\main\java\verifycode\util\CookieUtil.java
+[2026-06-30 11:35:51] [javac-extractor-39060] Processing file C:\train-ticket-master\ts-verification-code-service\src\main\java\verifycode\service\impl\VerifyCodeServiceImpl.java
+[2026-06-30 11:35:56] [javac-extractor-39060] Processing JAR file: C:/Maven/LocalRepository/com/google/guava/guava/31.0-jre/guava-31.0-jre.jar
+[2026-06-30 11:35:56] [javac-extractor-39060] Processing JAR file: C:/Maven/LocalRepository/com/google/errorprone/error_prone_annotations/2.7.1/error_prone_annotations-2.7.1.jar
+[2026-06-30 11:35:56] [javac-extractor-39060] Processing JAR file: C:/Maven/LocalRepository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar
+[2026-06-30 11:35:56] [javac-extractor-39060] Processing JAR file: C:/Maven/LocalRepository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar
+[2026-06-30 11:35:56] [javac-extractor-39060] Processing file C:\train-ticket-master\ts-verification-code-service\src\main\java\verifycode\service\VerifyCodeService.java
+[2026-06-30 11:35:56] [javac-extractor-39060] Processing file C:\train-ticket-master\ts-verification-code-service\src\main\java\verifycode\config\SecurityConfig.java
+[2026-06-30 11:35:56] [javac-extractor-39060] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:36:09] [javac-extractor-39060] Processing JAR file: C:/Maven/LocalRepository/org/springframework/security/spring-security-config/5.3.9.RELEASE/spring-security-config-5.3.9.RELEASE.jar
+[2026-06-30 11:36:09] [javac-extractor-39060] Processing JAR file: C:/Maven/LocalRepository/org/springframework/security/spring-security-web/5.3.9.RELEASE/spring-security-web-5.3.9.RELEASE.jar
+[2026-06-30 11:36:09] [javac-extractor-39060] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-aop/5.2.15.RELEASE/spring-aop-5.2.15.RELEASE.jar
+[2026-06-30 11:36:09] [javac-extractor-39060] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-expression/5.2.15.RELEASE/spring-expression-5.2.15.RELEASE.jar
+[2026-06-30 11:36:09] [javac-extractor-39060] Processing file C:\train-ticket-master\ts-verification-code-service\src\main\java\verifycode\controller\VerifyCodeController.java
+[2026-06-30 11:36:10] [javac-extractor-39060] Processing file C:\train-ticket-master\ts-verification-code-service\src\main\java\verifycode\VerifyCodeApplication.java
+[2026-06-30 11:36:13] [javac-extractor-39060] Processing JAR file: C:/Maven/LocalRepository/org/springframework/boot/spring-boot/2.3.12.RELEASE/spring-boot-2.3.12.RELEASE.jar
+[2026-06-30 11:36:13] [javac-extractor-39060] Processing JAR file: C:/Maven/LocalRepository/org/springframework/boot/spring-boot-autoconfigure/2.3.12.RELEASE/spring-boot-autoconfigure-2.3.12.RELEASE.jar
+[2026-06-30 11:36:13] [javac-extractor-39060] Processing JAR file: C:/Maven/LocalRepository/org/springframework/cloud/spring-cloud-commons/2.2.9.RELEASE/spring-cloud-commons-2.2.9.RELEASE.jar
+[2026-06-30 11:36:13] [javac-extractor-39060] Javac init time: 7.3s
+[2026-06-30 11:36:13] [javac-extractor-39060] Javac attr time: 0.2s
+[2026-06-30 11:36:13] [javac-extractor-39060] Extractor time: 21.6s
+[2026-06-30 11:36:13] [javac-extractor-39060] Other time: 0.4s
+[2026-06-30 11:36:13] [javac-extractor-39060] Total time: 29.4s

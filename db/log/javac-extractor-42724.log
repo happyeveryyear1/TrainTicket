@@ -1,0 +1,21 @@
+[2026-06-30 11:55:53] [javac-extractor-42724] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-60.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 11:55:53] [javac-extractor-42724] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-60.trap.gz
+[2026-06-30 11:55:53] [javac-extractor-42724] [WARN] Appending source destination directory C:\train-ticket-master\ts-admin-order-service\target\generated-test-sources\test-annotations to sourcepath
+[2026-06-30 11:56:01] [javac-extractor-42724] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 11:56:01] [javac-extractor-42724] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 11:56:02] [javac-extractor-42724] Processing file C:\train-ticket-master\ts-admin-order-service\src\test\java\adminorder\controller\AdminOrderControllerTest.java
+[2026-06-30 11:56:02] [javac-extractor-42724] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\adminorder\service\AdminOrderService.members\AdminOrderService.members#52.0-1782791735472-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\adminorder\service\AdminOrderService.members\AdminOrderService.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:56:02] [javac-extractor-42724] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:56:02] [javac-extractor-42724] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\adminorder\controller\AdminOrderController.members\AdminOrderController.members#52.0-1782791735477-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\adminorder\controller\AdminOrderController.members\AdminOrderController.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:56:02] [javac-extractor-42724] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Order.members\Order.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Order.members\Order.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:56:02] [javac-extractor-42724] Processing file C:\train-ticket-master\ts-admin-order-service\src\test\java\adminorder\service\AdminOrderServiceImplTest.java
+[2026-06-30 11:56:02] [javac-extractor-42724] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:56:02] [javac-extractor-42724] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\adminorder\service\AdminOrderServiceImpl.members\AdminOrderServiceImpl.members#52.0-1782791735468-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\adminorder\service\AdminOrderServiceImpl.members\AdminOrderServiceImpl.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:56:02] [javac-extractor-42724] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Order.members\Order.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Order.members\Order.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:56:03] [javac-extractor-42724] Javac init time: 8.3s
+[2026-06-30 11:56:03] [javac-extractor-42724] Javac attr time: 0.3s
+[2026-06-30 11:56:03] [javac-extractor-42724] Extractor time: 1.0s
+[2026-06-30 11:56:03] [javac-extractor-42724] Other time: 0.4s
+[2026-06-30 11:56:03] [javac-extractor-42724] Total time: 10.0s

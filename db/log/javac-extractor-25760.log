@@ -1,0 +1,23 @@
+[2026-06-30 11:40:19] [javac-extractor-25760] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-13.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 11:40:19] [javac-extractor-25760] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-13.trap.gz
+[2026-06-30 11:40:19] [javac-extractor-25760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-train-service\src\main\java\train\entity\TrainType.java
+[2026-06-30 11:40:19] [javac-extractor-25760] [WARN] Appending source destination directory C:\train-ticket-master\ts-train-service\target\generated-sources\annotations to sourcepath
+[2026-06-30 11:40:27] [javac-extractor-25760] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 11:40:28] [javac-extractor-25760] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 11:40:28] [javac-extractor-25760] Processing file C:\train-ticket-master\ts-train-service\src\main\java\train\repository\TrainTypeRepository.java
+[2026-06-30 11:40:28] [javac-extractor-25760] Processing file C:\train-ticket-master\ts-train-service\src\main\java\train\entity\TrainType.java
+[2026-06-30 11:40:28] [javac-extractor-25760] Processing file C:\train-ticket-master\ts-train-service\src\main\java\train\init\InitData.java
+[2026-06-30 11:40:28] [javac-extractor-25760] Processing file C:\train-ticket-master\ts-train-service\src\main\java\train\service\TrainService.java
+[2026-06-30 11:40:29] [javac-extractor-25760] Processing file C:\train-ticket-master\ts-train-service\src\main\java\train\service\TrainServiceImpl.java
+[2026-06-30 11:40:29] [javac-extractor-25760] Processing file C:\train-ticket-master\ts-train-service\src\main\java\train\config\SecurityConfig.java
+[2026-06-30 11:40:29] [javac-extractor-25760] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:40:29] [javac-extractor-25760] Processing file C:\train-ticket-master\ts-train-service\src\main\java\train\controller\TrainController.java
+[2026-06-30 11:40:29] [javac-extractor-25760] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:40:30] [javac-extractor-25760] Processing file C:\train-ticket-master\ts-train-service\src\main\java\train\TrainApplication.java
+[2026-06-30 11:40:30] [javac-extractor-25760] Javac init time: 8.6s
+[2026-06-30 11:40:30] [javac-extractor-25760] Javac attr time: 0.2s
+[2026-06-30 11:40:30] [javac-extractor-25760] Extractor time: 1.7s
+[2026-06-30 11:40:30] [javac-extractor-25760] Other time: 0.5s
+[2026-06-30 11:40:30] [javac-extractor-25760] Total time: 10.9s

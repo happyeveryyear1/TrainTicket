@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Train Ticket 服务调用关系 · seat-basic（左=调用方 · 右=被调方 · 实线=同步 · 虚线=异步）",
+    "locale": "zh-CN",
+    "quality_profile": "standard",
+    "viewBox": [
+      1105,
+      442
+    ]
+  },
+  "components": [
+    {
+      "id": "ts-basic-service",
+      "type": "backend",
+      "label": "ts-basic-service",
+      "pos": [
+        48,
+        207
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-seat-service",
+      "type": "backend",
+      "label": "ts-seat-service",
+      "pos": [
+        48,
+        253
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-config-service",
+      "type": "backend",
+      "label": "ts-config-service",
+      "pos": [
+        867,
+        92
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-order-other-service",
+      "type": "backend",
+      "label": "ts-order-other-service",
+      "pos": [
+        867,
+        138
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-order-service",
+      "type": "backend",
+      "label": "ts-order-service",
+      "pos": [
+        867,
+        184
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-price-service",
+      "type": "backend",
+      "label": "ts-price-service",
+      "pos": [
+        867,
+        230
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-route-service",
+      "type": "backend",
+      "label": "ts-route-service",
+      "pos": [
+        867,
+        276
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-station-service",
+      "type": "backend",
+      "label": "ts-station-service",
+      "pos": [
+        867,
+        322
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-train-service",
+      "type": "backend",
+      "label": "ts-train-service",
+      "pos": [
+        867,
+        368
+      ],
+      "size": [
+        190,
+        34
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "e0",
+      "from": "ts-basic-service",
+      "to": "ts-station-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e1",
+      "from": "ts-basic-service",
+      "to": "ts-train-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "from": "ts-basic-service",
+      "to": "ts-route-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e3",
+      "from": "ts-basic-service",
+      "to": "ts-price-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e4",
+      "from": "ts-seat-service",
+      "to": "ts-order-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e5",
+      "from": "ts-seat-service",
+      "to": "ts-order-other-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e6",
+      "from": "ts-seat-service",
+      "to": "ts-config-service",
+      "fromSide": "right",
+      "toSide": "left"
+    }
+  ]
+}

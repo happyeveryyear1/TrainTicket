@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Train Ticket 服务调用关系 · order-store（左=调用方 · 右=被调方 · 实线=同步 · 虚线=异步）",
+    "locale": "zh-CN",
+    "quality_profile": "standard",
+    "viewBox": [
+      940,
+      240
+    ]
+  },
+  "components": [
+    {
+      "id": "ts-order-other-service",
+      "type": "backend",
+      "label": "ts-order-other-service",
+      "pos": [
+        48,
+        92
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-order-service",
+      "type": "backend",
+      "label": "ts-order-service",
+      "pos": [
+        48,
+        138
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-station-service",
+      "type": "backend",
+      "label": "ts-station-service",
+      "pos": [
+        702,
+        115
+      ],
+      "size": [
+        190,
+        34
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "e0",
+      "from": "ts-order-other-service",
+      "to": "ts-station-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e1",
+      "from": "ts-order-service",
+      "to": "ts-station-service",
+      "fromSide": "right",
+      "toSide": "left"
+    }
+  ]
+}

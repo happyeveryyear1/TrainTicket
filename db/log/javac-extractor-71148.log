@@ -1,0 +1,44 @@
+[2026-06-30 11:39:59] [javac-extractor-71148] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-12.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 11:40:00] [javac-extractor-71148] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-12.trap.gz
+[2026-06-30 11:40:00] [javac-extractor-71148] [WARN] Appending source destination directory C:\train-ticket-master\ts-station-service\target\generated-test-sources\test-annotations to sourcepath
+[2026-06-30 11:40:08] [javac-extractor-71148] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 11:40:08] [javac-extractor-71148] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 11:40:09] [javac-extractor-71148] Processing file C:\train-ticket-master\ts-station-service\src\test\java\fdse\microservice\service\StationServiceImplTest.java
+[2026-06-30 11:40:09] [javac-extractor-71148] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:40:09] [javac-extractor-71148] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\fdse\microservice\entity\Station.members\Station.members#52.0-1782790780406-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\fdse\microservice\entity\Station.members\Station.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:40:09] [javac-extractor-71148] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\fdse\microservice\repository\StationRepository.members\StationRepository.members#52.0-1782790780400-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\fdse\microservice\repository\StationRepository.members\StationRepository.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:40:09] [javac-extractor-71148] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\fdse\microservice\service\StationServiceImpl.members\StationServiceImpl.members#52.0-1782790780390-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\fdse\microservice\service\StationServiceImpl.members\StationServiceImpl.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:40:09] [javac-extractor-71148] Processing file C:\train-ticket-master\ts-station-service\src\test\java\fdse\microservice\controller\StationControllerTest.java
+[2026-06-30 11:40:09] [javac-extractor-71148] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:40:09] [javac-extractor-71148] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\fdse\microservice\entity\Station.members\Station.members#52.0-1782790780406-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\fdse\microservice\entity\Station.members\Station.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:40:09] [javac-extractor-71148] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\fdse\microservice\service\StationService.members\StationService.members#52.0-1782790780395-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\fdse\microservice\service\StationService.members\StationService.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:40:10] [javac-extractor-71148] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\fdse\microservice\controller\StationController.members\StationController.members#52.0-1782790780426-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\fdse\microservice\controller\StationController.members\StationController.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:40:10] [javac-extractor-71148] Javac init time: 8.6s
+[2026-06-30 11:40:10] [javac-extractor-71148] Javac attr time: 0.3s
+[2026-06-30 11:40:10] [javac-extractor-71148] Extractor time: 0.9s
+[2026-06-30 11:40:10] [javac-extractor-71148] Other time: 0.4s
+[2026-06-30 11:40:10] [javac-extractor-71148] Total time: 10.2s
+[2026-06-30 12:01:20] [javac-extractor-71148] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-75.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 12:01:20] [javac-extractor-71148] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-75.trap.gz
+[2026-06-30 12:01:20] [javac-extractor-71148] [WARN] Appending source destination directory C:\train-ticket-master\ts-gateway-service\target\generated-sources\annotations to sourcepath
+[2026-06-30 12:01:28] [javac-extractor-71148] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 12:01:28] [javac-extractor-71148] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 12:01:29] [javac-extractor-71148] Processing file C:\train-ticket-master\ts-gateway-service\src\main\java\gateway\GatewayConfiguration.java
+[2026-06-30 12:01:36] [javac-extractor-71148] Processing JAR file: C:/Maven/LocalRepository/io/projectreactor/reactor-core/3.3.17.RELEASE/reactor-core-3.3.17.RELEASE.jar
+[2026-06-30 12:01:36] [javac-extractor-71148] Processing JAR file: C:/Maven/LocalRepository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar
+[2026-06-30 12:01:36] [javac-extractor-71148] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-webflux/5.2.15.RELEASE/spring-webflux-5.2.15.RELEASE.jar
+[2026-06-30 12:01:36] [javac-extractor-71148] Processing JAR file: C:/Maven/LocalRepository/com/alibaba/csp/sentinel-api-gateway-adapter-common/1.8.1/sentinel-api-gateway-adapter-common-1.8.1.jar
+[2026-06-30 12:01:36] [javac-extractor-71148] Processing JAR file: C:/Maven/LocalRepository/com/alibaba/csp/sentinel-core/1.8.1/sentinel-core-1.8.1.jar
+[2026-06-30 12:01:36] [javac-extractor-71148] Processing JAR file: C:/Maven/LocalRepository/com/alibaba/csp/sentinel-spring-cloud-gateway-adapter/1.8.1/sentinel-spring-cloud-gateway-adapter-1.8.1.jar
+[2026-06-30 12:01:36] [javac-extractor-71148] Processing JAR file: C:/Maven/LocalRepository/org/springframework/cloud/spring-cloud-gateway-server/2.2.9.RELEASE/spring-cloud-gateway-server-2.2.9.RELEASE.jar
+[2026-06-30 12:01:36] [javac-extractor-71148] Processing JAR file: C:/Maven/LocalRepository/com/alibaba/csp/sentinel-parameter-flow-control/1.8.1/sentinel-parameter-flow-control-1.8.1.jar
+[2026-06-30 12:01:36] [javac-extractor-71148] Processing file C:\train-ticket-master\ts-gateway-service\src\main\java\gateway\GatewayApplication.java
+[2026-06-30 12:01:36] [javac-extractor-71148] Javac init time: 7.6s
+[2026-06-30 12:01:36] [javac-extractor-71148] Javac attr time: 0.2s
+[2026-06-30 12:01:36] [javac-extractor-71148] Extractor time: 7.5s
+[2026-06-30 12:01:36] [javac-extractor-71148] Other time: 0.4s
+[2026-06-30 12:01:36] [javac-extractor-71148] Total time: 15.8s

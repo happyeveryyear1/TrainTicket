@@ -1,0 +1,23 @@
+[2026-06-30 11:46:48] [javac-extractor-10908] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-33.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 11:46:48] [javac-extractor-10908] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-33.trap.gz
+[2026-06-30 11:46:48] [javac-extractor-10908] [WARN] Appending source destination directory C:\train-ticket-master\ts-execute-service\target\generated-sources\annotations to sourcepath
+[2026-06-30 11:46:55] [javac-extractor-10908] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 11:46:55] [javac-extractor-10908] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 11:46:55] [javac-extractor-10908] Processing file C:\train-ticket-master\ts-execute-service\src\main\java\execute\ExecuteApplication.java
+[2026-06-30 11:46:56] [javac-extractor-10908] Processing file C:\train-ticket-master\ts-execute-service\src\main\java\execute\config\SecurityConfig.java
+[2026-06-30 11:46:56] [javac-extractor-10908] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:46:56] [javac-extractor-10908] Processing file C:\train-ticket-master\ts-execute-service\src\main\java\execute\controller\ExecuteControlller.java
+[2026-06-30 11:46:56] [javac-extractor-10908] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:46:56] [javac-extractor-10908] Processing file C:\train-ticket-master\ts-execute-service\src\main\java\execute\serivce\ExecuteService.java
+[2026-06-30 11:46:56] [javac-extractor-10908] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:46:57] [javac-extractor-10908] Processing file C:\train-ticket-master\ts-execute-service\src\main\java\execute\serivce\ExecuteServiceImpl.java
+[2026-06-30 11:46:57] [javac-extractor-10908] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:46:57] [javac-extractor-10908] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Order.members\Order.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Order.members\Order.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:46:57] [javac-extractor-10908] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\OrderStatus.members\OrderStatus.members#52.0-1782790478000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\OrderStatus.members\OrderStatus.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:46:57] [javac-extractor-10908] Javac init time: 6.8s
+[2026-06-30 11:46:57] [javac-extractor-10908] Javac attr time: 0.2s
+[2026-06-30 11:46:57] [javac-extractor-10908] Extractor time: 1.2s
+[2026-06-30 11:46:57] [javac-extractor-10908] Other time: 0.4s
+[2026-06-30 11:46:57] [javac-extractor-10908] Total time: 8.6s

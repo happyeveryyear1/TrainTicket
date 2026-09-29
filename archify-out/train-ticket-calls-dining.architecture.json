@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Train Ticket 服务调用关系 · dining（左=调用方 · 右=被调方 · 实线=同步 · 虚线=异步）",
+    "locale": "zh-CN",
+    "quality_profile": "standard",
+    "viewBox": [
+      940,
+      350
+    ]
+  },
+  "components": [
+    {
+      "id": "ts-consign-service",
+      "type": "backend",
+      "label": "ts-consign-service",
+      "pos": [
+        48,
+        138
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-food-delivery-service",
+      "type": "backend",
+      "label": "ts-food-delivery-service",
+      "pos": [
+        48,
+        184
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-food-service",
+      "type": "backend",
+      "label": "ts-food-service",
+      "pos": [
+        48,
+        230
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "rabbitmq",
+      "type": "messagebus",
+      "label": "rabbitmq",
+      "pos": [
+        702,
+        92
+      ],
+      "size": [
+        190,
+        34
+      ],
+      "brand": "rabbitmq"
+    },
+    {
+      "id": "ts-consign-price-service",
+      "type": "backend",
+      "label": "ts-consign-price-service",
+      "pos": [
+        702,
+        138
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-station-food-service",
+      "type": "backend",
+      "label": "ts-station-food-service",
+      "pos": [
+        702,
+        184
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-train-food-service",
+      "type": "backend",
+      "label": "ts-train-food-service",
+      "pos": [
+        702,
+        230
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-travel-service",
+      "type": "backend",
+      "label": "ts-travel-service",
+      "pos": [
+        702,
+        276
+      ],
+      "size": [
+        190,
+        34
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "e0",
+      "from": "ts-consign-service",
+      "to": "ts-consign-price-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e1",
+      "from": "ts-food-delivery-service",
+      "to": "ts-station-food-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "from": "ts-food-service",
+      "to": "ts-train-food-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e3",
+      "from": "ts-food-service",
+      "to": "ts-travel-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e4",
+      "from": "ts-food-service",
+      "to": "ts-station-food-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e5",
+      "from": "ts-food-service",
+      "to": "rabbitmq",
+      "fromSide": "right",
+      "toSide": "left",
+      "variant": "dashed"
+    }
+  ]
+}

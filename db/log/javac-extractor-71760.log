@@ -1,0 +1,128 @@
+[2026-06-30 11:34:37] [javac-extractor-71760] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 11:34:37] [javac-extractor-71760] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic.trap.gz
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\RoutePlanResultUnit.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\RoutePlanInfo.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Account.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\TripId.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\TripResponse.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\StationFoodStore.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Travel.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Assurance.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\RouteInfo.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\NotifyInfo.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\LeftTicketInfo.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Trip.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Food.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Order.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\OrderAlterInfo.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Ticket.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\TrainType.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Station.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\TrainFood.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Seat.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\FoodOrder.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\AdminTrip.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Config.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\PaymentDifferenceInfo.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\User.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\PriceConfig.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\TripInfo.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\SoldTicket.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\TripAllDetail.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\util\Response.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\OrderSecurity.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Route.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\TravelInfo.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\VerifyResult.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\TravelResult.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\TripAllDetailInfo.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Consign.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Contacts.java
+[2026-06-30 11:34:37] [javac-extractor-71760] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\OrderTicketsInfo.java
+[2026-06-30 11:34:37] [javac-extractor-71760] [WARN] Appending source destination directory C:\train-ticket-master\ts-common\target\generated-sources\annotations to sourcepath
+[2026-06-30 11:34:46] [javac-extractor-71760] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 11:34:48] [javac-extractor-71760] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 11:34:49] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Gender.java
+[2026-06-30 11:35:02] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\RoutePlanResultUnit.java
+[2026-06-30 11:35:02] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar
+[2026-06-30 11:35:03] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\RoutePlanInfo.java
+[2026-06-30 11:35:03] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Account.java
+[2026-06-30 11:35:03] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\TripId.java
+[2026-06-30 11:35:03] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Type.java
+[2026-06-30 11:35:03] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\TripResponse.java
+[2026-06-30 11:35:03] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar
+[2026-06-30 11:35:04] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\exception\BaseException.java
+[2026-06-30 11:35:04] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\StationFoodStore.java
+[2026-06-30 11:35:04] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar
+[2026-06-30 11:35:04] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Food.java
+[2026-06-30 11:35:04] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Travel.java
+[2026-06-30 11:35:04] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Trip.java
+[2026-06-30 11:35:04] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\security\jwt\JWTUtil.java
+[2026-06-30 11:35:07] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/io/jsonwebtoken/jjwt/0.8.0/jjwt-0.8.0.jar
+[2026-06-30 11:35:07] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar
+[2026-06-30 11:35:07] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/org/springframework/security/spring-security-core/5.3.9.RELEASE/spring-security-core-5.3.9.RELEASE.jar
+[2026-06-30 11:35:07] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/org/apache/tomcat/embed/tomcat-embed-core/9.0.46/tomcat-embed-core-9.0.46.jar
+[2026-06-30 11:35:07] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Assurance.java
+[2026-06-30 11:35:07] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/com/fasterxml/jackson/core/jackson-annotations/2.11.4/jackson-annotations-2.11.4.jar
+[2026-06-30 11:35:07] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\AssuranceType.java
+[2026-06-30 11:35:07] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\RouteInfo.java
+[2026-06-30 11:35:08] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\NotifyInfo.java
+[2026-06-30 11:35:08] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\LeftTicketInfo.java
+[2026-06-30 11:35:08] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Ticket.java
+[2026-06-30 11:35:08] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Order.java
+[2026-06-30 11:35:08] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\OrderAlterInfo.java
+[2026-06-30 11:35:09] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\TrainType.java
+[2026-06-30 11:35:09] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Station.java
+[2026-06-30 11:35:09] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\TrainFood.java
+[2026-06-30 11:35:09] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Seat.java
+[2026-06-30 11:35:09] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\DocumentType.java
+[2026-06-30 11:35:09] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\exception\TokenException.java
+[2026-06-30 11:35:09] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\FoodOrder.java
+[2026-06-30 11:35:09] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\util\JsonUtils.java
+[2026-06-30 11:35:18] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/com/fasterxml/jackson/core/jackson-databind/2.11.4/jackson-databind-2.11.4.jar
+[2026-06-30 11:35:18] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/com/fasterxml/jackson/core/jackson-core/2.11.4/jackson-core-2.11.4.jar
+[2026-06-30 11:35:18] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\security\jwt\JWTFilter.java
+[2026-06-30 11:35:26] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-web/5.2.15.RELEASE/spring-web-5.2.15.RELEASE.jar
+[2026-06-30 11:35:26] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-beans/5.2.15.RELEASE/spring-beans-5.2.15.RELEASE.jar
+[2026-06-30 11:35:26] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-context/5.2.15.RELEASE/spring-context-5.2.15.RELEASE.jar
+[2026-06-30 11:35:26] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-core/5.2.15.RELEASE/spring-core-5.2.15.RELEASE.jar
+[2026-06-30 11:35:26] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-jcl/5.2.15.RELEASE/spring-jcl-5.2.15.RELEASE.jar
+[2026-06-30 11:35:26] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar
+[2026-06-30 11:35:26] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\AdminTrip.java
+[2026-06-30 11:35:27] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Route.java
+[2026-06-30 11:35:27] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Config.java
+[2026-06-30 11:35:27] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\PaymentDifferenceInfo.java
+[2026-06-30 11:35:27] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\User.java
+[2026-06-30 11:35:27] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\PriceConfig.java
+[2026-06-30 11:35:27] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\TripInfo.java
+[2026-06-30 11:35:27] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\SoldTicket.java
+[2026-06-30 11:35:27] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\TripAllDetail.java
+[2026-06-30 11:35:27] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\util\Response.java
+[2026-06-30 11:35:27] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\config\SwaggerConfig.java
+[2026-06-30 11:35:31] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/com/google/guava/guava/30.0-jre/guava-30.0-jre.jar
+[2026-06-30 11:35:31] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/io/springfox/springfox-core/2.4.0/springfox-core-2.4.0.jar
+[2026-06-30 11:35:31] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/io/springfox/springfox-spi/2.4.0/springfox-spi-2.4.0.jar
+[2026-06-30 11:35:31] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/io/springfox/springfox-spring-web/2.4.0/springfox-spring-web-2.4.0.jar
+[2026-06-30 11:35:31] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/org/springframework/plugin/spring-plugin-metadata/1.2.0.RELEASE/spring-plugin-metadata-1.2.0.RELEASE.jar
+[2026-06-30 11:35:31] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.jar
+[2026-06-30 11:35:31] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar
+[2026-06-30 11:35:31] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar
+[2026-06-30 11:35:31] [javac-extractor-71760] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-webmvc/5.2.15.RELEASE/spring-webmvc-5.2.15.RELEASE.jar
+[2026-06-30 11:35:31] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\OrderSecurity.java
+[2026-06-30 11:35:31] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\util\StringUtils.java
+[2026-06-30 11:35:31] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\OrderStatus.java
+[2026-06-30 11:35:31] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\TravelInfo.java
+[2026-06-30 11:35:31] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\VerifyResult.java
+[2026-06-30 11:35:31] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\TravelResult.java
+[2026-06-30 11:35:32] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\TripAllDetailInfo.java
+[2026-06-30 11:35:32] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\SeatClass.java
+[2026-06-30 11:35:32] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Consign.java
+[2026-06-30 11:35:32] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\Contacts.java
+[2026-06-30 11:35:32] [javac-extractor-71760] Processing file C:\train-ticket-master\ts-common\src\main\java\edu\fudan\common\entity\OrderTicketsInfo.java
+[2026-06-30 11:35:32] [javac-extractor-71760] Javac init time: 10.7s
+[2026-06-30 11:35:32] [javac-extractor-71760] Javac attr time: 0.4s
+[2026-06-30 11:35:32] [javac-extractor-71760] Extractor time: 43.1s
+[2026-06-30 11:35:32] [javac-extractor-71760] Other time: 0.7s
+[2026-06-30 11:35:32] [javac-extractor-71760] Total time: 55.0s

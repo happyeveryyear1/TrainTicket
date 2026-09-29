@@ -1,0 +1,22 @@
+[2026-06-30 11:53:12] [javac-extractor-52440] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-52.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 11:53:12] [javac-extractor-52440] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-52.trap.gz
+[2026-06-30 11:53:12] [javac-extractor-52440] [WARN] Appending source destination directory C:\train-ticket-master\ts-food-service\target\generated-test-sources\test-annotations to sourcepath
+[2026-06-30 11:53:22] [javac-extractor-52440] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 11:53:22] [javac-extractor-52440] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 11:53:22] [javac-extractor-52440] Processing file C:\train-ticket-master\ts-food-service\src\test\java\adminorder\controller\FoodControllerTest.java
+[2026-06-30 11:53:23] [javac-extractor-52440] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:53:23] [javac-extractor-52440] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\foodsearch\controller\FoodController.members\FoodController.members#52.0-1782791568197-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\foodsearch\controller\FoodController.members\FoodController.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:53:23] [javac-extractor-52440] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\foodsearch\entity\FoodOrder.members\FoodOrder.members#52.0-1782791568191-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\foodsearch\entity\FoodOrder.members\FoodOrder.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:53:23] [javac-extractor-52440] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\foodsearch\service\FoodService.members\FoodService.members#52.0-1782791568249-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\foodsearch\service\FoodService.members\FoodService.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:53:23] [javac-extractor-52440] Processing file C:\train-ticket-master\ts-food-service\src\test\java\adminorder\service\FoodServiceImplTest.java
+[2026-06-30 11:53:23] [javac-extractor-52440] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:53:23] [javac-extractor-52440] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\foodsearch\entity\FoodOrder.members\FoodOrder.members#52.0-1782791568191-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\foodsearch\entity\FoodOrder.members\FoodOrder.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:53:23] [javac-extractor-52440] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\foodsearch\repository\FoodOrderRepository.members\FoodOrderRepository.members#52.0-1782791568260-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\foodsearch\repository\FoodOrderRepository.members\FoodOrderRepository.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:53:23] [javac-extractor-52440] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\foodsearch\service\FoodServiceImpl.members\FoodServiceImpl.members#52.0-1782791568363-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\foodsearch\service\FoodServiceImpl.members\FoodServiceImpl.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:53:23] [javac-extractor-52440] Javac init time: 9.5s
+[2026-06-30 11:53:23] [javac-extractor-52440] Javac attr time: 0.4s
+[2026-06-30 11:53:23] [javac-extractor-52440] Extractor time: 0.9s
+[2026-06-30 11:53:23] [javac-extractor-52440] Other time: 0.4s
+[2026-06-30 11:53:23] [javac-extractor-52440] Total time: 11.3s

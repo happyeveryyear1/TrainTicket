@@ -1,0 +1,834 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Train Ticket 服务调用总览 · 章节导航（可渲染子集 25/97 条）",
+    "locale": "zh-CN",
+    "quality_profile": "standard",
+    "viewBox": [
+      1792,
+      696
+    ],
+    "views": [
+      {
+        "id": "booking",
+        "label": "订票与改签",
+        "focus": [
+          "ts-preserve-service",
+          "ts-preserve-other-service",
+          "ts-rebook-service",
+          "ts-cancel-service",
+          "ts-wait-order-service",
+          "ts-voucher-service",
+          "ts-travel-plan-service",
+          "ts-route-plan-service"
+        ],
+        "note": "订票、跨局订票、改签、取消、候补的入站编排。"
+      },
+      {
+        "id": "core",
+        "label": "票务核心域",
+        "focus": [
+          "ts-seat-service",
+          "ts-order-service",
+          "ts-order-other-service",
+          "ts-basic-service",
+          "ts-travel-service",
+          "ts-travel2-service",
+          "ts-station-service",
+          "ts-train-service",
+          "ts-route-service",
+          "ts-price-service",
+          "ts-contacts-service",
+          "ts-security-service"
+        ],
+        "note": "座位、订单、车次、路线、票价等被高频调用的领域服务。"
+      },
+      {
+        "id": "payment",
+        "label": "支付与通知",
+        "focus": [
+          "ts-inside-payment-service",
+          "ts-payment-service",
+          "ts-execute-service",
+          "ts-notification-service",
+          "rabbitmq"
+        ],
+        "note": "支付结算、订单执行与 RabbitMQ 异步通知。"
+      },
+      {
+        "id": "admin",
+        "label": "管理后台",
+        "focus": [
+          "ts-admin-basic-info-service",
+          "ts-admin-order-service",
+          "ts-admin-route-service",
+          "ts-admin-travel-service",
+          "ts-admin-user-service"
+        ],
+        "note": "五个管理服务对票务核心的调用。"
+      },
+      {
+        "id": "aux",
+        "label": "餐食与账户",
+        "focus": [
+          "ts-food-service",
+          "ts-food-delivery-service",
+          "ts-station-food-service",
+          "ts-train-food-service",
+          "ts-delivery-service",
+          "ts-auth-service",
+          "ts-user-service",
+          "ts-verification-code-service",
+          "ts-consign-service"
+        ],
+        "note": "餐食配送与账户认证链路。"
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "ts-gateway-service",
+      "type": "backend",
+      "label": "ts-gateway-service",
+      "pos": [
+        44,
+        100
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-ui-dashboard",
+      "type": "backend",
+      "label": "ts-ui-dashboard",
+      "pos": [
+        260,
+        100
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-auth-service",
+      "type": "backend",
+      "label": "ts-auth-service",
+      "pos": [
+        476,
+        100
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-user-service",
+      "type": "backend",
+      "label": "ts-user-service",
+      "pos": [
+        692,
+        100
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-verification-code-service",
+      "type": "backend",
+      "label": "ts-verification-code-service",
+      "pos": [
+        908,
+        100
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-security-service",
+      "type": "backend",
+      "label": "ts-security-service",
+      "pos": [
+        1124,
+        100
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-preserve-service",
+      "type": "backend",
+      "label": "ts-preserve-service",
+      "pos": [
+        44,
+        172
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-preserve-other-service",
+      "type": "backend",
+      "label": "ts-preserve-other-service",
+      "pos": [
+        260,
+        172
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-order-service",
+      "type": "backend",
+      "label": "ts-order-service",
+      "pos": [
+        476,
+        172
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-order-other-service",
+      "type": "backend",
+      "label": "ts-order-other-service",
+      "pos": [
+        692,
+        172
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-seat-service",
+      "type": "backend",
+      "label": "ts-seat-service",
+      "pos": [
+        908,
+        172
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-basic-service",
+      "type": "backend",
+      "label": "ts-basic-service",
+      "pos": [
+        1124,
+        172
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-travel-service",
+      "type": "backend",
+      "label": "ts-travel-service",
+      "pos": [
+        1340,
+        172
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-travel2-service",
+      "type": "backend",
+      "label": "ts-travel2-service",
+      "pos": [
+        1556,
+        172
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-travel-plan-service",
+      "type": "backend",
+      "label": "ts-travel-plan-service",
+      "pos": [
+        44,
+        250
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-route-plan-service",
+      "type": "backend",
+      "label": "ts-route-plan-service",
+      "pos": [
+        260,
+        250
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-route-service",
+      "type": "backend",
+      "label": "ts-route-service",
+      "pos": [
+        476,
+        250
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-price-service",
+      "type": "backend",
+      "label": "ts-price-service",
+      "pos": [
+        692,
+        250
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-train-service",
+      "type": "backend",
+      "label": "ts-train-service",
+      "pos": [
+        908,
+        250
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-station-service",
+      "type": "backend",
+      "label": "ts-station-service",
+      "pos": [
+        1124,
+        250
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-contacts-service",
+      "type": "backend",
+      "label": "ts-contacts-service",
+      "pos": [
+        1340,
+        250
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-inside-payment-service",
+      "type": "backend",
+      "label": "ts-inside-payment-service",
+      "pos": [
+        44,
+        322
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-payment-service",
+      "type": "backend",
+      "label": "ts-payment-service",
+      "pos": [
+        260,
+        322
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-execute-service",
+      "type": "backend",
+      "label": "ts-execute-service",
+      "pos": [
+        476,
+        322
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-cancel-service",
+      "type": "backend",
+      "label": "ts-cancel-service",
+      "pos": [
+        692,
+        322
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-rebook-service",
+      "type": "backend",
+      "label": "ts-rebook-service",
+      "pos": [
+        908,
+        322
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-wait-order-service",
+      "type": "backend",
+      "label": "ts-wait-order-service",
+      "pos": [
+        1124,
+        322
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-assurance-service",
+      "type": "backend",
+      "label": "ts-assurance-service",
+      "pos": [
+        44,
+        394
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-food-service",
+      "type": "backend",
+      "label": "ts-food-service",
+      "pos": [
+        260,
+        394
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-station-food-service",
+      "type": "backend",
+      "label": "ts-station-food-service",
+      "pos": [
+        476,
+        394
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-train-food-service",
+      "type": "backend",
+      "label": "ts-train-food-service",
+      "pos": [
+        692,
+        394
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-food-delivery-service",
+      "type": "backend",
+      "label": "ts-food-delivery-service",
+      "pos": [
+        908,
+        394
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-delivery-service",
+      "type": "backend",
+      "label": "ts-delivery-service",
+      "pos": [
+        1124,
+        394
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-consign-service",
+      "type": "backend",
+      "label": "ts-consign-service",
+      "pos": [
+        1340,
+        394
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-consign-price-service",
+      "type": "backend",
+      "label": "ts-consign-price-service",
+      "pos": [
+        1556,
+        394
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-ticket-office-service",
+      "type": "backend",
+      "label": "ts-ticket-office-service",
+      "pos": [
+        44,
+        472
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-news-service",
+      "type": "backend",
+      "label": "ts-news-service",
+      "pos": [
+        260,
+        472
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-config-service",
+      "type": "backend",
+      "label": "ts-config-service",
+      "pos": [
+        476,
+        472
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-avatar-service",
+      "type": "backend",
+      "label": "ts-avatar-service",
+      "pos": [
+        692,
+        472
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-voucher-service",
+      "type": "backend",
+      "label": "ts-voucher-service",
+      "pos": [
+        908,
+        472
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-notification-service",
+      "type": "backend",
+      "label": "ts-notification-service",
+      "pos": [
+        1124,
+        472
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-admin-basic-info-service",
+      "type": "backend",
+      "label": "ts-admin-basic-info-service",
+      "pos": [
+        44,
+        544
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-admin-order-service",
+      "type": "backend",
+      "label": "ts-admin-order-service",
+      "pos": [
+        260,
+        544
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-admin-route-service",
+      "type": "backend",
+      "label": "ts-admin-route-service",
+      "pos": [
+        476,
+        544
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-admin-travel-service",
+      "type": "backend",
+      "label": "ts-admin-travel-service",
+      "pos": [
+        692,
+        544
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "ts-admin-user-service",
+      "type": "backend",
+      "label": "ts-admin-user-service",
+      "pos": [
+        908,
+        544
+      ],
+      "size": [
+        186,
+        40
+      ]
+    },
+    {
+      "id": "rabbitmq",
+      "type": "messagebus",
+      "label": "rabbitmq",
+      "pos": [
+        44,
+        616
+      ],
+      "size": [
+        186,
+        40
+      ],
+      "brand": "rabbitmq"
+    }
+  ],
+  "connections": [
+    {
+      "id": "e5",
+      "from": "ts-admin-order-service",
+      "to": "ts-order-service"
+    },
+    {
+      "id": "e12",
+      "from": "ts-admin-travel-service",
+      "to": "ts-train-service"
+    },
+    {
+      "id": "e13",
+      "from": "ts-admin-travel-service",
+      "to": "ts-route-service"
+    },
+    {
+      "id": "e14",
+      "from": "ts-admin-user-service",
+      "to": "ts-user-service"
+    },
+    {
+      "id": "e16",
+      "from": "ts-basic-service",
+      "to": "ts-station-service"
+    },
+    {
+      "id": "e17",
+      "from": "ts-basic-service",
+      "to": "ts-train-service"
+    },
+    {
+      "id": "e20",
+      "from": "ts-cancel-service",
+      "to": "ts-order-service"
+    },
+    {
+      "id": "e25",
+      "from": "ts-consign-service",
+      "to": "ts-consign-price-service"
+    },
+    {
+      "id": "e27",
+      "from": "ts-execute-service",
+      "to": "ts-order-other-service"
+    },
+    {
+      "id": "e31",
+      "from": "ts-food-service",
+      "to": "ts-station-food-service"
+    },
+    {
+      "id": "e34",
+      "from": "ts-inside-payment-service",
+      "to": "ts-payment-service"
+    },
+    {
+      "id": "e40",
+      "from": "ts-preserve-other-service",
+      "to": "ts-assurance-service"
+    },
+    {
+      "id": "e57",
+      "from": "ts-preserve-service",
+      "to": "ts-food-service"
+    },
+    {
+      "id": "e60",
+      "from": "ts-rebook-service",
+      "to": "ts-order-other-service"
+    },
+    {
+      "id": "e65",
+      "from": "ts-rebook-service",
+      "to": "ts-train-service"
+    },
+    {
+      "id": "e69",
+      "from": "ts-route-plan-service",
+      "to": "ts-route-service"
+    },
+    {
+      "id": "e71",
+      "from": "ts-seat-service",
+      "to": "ts-order-other-service"
+    },
+    {
+      "id": "e75",
+      "from": "ts-travel-plan-service",
+      "to": "ts-route-plan-service"
+    },
+    {
+      "id": "e80",
+      "from": "ts-travel-service",
+      "to": "ts-basic-service"
+    },
+    {
+      "id": "e88",
+      "from": "ts-user-service",
+      "to": "ts-auth-service"
+    },
+    {
+      "id": "e91",
+      "from": "ts-voucher-service",
+      "to": "ts-order-other-service"
+    },
+    {
+      "id": "e93",
+      "from": "ts-preserve-other-service",
+      "to": "rabbitmq",
+      "variant": "dashed"
+    },
+    {
+      "id": "e94",
+      "from": "ts-food-service",
+      "to": "rabbitmq",
+      "variant": "dashed"
+    },
+    {
+      "id": "e95",
+      "from": "rabbitmq",
+      "to": "ts-notification-service",
+      "variant": "dashed"
+    },
+    {
+      "id": "e96",
+      "from": "rabbitmq",
+      "to": "ts-delivery-service",
+      "variant": "dashed"
+    }
+  ]
+}

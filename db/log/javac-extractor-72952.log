@@ -1,0 +1,29 @@
+[2026-06-30 11:53:34] [javac-extractor-72952] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-53.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 11:53:34] [javac-extractor-72952] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-53.trap.gz
+[2026-06-30 11:53:34] [javac-extractor-72952] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-station-food-service\src\main\java\food\entity\StationFoodStore.java
+[2026-06-30 11:53:34] [javac-extractor-72952] [WARN] Appending source destination directory C:\train-ticket-master\ts-station-food-service\target\generated-sources\annotations to sourcepath
+[2026-06-30 11:53:42] [javac-extractor-72952] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 11:53:43] [javac-extractor-72952] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 11:53:43] [javac-extractor-72952] Processing file C:\train-ticket-master\ts-station-food-service\src\main\java\food\controller\StationFoodController.java
+[2026-06-30 11:53:43] [javac-extractor-72952] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:53:44] [javac-extractor-72952] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Food.members\Food.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Food.members\Food.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:53:44] [javac-extractor-72952] Processing file C:\train-ticket-master\ts-station-food-service\src\main\java\food\service\StationFoodService.java
+[2026-06-30 11:53:44] [javac-extractor-72952] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:53:44] [javac-extractor-72952] Processing file C:\train-ticket-master\ts-station-food-service\src\main\java\food\entity\StationFoodStore.java
+[2026-06-30 11:53:44] [javac-extractor-72952] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Food.members\Food.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Food.members\Food.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:53:44] [javac-extractor-72952] Processing file C:\train-ticket-master\ts-station-food-service\src\main\java\food\config\SecurityConfig.java
+[2026-06-30 11:53:44] [javac-extractor-72952] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:53:45] [javac-extractor-72952] Processing file C:\train-ticket-master\ts-station-food-service\src\main\java\food\repository\StationFoodRepository.java
+[2026-06-30 11:53:45] [javac-extractor-72952] Processing file C:\train-ticket-master\ts-station-food-service\src\main\java\food\service\StationFoodServiceImpl.java
+[2026-06-30 11:53:45] [javac-extractor-72952] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:53:45] [javac-extractor-72952] Processing file C:\train-ticket-master\ts-station-food-service\src\main\java\food\init\InitData.java
+[2026-06-30 11:53:45] [javac-extractor-72952] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Food.members\Food.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Food.members\Food.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:53:45] [javac-extractor-72952] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:53:46] [javac-extractor-72952] Processing file C:\train-ticket-master\ts-station-food-service\src\main\java\food\StationFoodApplication.java
+[2026-06-30 11:53:46] [javac-extractor-72952] Javac init time: 8.7s
+[2026-06-30 11:53:46] [javac-extractor-72952] Javac attr time: 0.2s
+[2026-06-30 11:53:46] [javac-extractor-72952] Extractor time: 2.4s
+[2026-06-30 11:53:46] [javac-extractor-72952] Other time: 0.5s
+[2026-06-30 11:53:46] [javac-extractor-72952] Total time: 11.8s

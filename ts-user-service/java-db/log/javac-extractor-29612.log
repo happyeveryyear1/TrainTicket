@@ -1,0 +1,66 @@
+[2025-11-25 22:03:04] [javac-extractor-29612] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version -1 --javac-args @@@C:\train-ticket-master\ts-user-service\java-db\log\ext\javac.args
+                                              user.dir=C:\train-ticket-master\ts-user-service
+[2025-11-25 22:03:04] [javac-extractor-29612] Compilation name C:/train-ticket-master/ts-user-service/java-db/trap/java/diagnostics/diagnostic.trap.gz
+[2025-11-25 22:03:04] [javac-extractor-29612] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-user-service\src\main\java\user\entity\User.java
+[2025-11-25 22:03:04] [javac-extractor-29612] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-user-service\src\main\java\user\dto\UserDto.java
+[2025-11-25 22:03:04] [javac-extractor-29612] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-user-service\src\main\java\user\dto\AuthDto.java
+[2025-11-25 22:03:04] [javac-extractor-29612] [WARN] Appending source destination directory C:\train-ticket-master\ts-user-service\target\generated-sources\annotations to sourcepath
+[2025-11-25 22:03:12] [javac-extractor-29612] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2025-11-25 22:03:12] [javac-extractor-29612] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2025-11-25 22:03:13] [javac-extractor-29612] Processing file C:\train-ticket-master\ts-user-service\src\main\java\user\dto\Gender.java
+[2025-11-25 22:03:25] [javac-extractor-29612] Processing JAR file: C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar
+[2025-11-25 22:03:25] [javac-extractor-29612] Processing file C:\train-ticket-master\ts-user-service\src\main\java\user\entity\User.java
+[2025-11-25 22:03:25] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar
+[2025-11-25 22:03:25] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/hibernate/hibernate-core/5.4.32.Final/hibernate-core-5.4.32.Final.jar
+[2025-11-25 22:03:25] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar
+[2025-11-25 22:03:26] [javac-extractor-29612] Processing file C:\train-ticket-master\ts-user-service\src\main\java\user\init\InitUser.java
+[2025-11-25 22:03:27] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/springframework/data/spring-data-commons/2.3.9.RELEASE/spring-data-commons-2.3.9.RELEASE.jar
+[2025-11-25 22:03:27] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-beans/5.2.15.RELEASE/spring-beans-5.2.15.RELEASE.jar
+[2025-11-25 22:03:27] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/springframework/boot/spring-boot/2.3.12.RELEASE/spring-boot-2.3.12.RELEASE.jar
+[2025-11-25 22:03:27] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/springframework/security/spring-security-core/5.3.9.RELEASE/spring-security-core-5.3.9.RELEASE.jar
+[2025-11-25 22:03:27] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-context/5.2.15.RELEASE/spring-context-5.2.15.RELEASE.jar
+[2025-11-25 22:03:27] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/services/ts-common/0.1.0/ts-common-0.1.0.jar
+[2025-11-25 22:03:27] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-web/5.2.15.RELEASE/spring-web-5.2.15.RELEASE.jar
+[2025-11-25 22:03:27] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-core/5.2.15.RELEASE/spring-core-5.2.15.RELEASE.jar
+[2025-11-25 22:03:27] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar
+[2025-11-25 22:03:27] [javac-extractor-29612] Processing file C:\train-ticket-master\ts-user-service\src\main\java\user\repository\UserRepository.java
+[2025-11-25 22:03:27] [javac-extractor-29612] Processing file C:\train-ticket-master\ts-user-service\src\main\java\user\service\UserService.java
+[2025-11-25 22:03:27] [javac-extractor-29612] Processing file C:\train-ticket-master\ts-user-service\src\main\java\user\dto\UserDto.java
+[2025-11-25 22:03:27] [javac-extractor-29612] Processing file C:\train-ticket-master\ts-user-service\src\main\java\user\service\impl\UserServiceImpl.java
+[2025-11-25 22:03:29] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar
+[2025-11-25 22:03:29] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/springframework/cloud/spring-cloud-commons/2.2.9.RELEASE/spring-cloud-commons-2.2.9.RELEASE.jar
+[2025-11-25 22:03:29] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-tx/5.2.15.RELEASE/spring-tx-5.2.15.RELEASE.jar
+[2025-11-25 22:03:29] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-jcl/5.2.15.RELEASE/spring-jcl-5.2.15.RELEASE.jar
+[2025-11-25 22:03:29] [javac-extractor-29612] Processing file C:\train-ticket-master\ts-user-service\src\main\java\user\dto\AuthDto.java
+[2025-11-25 22:03:29] [javac-extractor-29612] Processing file C:\train-ticket-master\ts-user-service\src\main\java\user\UserApplication.java
+[2025-11-25 22:03:55] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/springframework/boot/spring-boot-autoconfigure/2.3.12.RELEASE/spring-boot-autoconfigure-2.3.12.RELEASE.jar
+[2025-11-25 22:03:55] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/springframework/integration/spring-integration-core/5.3.8.RELEASE/spring-integration-core-5.3.8.RELEASE.jar
+[2025-11-25 22:03:55] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/io/springfox/springfox-swagger2/2.4.0/springfox-swagger2-2.4.0.jar
+[2025-11-25 22:03:55] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/io/springfox/springfox-spring-web/2.4.0/springfox-spring-web-2.4.0.jar
+[2025-11-25 22:03:55] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.jar
+[2025-11-25 22:03:56] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/io/springfox/springfox-swagger-common/2.4.0/springfox-swagger-common-2.4.0.jar
+[2025-11-25 22:03:56] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/io/springfox/springfox-schema/2.4.0/springfox-schema-2.4.0.jar
+[2025-11-25 22:03:56] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/io/springfox/springfox-spi/2.4.0/springfox-spi-2.4.0.jar
+[2025-11-25 22:03:56] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/com/google/guava/guava/30.0-jre/guava-30.0-jre.jar
+[2025-11-25 22:03:56] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/com/fasterxml/jackson/core/jackson-databind/2.11.4/jackson-databind-2.11.4.jar
+[2025-11-25 22:03:56] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/com/fasterxml/jackson/core/jackson-core/2.11.4/jackson-core-2.11.4.jar
+[2025-11-25 22:03:56] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar
+[2025-11-25 22:03:56] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-webmvc/5.2.15.RELEASE/spring-webmvc-5.2.15.RELEASE.jar
+[2025-11-25 22:03:56] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/io/springfox/springfox-core/2.4.0/springfox-core-2.4.0.jar
+[2025-11-25 22:03:56] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/com/fasterxml/jackson/core/jackson-annotations/2.11.4/jackson-annotations-2.11.4.jar
+[2025-11-25 22:03:56] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/springframework/plugin/spring-plugin-metadata/1.2.0.RELEASE/spring-plugin-metadata-1.2.0.RELEASE.jar
+[2025-11-25 22:03:56] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar
+[2025-11-25 22:03:56] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/apache/tomcat/embed/tomcat-embed-core/9.0.46/tomcat-embed-core-9.0.46.jar
+[2025-11-25 22:03:56] [javac-extractor-29612] Processing file C:\train-ticket-master\ts-user-service\src\main\java\user\controller\UserController.java
+[2025-11-25 22:03:56] [javac-extractor-29612] Processing file C:\train-ticket-master\ts-user-service\src\main\java\user\config\SecurityConfig.java
+[2025-11-25 22:04:09] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/springframework/security/spring-security-config/5.3.9.RELEASE/spring-security-config-5.3.9.RELEASE.jar
+[2025-11-25 22:04:09] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/springframework/security/spring-security-web/5.3.9.RELEASE/spring-security-web-5.3.9.RELEASE.jar
+[2025-11-25 22:04:09] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-aop/5.2.15.RELEASE/spring-aop-5.2.15.RELEASE.jar
+[2025-11-25 22:04:09] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-expression/5.2.15.RELEASE/spring-expression-5.2.15.RELEASE.jar
+[2025-11-25 22:04:09] [javac-extractor-29612] Processing JAR file: C:/Maven/LocalRepository/org/springframework/spring-jdbc/5.2.15.RELEASE/spring-jdbc-5.2.15.RELEASE.jar
+[2025-11-25 22:04:09] [javac-extractor-29612] Javac init time: 7.8s
+[2025-11-25 22:04:09] [javac-extractor-29612] Javac attr time: 0.2s
+[2025-11-25 22:04:09] [javac-extractor-29612] Extractor time: 56.0s
+[2025-11-25 22:04:09] [javac-extractor-29612] Other time: 0.5s
+[2025-11-25 22:04:09] [javac-extractor-29612] Total time: 64.5s

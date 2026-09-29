@@ -1,0 +1,21 @@
+[2026-06-30 11:40:37] [javac-extractor-52428] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-14.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 11:40:38] [javac-extractor-52428] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-14.trap.gz
+[2026-06-30 11:40:38] [javac-extractor-52428] [WARN] Appending source destination directory C:\train-ticket-master\ts-train-service\target\generated-test-sources\test-annotations to sourcepath
+[2026-06-30 11:40:46] [javac-extractor-52428] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 11:40:46] [javac-extractor-52428] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 11:40:47] [javac-extractor-52428] Processing file C:\train-ticket-master\ts-train-service\src\test\java\train\service\TrainServiceImplTest.java
+[2026-06-30 11:40:47] [javac-extractor-52428] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\train\entity\TrainType.members\TrainType.members#52.0-1782790817856-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\train\entity\TrainType.members\TrainType.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:40:47] [javac-extractor-52428] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\train\repository\TrainTypeRepository.members\TrainTypeRepository.members#52.0-1782790817846-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\train\repository\TrainTypeRepository.members\TrainTypeRepository.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:40:47] [javac-extractor-52428] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\train\service\TrainServiceImpl.members\TrainServiceImpl.members#52.0-1782790817876-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\train\service\TrainServiceImpl.members\TrainServiceImpl.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:40:48] [javac-extractor-52428] Processing file C:\train-ticket-master\ts-train-service\src\test\java\train\controller\TrainControllerTest.java
+[2026-06-30 11:40:48] [javac-extractor-52428] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:40:48] [javac-extractor-52428] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\train\entity\TrainType.members\TrainType.members#52.0-1782790817856-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\train\entity\TrainType.members\TrainType.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:40:48] [javac-extractor-52428] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\train\service\TrainService.members\TrainService.members#52.0-1782790817866-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\train\service\TrainService.members\TrainService.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:40:48] [javac-extractor-52428] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\train\controller\TrainController.members\TrainController.members#52.0-1782790817916-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\train\controller\TrainController.members\TrainController.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:40:48] [javac-extractor-52428] Javac init time: 8.5s
+[2026-06-30 11:40:48] [javac-extractor-52428] Javac attr time: 0.4s
+[2026-06-30 11:40:48] [javac-extractor-52428] Extractor time: 1.2s
+[2026-06-30 11:40:48] [javac-extractor-52428] Other time: 0.6s
+[2026-06-30 11:40:48] [javac-extractor-52428] Total time: 10.6s

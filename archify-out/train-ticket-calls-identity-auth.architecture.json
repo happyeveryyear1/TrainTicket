@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Train Ticket 服务调用关系 · identity-auth（左=调用方 · 右=被调方 · 实线=同步 · 虚线=异步）",
+    "locale": "zh-CN",
+    "quality_profile": "standard",
+    "viewBox": [
+      940,
+      240
+    ]
+  },
+  "components": [
+    {
+      "id": "ts-auth-service",
+      "type": "backend",
+      "label": "ts-auth-service",
+      "pos": [
+        48,
+        92
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-verification-code-service",
+      "type": "backend",
+      "label": "ts-verification-code-service",
+      "pos": [
+        702,
+        92
+      ],
+      "size": [
+        190,
+        34
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "e0",
+      "from": "ts-auth-service",
+      "to": "ts-verification-code-service",
+      "fromSide": "right",
+      "toSide": "left"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+[2026-06-30 12:02:27] [javac-extractor-25944] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-78.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 12:02:27] [javac-extractor-25944] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-78.trap.gz
+[2026-06-30 12:02:27] [javac-extractor-25944] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-wait-order-service\src\main\java\waitorder\entity\WaitListOrder.java
+[2026-06-30 12:02:27] [javac-extractor-25944] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-wait-order-service\src\main\java\waitorder\entity\WaitListOrderVO.java
+[2026-06-30 12:02:27] [javac-extractor-25944] [WARN] Appending source destination directory C:\train-ticket-master\ts-wait-order-service\target\generated-sources\annotations to sourcepath
+[2026-06-30 12:02:35] [javac-extractor-25944] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 12:02:36] [javac-extractor-25944] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 12:02:36] [javac-extractor-25944] Processing file C:\train-ticket-master\ts-wait-order-service\src\main\java\waitorder\entity\WaitListOrder.java
+[2026-06-30 12:02:36] [javac-extractor-25944] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\StringUtils.members\StringUtils.members#52.0-1782790478000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\StringUtils.members\StringUtils.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 12:02:36] [javac-extractor-25944] Processing file C:\train-ticket-master\ts-wait-order-service\src\main\java\waitorder\service\WaitListOrderService.java
+[2026-06-30 12:02:36] [javac-extractor-25944] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 12:02:36] [javac-extractor-25944] Processing file C:\train-ticket-master\ts-wait-order-service\src\main\java\waitorder\entity\WaitListOrderVO.java
+[2026-06-30 12:02:36] [javac-extractor-25944] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\StringUtils.members\StringUtils.members#52.0-1782790478000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\StringUtils.members\StringUtils.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 12:02:37] [javac-extractor-25944] Processing file C:\train-ticket-master\ts-wait-order-service\src\main\java\waitorder\repository\WaitListOrderRepository.java
+[2026-06-30 12:02:37] [javac-extractor-25944] Processing file C:\train-ticket-master\ts-wait-order-service\src\main\java\waitorder\config\SecurityConfig.java
+[2026-06-30 12:02:37] [javac-extractor-25944] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 12:02:37] [javac-extractor-25944] Processing file C:\train-ticket-master\ts-wait-order-service\src\main\java\waitorder\WaitOrderApplication.java
+[2026-06-30 12:02:37] [javac-extractor-25944] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\springfox\documentation\swagger2\annotations\EnableSwagger2.members\EnableSwagger2.members#50.0-1456918436000-java.trap.gz as the trap-old exists
+[2026-06-30 12:02:38] [javac-extractor-25944] Processing file C:\train-ticket-master\ts-wait-order-service\src\main\java\waitorder\entity\WaitListOrderStatus.java
+[2026-06-30 12:02:38] [javac-extractor-25944] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\OrderStatus.members\OrderStatus.members#52.0-1782790478000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\OrderStatus.members\OrderStatus.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 12:02:38] [javac-extractor-25944] Processing file C:\train-ticket-master\ts-wait-order-service\src\main\java\waitorder\controller\WaitListOrderController.java
+[2026-06-30 12:02:38] [javac-extractor-25944] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 12:02:38] [javac-extractor-25944] Processing file C:\train-ticket-master\ts-wait-order-service\src\main\java\waitorder\utils\PollThread.java
+[2026-06-30 12:02:38] [javac-extractor-25944] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Contacts.members\Contacts.members#52.0-1782790478000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\entity\Contacts.members\Contacts.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 12:02:38] [javac-extractor-25944] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 12:02:38] [javac-extractor-25944] Processing file C:\train-ticket-master\ts-wait-order-service\src\main\java\waitorder\service\Impl\WaitListOrderServiceImpl.java
+[2026-06-30 12:02:38] [javac-extractor-25944] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 12:02:39] [javac-extractor-25944] Javac init time: 8.3s
+[2026-06-30 12:02:39] [javac-extractor-25944] Javac attr time: 0.3s
+[2026-06-30 12:02:39] [javac-extractor-25944] Extractor time: 2.6s
+[2026-06-30 12:02:39] [javac-extractor-25944] Other time: 0.6s
+[2026-06-30 12:02:39] [javac-extractor-25944] Total time: 11.9s

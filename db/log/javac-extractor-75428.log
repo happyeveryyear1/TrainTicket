@@ -1,0 +1,31 @@
+[2026-06-30 11:50:17] [javac-extractor-75428] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\train-ticket-master\db\log\ext\javac-43.args
+                                              user.dir=C:\train-ticket-master
+[2026-06-30 11:50:17] [javac-extractor-75428] Compilation name C:/train-ticket-master/db/trap/java/diagnostics/diagnostic-43.trap.gz
+[2026-06-30 11:50:17] [javac-extractor-75428] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-assurance-service\src\main\java\assurance\entity\AssuranceTypeBean.java
+[2026-06-30 11:50:17] [javac-extractor-75428] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-assurance-service\src\main\java\assurance\entity\Assurance.java
+[2026-06-30 11:50:17] [javac-extractor-75428] Annotation processors enabled, and lombok usage detected in file: C:\train-ticket-master\ts-assurance-service\src\main\java\assurance\entity\PlainAssurance.java
+[2026-06-30 11:50:17] [javac-extractor-75428] [WARN] Appending source destination directory C:\train-ticket-master\ts-assurance-service\target\generated-sources\annotations to sourcepath
+[2026-06-30 11:50:25] [javac-extractor-75428] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-30 11:50:26] [javac-extractor-75428] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-30 11:50:26] [javac-extractor-75428] Processing file C:\train-ticket-master\ts-assurance-service\src\main\java\assurance\repository\AssuranceRepository.java
+[2026-06-30 11:50:27] [javac-extractor-75428] Processing file C:\train-ticket-master\ts-assurance-service\src\main\java\assurance\entity\Assurance.java
+[2026-06-30 11:50:27] [javac-extractor-75428] Processing file C:\train-ticket-master\ts-assurance-service\src\main\java\assurance\entity\AssuranceType.java
+[2026-06-30 11:50:27] [javac-extractor-75428] Processing file C:\train-ticket-master\ts-assurance-service\src\main\java\assurance\config\SecurityConfig.java
+[2026-06-30 11:50:27] [javac-extractor-75428] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\security\jwt\JWTFilter.members\JWTFilter.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:50:27] [javac-extractor-75428] Processing file C:\train-ticket-master\ts-assurance-service\src\main\java\assurance\entity\AssuranceTypeBean.java
+[2026-06-30 11:50:28] [javac-extractor-75428] Processing file C:\train-ticket-master\ts-assurance-service\src\main\java\assurance\controller\AssuranceController.java
+[2026-06-30 11:50:28] [javac-extractor-75428] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:50:28] [javac-extractor-75428] Processing file C:\train-ticket-master\ts-assurance-service\src\main\java\assurance\service\AssuranceService.java
+[2026-06-30 11:50:28] [javac-extractor-75428] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:50:28] [javac-extractor-75428] Processing file C:\train-ticket-master\ts-assurance-service\src\main\java\assurance\init\InitData.java
+[2026-06-30 11:50:28] [javac-extractor-75428] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:50:28] [javac-extractor-75428] Processing file C:\train-ticket-master\ts-assurance-service\src\main\java\assurance\service\AssuranceServiceImpl.java
+[2026-06-30 11:50:28] [javac-extractor-75428] [WARN] Not rewriting trap file for C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#52.0-1782790476000-java.trap.gz as C:\train-ticket-master\db\trap\java\classes\edu\fudan\common\util\Response.members\Response.members#0.0-1667290899000-java.trap.gz exists
+[2026-06-30 11:50:28] [javac-extractor-75428] Processing file C:\train-ticket-master\ts-assurance-service\src\main\java\assurance\entity\PlainAssurance.java
+[2026-06-30 11:50:28] [javac-extractor-75428] Processing file C:\train-ticket-master\ts-assurance-service\src\main\java\assurance\AssuranceApplication.java
+[2026-06-30 11:50:29] [javac-extractor-75428] Javac init time: 8.4s
+[2026-06-30 11:50:29] [javac-extractor-75428] Javac attr time: 0.2s
+[2026-06-30 11:50:29] [javac-extractor-75428] Extractor time: 2.2s
+[2026-06-30 11:50:29] [javac-extractor-75428] Other time: 0.4s
+[2026-06-30 11:50:29] [javac-extractor-75428] Total time: 11.2s

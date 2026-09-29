@@ -1,0 +1,888 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Train Ticket 全网服务地图（46 个可运行服务）",
+    "locale": "zh-CN",
+    "quality_profile": "standard",
+    "viewBox": [
+      1558,
+      810
+    ]
+  },
+  "components": [
+    {
+      "id": "passengers",
+      "type": "external",
+      "label": "乘客",
+      "sublabel": "浏览器 / Web 客户端",
+      "pos": [
+        40,
+        110
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "ui",
+      "type": "frontend",
+      "label": "ts-ui-dashboard",
+      "sublabel": "Nginx :8080 静态前端",
+      "pos": [
+        286,
+        110
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "gateway",
+      "type": "backend",
+      "label": "ts-gateway-service",
+      "sublabel": "Spring Cloud Gateway :18888",
+      "pos": [
+        532,
+        110
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "auth",
+      "type": "security",
+      "label": "ts-auth-service",
+      "sublabel": "登录 · 签发 JWT",
+      "pos": [
+        778,
+        110
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "user",
+      "type": "backend",
+      "label": "ts-user-service",
+      "sublabel": "用户账户",
+      "pos": [
+        960,
+        110
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "verification",
+      "type": "backend",
+      "label": "ts-verification-code-service",
+      "sublabel": "验证码",
+      "pos": [
+        1142,
+        110
+      ],
+      "size": [
+        194,
+        56
+      ]
+    },
+    {
+      "id": "security-svc",
+      "type": "backend",
+      "label": "ts-security-service",
+      "sublabel": "安全 / 风控",
+      "pos": [
+        1352,
+        110
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "preserve",
+      "type": "backend",
+      "label": "ts-preserve-service",
+      "sublabel": "订票编排",
+      "pos": [
+        40,
+        202
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "seat",
+      "type": "backend",
+      "label": "ts-seat-service",
+      "sublabel": "座位分配",
+      "pos": [
+        222,
+        202
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "order",
+      "type": "backend",
+      "label": "ts-order-service",
+      "sublabel": "订单",
+      "pos": [
+        404,
+        202
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "basic",
+      "type": "backend",
+      "label": "ts-basic-service",
+      "sublabel": "车次信息聚合",
+      "pos": [
+        586,
+        202
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "travel",
+      "type": "backend",
+      "label": "ts-travel-service",
+      "sublabel": "高铁车次",
+      "pos": [
+        768,
+        202
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "travel2",
+      "type": "backend",
+      "label": "ts-travel2-service",
+      "sublabel": "普通车次",
+      "pos": [
+        950,
+        202
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "preserve-other",
+      "type": "backend",
+      "label": "ts-preserve-other-service",
+      "sublabel": "跨局订票",
+      "pos": [
+        1132,
+        202
+      ],
+      "size": [
+        194,
+        56
+      ]
+    },
+    {
+      "id": "order-other",
+      "type": "backend",
+      "label": "ts-order-other-service",
+      "sublabel": "跨局订单",
+      "pos": [
+        1342,
+        202
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "travel-plan",
+      "type": "backend",
+      "label": "ts-travel-plan-service",
+      "sublabel": "行程规划",
+      "pos": [
+        40,
+        274
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "route-plan",
+      "type": "backend",
+      "label": "ts-route-plan-service",
+      "sublabel": "路线规划",
+      "pos": [
+        222,
+        274
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "route",
+      "type": "backend",
+      "label": "ts-route-service",
+      "sublabel": "路线",
+      "pos": [
+        404,
+        274
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "price",
+      "type": "backend",
+      "label": "ts-price-service",
+      "sublabel": "票价",
+      "pos": [
+        586,
+        274
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "train",
+      "type": "backend",
+      "label": "ts-train-service",
+      "sublabel": "列车",
+      "pos": [
+        768,
+        274
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "station",
+      "type": "backend",
+      "label": "ts-station-service",
+      "sublabel": "车站",
+      "pos": [
+        950,
+        274
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "contacts",
+      "type": "backend",
+      "label": "ts-contacts-service",
+      "sublabel": "联系人",
+      "pos": [
+        1132,
+        274
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "inside-payment",
+      "type": "backend",
+      "label": "ts-inside-payment-service",
+      "sublabel": "支付结算",
+      "pos": [
+        40,
+        366
+      ],
+      "size": [
+        194,
+        56
+      ]
+    },
+    {
+      "id": "payment",
+      "type": "backend",
+      "label": "ts-payment-service",
+      "sublabel": "支付网关",
+      "pos": [
+        250,
+        366
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "execute",
+      "type": "backend",
+      "label": "ts-execute-service",
+      "sublabel": "订单执行",
+      "pos": [
+        432,
+        366
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "cancel",
+      "type": "backend",
+      "label": "ts-cancel-service",
+      "sublabel": "取消",
+      "pos": [
+        614,
+        366
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "rebook",
+      "type": "backend",
+      "label": "ts-rebook-service",
+      "sublabel": "改签",
+      "pos": [
+        796,
+        366
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "wait-order",
+      "type": "backend",
+      "label": "ts-wait-order-service",
+      "sublabel": "候补订单",
+      "pos": [
+        978,
+        366
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "assurance",
+      "type": "backend",
+      "label": "ts-assurance-service",
+      "sublabel": "保险",
+      "pos": [
+        40,
+        458
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "food",
+      "type": "backend",
+      "label": "ts-food-service",
+      "sublabel": "餐饮",
+      "pos": [
+        222,
+        458
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "station-food",
+      "type": "backend",
+      "label": "ts-station-food-service",
+      "sublabel": "车站餐食",
+      "pos": [
+        404,
+        458
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "train-food",
+      "type": "backend",
+      "label": "ts-train-food-service",
+      "sublabel": "列车餐食",
+      "pos": [
+        586,
+        458
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "food-delivery",
+      "type": "backend",
+      "label": "ts-food-delivery-service",
+      "sublabel": "餐食配送",
+      "pos": [
+        768,
+        458
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "delivery",
+      "type": "backend",
+      "label": "ts-delivery-service",
+      "sublabel": "配送",
+      "pos": [
+        950,
+        458
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "consign",
+      "type": "backend",
+      "label": "ts-consign-service",
+      "sublabel": "托运",
+      "pos": [
+        1132,
+        458
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "consign-price",
+      "type": "backend",
+      "label": "ts-consign-price-service",
+      "sublabel": "托运价格",
+      "pos": [
+        40,
+        530
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "ticket-office",
+      "type": "backend",
+      "label": "ts-ticket-office-service",
+      "sublabel": "售票点",
+      "pos": [
+        222,
+        530
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "news",
+      "type": "backend",
+      "label": "ts-news-service",
+      "sublabel": "资讯",
+      "pos": [
+        404,
+        530
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "config",
+      "type": "backend",
+      "label": "ts-config-service",
+      "sublabel": "配置",
+      "pos": [
+        586,
+        530
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "avatar",
+      "type": "backend",
+      "label": "ts-avatar-service",
+      "sublabel": "头像",
+      "pos": [
+        768,
+        530
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "voucher",
+      "type": "backend",
+      "label": "ts-voucher-service",
+      "sublabel": "代金券",
+      "pos": [
+        950,
+        530
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "notification",
+      "type": "backend",
+      "label": "ts-notification-service",
+      "sublabel": "通知（队列消费）",
+      "pos": [
+        1132,
+        530
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "admin-basic-info",
+      "type": "backend",
+      "label": "ts-admin-basic-info-service",
+      "sublabel": "基础信息管理",
+      "pos": [
+        40,
+        622
+      ],
+      "size": [
+        194,
+        56
+      ]
+    },
+    {
+      "id": "admin-order",
+      "type": "backend",
+      "label": "ts-admin-order-service",
+      "sublabel": "订单管理",
+      "pos": [
+        250,
+        622
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "admin-route",
+      "type": "backend",
+      "label": "ts-admin-route-service",
+      "sublabel": "路线管理",
+      "pos": [
+        432,
+        622
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "admin-travel",
+      "type": "backend",
+      "label": "ts-admin-travel-service",
+      "sublabel": "车次管理",
+      "pos": [
+        614,
+        622
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "admin-user",
+      "type": "backend",
+      "label": "ts-admin-user-service",
+      "sublabel": "用户管理",
+      "pos": [
+        796,
+        622
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "nacos",
+      "type": "cloud",
+      "label": "Nacos",
+      "sublabel": "注册 / 配置 :8848",
+      "pos": [
+        40,
+        714
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "rabbitmq",
+      "type": "messagebus",
+      "label": "RabbitMQ",
+      "sublabel": "消息队列",
+      "pos": [
+        222,
+        714
+      ],
+      "size": [
+        166,
+        56
+      ],
+      "brand": "rabbitmq"
+    },
+    {
+      "id": "mongo",
+      "type": "database",
+      "label": "MongoDB",
+      "sublabel": "主数据存储",
+      "pos": [
+        404,
+        714
+      ],
+      "size": [
+        166,
+        56
+      ],
+      "brand": "mongodb"
+    },
+    {
+      "id": "mysql",
+      "type": "database",
+      "label": "MySQL",
+      "sublabel": "voucher 等",
+      "pos": [
+        586,
+        714
+      ],
+      "size": [
+        166,
+        56
+      ]
+    },
+    {
+      "id": "redis",
+      "type": "database",
+      "label": "Redis",
+      "sublabel": "缓存",
+      "pos": [
+        768,
+        714
+      ],
+      "size": [
+        166,
+        56
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "入口与身份",
+      "wraps": [
+        "passengers",
+        "ui",
+        "gateway",
+        "auth",
+        "user",
+        "verification",
+        "security-svc"
+      ],
+      "pad": 16
+    },
+    {
+      "kind": "region",
+      "label": "订票与出行（核心）",
+      "wraps": [
+        "preserve",
+        "seat",
+        "order",
+        "basic",
+        "travel",
+        "travel2",
+        "preserve-other",
+        "order-other",
+        "travel-plan",
+        "route-plan",
+        "route",
+        "price",
+        "train",
+        "station",
+        "contacts"
+      ],
+      "pad": 16
+    },
+    {
+      "kind": "region",
+      "label": "支付与订单生命周期",
+      "wraps": [
+        "inside-payment",
+        "payment",
+        "execute",
+        "cancel",
+        "rebook",
+        "wait-order"
+      ],
+      "pad": 16
+    },
+    {
+      "kind": "region",
+      "label": "辅助服务与通知",
+      "wraps": [
+        "assurance",
+        "food",
+        "station-food",
+        "train-food",
+        "food-delivery",
+        "delivery",
+        "consign",
+        "consign-price",
+        "ticket-office",
+        "news",
+        "config",
+        "avatar",
+        "voucher",
+        "notification"
+      ],
+      "pad": 16
+    },
+    {
+      "kind": "region",
+      "label": "管理后台",
+      "wraps": [
+        "admin-basic-info",
+        "admin-order",
+        "admin-route",
+        "admin-travel",
+        "admin-user"
+      ],
+      "pad": 16
+    },
+    {
+      "kind": "region",
+      "label": "平台与数据（外部依赖）",
+      "wraps": [
+        "nacos",
+        "rabbitmq",
+        "mongo",
+        "mysql",
+        "redis"
+      ],
+      "pad": 16
+    }
+  ],
+  "connections": [
+    {
+      "id": "passengers-ui",
+      "from": "passengers",
+      "to": "ui",
+      "label": "HTTPS :8080",
+      "variant": "emphasis",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "ui-gateway",
+      "from": "ui",
+      "to": "gateway",
+      "label": "代理 /api/v1",
+      "variant": "emphasis",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "gateway-auth",
+      "from": "gateway",
+      "to": "auth",
+      "label": "登录 · JWT",
+      "variant": "security",
+      "fromSide": "right",
+      "toSide": "left"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "网关路由",
+      "items": [
+        "ts-gateway-service 以 Path 断言把 /api/v1/** 转发到 38 个后端服务",
+        "ts-ui-dashboard 经 Nginx 将 /api/v1 反向代理到网关，JWT / 角色在网关与服务内校验"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "数据、平台与未走网关的服务",
+      "items": [
+        "各服务使用独立 MongoDB / MySQL 库；Nacos 负责注册配置，RabbitMQ 承载通知",
+        "delivery / food-delivery / wait-order / ticket-office / news / voucher 未注册网关路由"
+      ]
+    }
+  ]
+}

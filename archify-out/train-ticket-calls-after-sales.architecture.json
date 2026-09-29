@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Train Ticket 服务调用关系 · after-sales（左=调用方 · 右=被调方 · 实线=同步 · 虚线=异步）",
+    "locale": "zh-CN",
+    "quality_profile": "standard",
+    "viewBox": [
+      1450,
+      580
+    ]
+  },
+  "components": [
+    {
+      "id": "ts-cancel-service",
+      "type": "backend",
+      "label": "ts-cancel-service",
+      "pos": [
+        48,
+        253
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-rebook-service",
+      "type": "backend",
+      "label": "ts-rebook-service",
+      "pos": [
+        48,
+        299
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-voucher-service",
+      "type": "backend",
+      "label": "ts-voucher-service",
+      "pos": [
+        48,
+        345
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-inside-payment-service",
+      "type": "backend",
+      "label": "ts-inside-payment-service",
+      "pos": [
+        1212,
+        92
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-notification-service",
+      "type": "backend",
+      "label": "ts-notification-service",
+      "pos": [
+        1212,
+        138
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-order-other-service",
+      "type": "backend",
+      "label": "ts-order-other-service",
+      "pos": [
+        1212,
+        184
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-order-service",
+      "type": "backend",
+      "label": "ts-order-service",
+      "pos": [
+        1212,
+        230
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-route-service",
+      "type": "backend",
+      "label": "ts-route-service",
+      "pos": [
+        1212,
+        276
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-seat-service",
+      "type": "backend",
+      "label": "ts-seat-service",
+      "pos": [
+        1212,
+        322
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-train-service",
+      "type": "backend",
+      "label": "ts-train-service",
+      "pos": [
+        1212,
+        368
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-travel-service",
+      "type": "backend",
+      "label": "ts-travel-service",
+      "pos": [
+        1212,
+        414
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-travel2-service",
+      "type": "backend",
+      "label": "ts-travel2-service",
+      "pos": [
+        1212,
+        460
+      ],
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "ts-user-service",
+      "type": "backend",
+      "label": "ts-user-service",
+      "pos": [
+        1212,
+        506
+      ],
+      "size": [
+        190,
+        34
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "e0",
+      "from": "ts-cancel-service",
+      "to": "ts-order-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e1",
+      "from": "ts-cancel-service",
+      "to": "ts-order-other-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "from": "ts-cancel-service",
+      "to": "ts-notification-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e3",
+      "from": "ts-cancel-service",
+      "to": "ts-inside-payment-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e4",
+      "from": "ts-cancel-service",
+      "to": "ts-user-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e5",
+      "from": "ts-rebook-service",
+      "to": "ts-order-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e6",
+      "from": "ts-rebook-service",
+      "to": "ts-order-other-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e7",
+      "from": "ts-rebook-service",
+      "to": "ts-inside-payment-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e8",
+      "from": "ts-rebook-service",
+      "to": "ts-seat-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e9",
+      "from": "ts-rebook-service",
+      "to": "ts-travel-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e10",
+      "from": "ts-rebook-service",
+      "to": "ts-travel2-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e11",
+      "from": "ts-rebook-service",
+      "to": "ts-train-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e12",
+      "from": "ts-rebook-service",
+      "to": "ts-route-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e13",
+      "from": "ts-voucher-service",
+      "to": "ts-order-service",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "e14",
+      "from": "ts-voucher-service",
+      "to": "ts-order-other-service",
+      "fromSide": "right",
+      "toSide": "left"
+    }
+  ]
+}

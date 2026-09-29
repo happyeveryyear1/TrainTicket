@@ -1,0 +1,222 @@
+# HTTP Server
+server:
+  port: 12346  # HTTP (Tomcat) port
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_ADDRS:nacos-0.nacos-headless.default.svc.cluster.local,nacos-1.nacos-headless.default.svc.cluster.local,nacos-2.nacos-headless.default.svc.cluster.local}
+  application:
+    name: ts-travel-service
+  datasource:
+    url: jdbc:mysql://${TRAVEL_MYSQL_HOST:ts-travel-mysql}:${TRAVEL_MYSQL_PORT:3306}/${TRAVEL_MYSQL_DATABASE:ts-travel-mysql}?useSSL=false
+    username: ${TRAVEL_MYSQL_USER:root}
+    password: ${TRAVEL_MYSQL_PASSWORD:root}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+swagger:
+  controllerPackage: travel.controller
+
+train-service:
+  url: http://${TRAIN_SERVICE_HOST:ts-train-service}:${TRAIN_SERVICE_PORT:14567}
+
+order-service:
+  url: http://${ORDER_SERVICE_HOST:ts-order-service}:${ORDER_SERVICE_PORT:12031}
+
+route-service:
+  url: http://${ROUTE_SERVICE_HOST:ts-route-service}:${ROUTE_SERVICE_PORT:11178}
+
+basic-service:
+  url: http://${BASIC_SERVICE_HOST:ts-basic-service}:${BASIC_SERVICE_PORT:15680}
+
+seat-service:
+  url: http://${SEAT_SERVICE_HOST:ts-seat-service}:${SEAT_SERVICE_PORT:18898}
+
+
+
+
+
+
+
+
+
+
+
+
+MATCH (svc:微服务 {
+    服务名称: '	ts-travel-service',
+    图谱版本: 'master'
+})
+
+MATCH (uapi:上游API {
+    HTTP方法: 'PUT',
+    API路径: '/api/v1/travelservice/trips',
+    图谱版本: 'master'
+})
+
+MATCH (uapi)-[:归属于 {图谱版本: 'master'}]-(:方法 {图谱版本: 'master'})
+      -[:归属于 {图谱版本: 'master'}]-(:类 {图谱版本: 'master'})
+      -[:归属于 {图谱版本: 'master'}]-(svc)
+
+
+// Layer 0：服务内调用链
+MATCH p0 = (uapi)<-[:服务于 {图谱版本: 'master'}]-(entry:方法 {图谱版本: 'master'})
+    -[:调用|接口调用|链中下一节点*0..10]->(leaf:方法)
+
+WHERE ALL(r IN relationships(p0) WHERE r.图谱版本 = 'master')
+  AND ALL(n IN nodes(p0) WHERE n.图谱版本 = 'master')
+
+
+// ── REST 下游链路 ──
+OPTIONAL MATCH rest1 = (leaf)-[:下游调用 {图谱版本: 'master'}]->(down:下游API {图谱版本: 'master'})
+    -[:目标服务 {图谱版本: 'master'}]->(tgtSvc:微服务 {图谱版本: 'master'})
+
+OPTIONAL MATCH rest2 = (down)-[:外部调用 {图谱版本: 'master'}]->(tgtUapi:上游API {图谱版本: 'master'})
+
+OPTIONAL MATCH rest3 = (tgtUapi)<-[:服务于 {图谱版本: 'master'}]-(tgtEntry:方法 {图谱版本: 'master'})
+    -[:调用|接口调用|链中下一节点*0..10]->(tgtLeaf:方法)
+
+WHERE rest3 IS NULL OR (
+    ALL(r IN relationships(rest3) WHERE r.图谱版本 = 'master')
+    AND ALL(n IN nodes(rest3) WHERE n.图谱版本 = 'master')
+)
+
+OPTIONAL MATCH rest4 = (tgtLeaf)-[:下游调用 {图谱版本: 'master'}]->(down2:下游API {图谱版本: 'master'})
+    -[:目标服务 {图谱版本: 'master'}]->(tgtSvc2:微服务 {图谱版本: 'master'})
+
+OPTIONAL MATCH rest5 = (down2)-[:外部调用 {图谱版本: 'master'}]->(tgtUapi2:上游API {图谱版本: 'master'})
+
+
+// ── MQ 异步链路 ──
+OPTIONAL MATCH mq1 = (leaf)-[:发布至 {图谱版本: 'master'}]->(exchange:消息交换机 {图谱版本: 'master'})
+    -[:路由至 {图谱版本: 'master'}]->(queue:消息队列 {图谱版本: 'master'})
+    -[:消费自 {图谱版本: 'master'}]->(consumer:方法 {图谱版本: 'master'})
+
+
+// MQ 消费者所在服务的归属链
+OPTIONAL MATCH mq2 = (consumer)-[:归属于 {图谱版本: 'master'}]->(consumerClass:类 {图谱版本: 'master'})
+    -[:归属于 {图谱版本: 'master'}]->(consumerSvc:微服务 {图谱版本: 'master'})
+
+
+// 消费者方法后续的服务内调用链
+OPTIONAL MATCH mq3 = (consumer)
+    -[:调用|接口调用|链中下一节点*0..10]->(consumerLeaf:方法)
+
+WHERE mq3 IS NULL OR (
+    ALL(r IN relationships(mq3) WHERE r.图谱版本 = 'master')
+    AND ALL(n IN nodes(mq3) WHERE n.图谱版本 = 'master')
+)
+
+RETURN p0,
+       rest1,
+       rest2,
+       rest3,
+       rest4,
+       rest5,
+       mq1,
+       mq2,
+       mq3
+
+
+
+
+MATCH (target:方法 {
+    图谱版本: 'master'
+})-[:归属于 {
+    图谱版本: 'master'
+}]->(:类 {
+    图谱版本: 'master'
+})-[:归属于 {
+    图谱版本: 'master'
+}]->(svc)
+
+WHERE target.方法名 = 'queryByBatch'
+  AND target.所属类名 CONTAINS 'travel.service.TravelServiceImpl'
+
+
+// 上游：上游API ← 入口方法 ← ... ← 目标方法
+OPTIONAL MATCH (uapi:上游API {
+    图谱版本: 'master'
+})<-[:服务于 {
+    图谱版本: 'master'
+}]-(entry:方法 {
+    图谱版本: 'master'
+})-[:归属于 {
+    图谱版本: 'master'
+}]->(:类 {
+    图谱版本: 'master'
+})-[:归属于 {
+    图谱版本: 'master'
+}]->(svc),
+
+path_up = (entry)
+    -[:调用|接口调用|链中下一节点*0..10]
+    ->(target)
+
+WHERE ALL(r IN relationships(path_up) WHERE r.图谱版本 = 'master')
+  AND ALL(n IN nodes(path_up) WHERE n.图谱版本 = 'master')
+
+
+// 下游：目标方法 → ... → 叶子方法
+OPTIONAL MATCH path_down = (target)
+    -[:调用|链中下一节点*1..10]
+    ->(leaf:方法 {
+        图谱版本: 'master'
+    })
+    -[:归属于 {
+        图谱版本: 'master'
+    }]->(:类 {
+        图谱版本: 'master'
+    })
+    -[:归属于 {
+        图谱版本: 'master'
+    }]->(svc)
+
+WHERE path_down IS NULL OR (
+    ALL(r IN relationships(path_down) WHERE r.图谱版本 = 'master')
+    AND ALL(n IN nodes(path_down) WHERE n.图谱版本 = 'master')
+)
+
+
+// 下游出口：叶子方法 → 下游API
+OPTIONAL MATCH (target)
+    -[:调用|链中下一节点*0..10]
+    ->(leaf2:方法 {
+        图谱版本: 'master'
+    })
+    -[:归属于 {
+        图谱版本: 'master'
+    }]->(:类 {
+        图谱版本: 'master'
+    })
+    -[:归属于 {
+        图谱版本: 'master'
+    }]->(svc),
+
+path_exit = (leaf2)
+    -[:下游调用 {
+        图谱版本: 'master'
+    }]
+    ->(:下游API {
+        图谱版本: 'master'
+    })
+
+WHERE path_exit IS NULL OR (
+    ALL(r IN relationships(path_exit) WHERE r.图谱版本 = 'master')
+    AND ALL(n IN nodes(path_exit) WHERE n.图谱版本 = 'master')
+)
+
+RETURN target,
+       uapi,
+       entry,
+       path_up,
+       path_down,
+       path_exit

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Train Ticket 订票系统运行时架构",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "viewBox": [1340, 660],
+    "views": [
+      {
+        "id": "booking-path",
+        "label": "订票主链路",
+        "focus": ["passengers", "ui", "gateway", "preserve", "seat", "order", "mongo"],
+        "note": "从浏览器下单到订单落库的唯一主路径。"
+      },
+      {
+        "id": "identity-edge",
+        "label": "身份与入口",
+        "focus": ["gateway", "auth", "nacos", "ui"],
+        "note": "网关是唯一入口，负责路由、JWT 校验与服务发现。"
+      },
+      {
+        "id": "async-payment",
+        "label": "支付与异步",
+        "focus": ["order", "payment", "rabbitmq", "preserve"],
+        "note": "支付结算与邮件通知两条旁路。"
+      }
+    ]
+  },
+  "components": [
+    { "id": "passengers", "type": "external", "label": "乘客", "sublabel": "浏览器 / Web 客户端", "pos": [40, 320], "size": [130, 76] },
+    { "id": "ui", "type": "frontend", "label": "ts-ui-dashboard", "sublabel": "Nginx :8080 静态前端", "pos": [250, 320], "size": [160, 76] },
+    { "id": "gateway", "type": "backend", "label": "ts-gateway-service", "sublabel": "Spring Cloud Gateway :18888", "pos": [450, 320], "size": [165, 76], "tag": "lb:// 路由" },
+    { "id": "preserve", "type": "backend", "label": "ts-preserve-service", "sublabel": "订票编排", "pos": [710, 320], "size": [165, 76] },
+    { "id": "travel", "type": "backend", "label": "ts-basic-service", "sublabel": "车次 · 路线 · 票价聚合", "pos": [950, 200], "size": [165, 76] },
+    { "id": "seat", "type": "backend", "label": "ts-seat-service", "sublabel": "座位分配", "pos": [950, 310], "size": [155, 76] },
+    { "id": "order", "type": "backend", "label": "ts-order-service", "sublabel": "订单持久化", "pos": [950, 420], "size": [155, 76] },
+    { "id": "payment", "type": "backend", "label": "ts-inside-payment-service", "sublabel": "支付结算", "pos": [1135, 420], "size": [160, 76] },
+    { "id": "nacos", "type": "cloud", "label": "Nacos", "sublabel": "服务发现 · 配置 :8848", "pos": [250, 530], "size": [170, 72] },
+    { "id": "auth", "type": "security", "label": "ts-auth-service", "sublabel": "登录 · 签发 JWT", "pos": [450, 120], "size": [170, 72] },
+    { "id": "rabbitmq", "type": "messagebus", "label": "RabbitMQ", "sublabel": "邮件通知队列", "pos": [700, 120], "size": [170, 72], "brand": "rabbitmq" },
+    { "id": "mongo", "type": "database", "label": "MongoDB", "sublabel": "各服务独立库", "pos": [950, 545], "size": [155, 76], "brand": "mongodb" }
+  ],
+  "boundaries": [
+    { "kind": "region", "label": "公共互联网 · 不可信", "wraps": ["passengers"], "pad": 26 },
+    { "kind": "region", "label": "Train Ticket 私有服务网络", "wraps": ["ui", "gateway", "preserve", "travel", "seat", "order", "payment", "nacos", "auth", "rabbitmq", "mongo"], "pad": 30 },
+    { "kind": "security-group", "label": "网关信任边界 · JWT + 角色校验", "wraps": ["gateway", "auth"], "pad": 20 }
+  ],
+  "connections": [
+    { "id": "passengers-ui", "from": "passengers", "to": "ui", "label": "HTTPS :8080", "variant": "emphasis", "fromSide": "right", "toSide": "left", "labelAt": [210, 418] },
+    { "id": "ui-gateway", "from": "ui", "to": "gateway", "label": "反向代理 /api/v1", "variant": "emphasis", "fromSide": "right", "toSide": "left", "labelAt": [430, 420] },
+    { "id": "gateway-preserve", "from": "gateway", "to": "preserve", "label": "路由 lb://", "variant": "emphasis", "fromSide": "right", "toSide": "left" },
+    { "id": "gateway-auth", "from": "gateway", "to": "auth", "label": "登录 · 签发 JWT", "variant": "security", "fromSide": "top", "toSide": "bottom", "labelAt": [535, 262] },
+    { "id": "gateway-nacos", "from": "gateway", "to": "nacos", "label": "服务发现", "fromSide": "bottom", "toSide": "top", "labelAt": [430, 495] },
+    { "id": "preserve-rabbitmq", "from": "preserve", "to": "rabbitmq", "label": "异步邮件事件", "variant": "dashed", "fromSide": "top", "toSide": "bottom", "labelAt": [795, 256] },
+    { "id": "preserve-travel", "from": "preserve", "to": "travel", "label": "车次 · 路线 · 票价", "fromSide": "top", "toSide": "left", "labelAt": [893, 238] },
+    { "id": "preserve-seat", "from": "preserve", "to": "seat", "label": "分配座位", "variant": "emphasis", "fromSide": "right", "toSide": "left" },
+    { "id": "preserve-order", "from": "preserve", "to": "order", "label": "创建订单", "variant": "emphasis", "fromSide": "bottom", "toSide": "left", "labelAt": [880, 452] },
+    { "id": "payment-order", "from": "payment", "to": "order", "label": "扣款 · 标记已支付", "fromSide": "left", "toSide": "right", "labelAt": [1210, 516] },
+    { "id": "order-mongo", "from": "order", "to": "mongo", "label": "订单持久化", "fromSide": "bottom", "toSide": "top", "labelAt": [1030, 524] }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "入口与信任边界",
+      "items": [
+        "浏览器只访问 ts-ui-dashboard 的 :8080，/api/v1 由 Nginx 反向代理到网关",
+        "ts-gateway-service :18888 是唯一入口，校验 JWT / 角色后按 Path 转发",
+        "数据层位于私有网络内，不对外暴露"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "核心链路与异步",
+      "items": [
+        "ts-preserve-service 依次校验安全、联系人、余票、座位后创建订单",
+        "ts-basic-service 聚合 ts-travel / ts-route / ts-station / ts-train / ts-price",
+        "ts-order-service 落库；ts-inside-payment-service 结算回写，邮件事件经 RabbitMQ 异步通知"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "平台与外部依赖",
+      "items": [
+        "Nacos :8848 提供服务注册与配置，网关以 lb:// 发现实例",
+        "各服务使用独立 MongoDB / MySQL 库，服务之间不共享数据表",
+        "可观测栈 Jaeger/Zipkin + Prometheus/Grafana + EFK；另有约 27 个服务经网关路由"
+      ]
+    }
+  ]
+}
